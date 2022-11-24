@@ -1,0 +1,109 @@
+﻿<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:e="clr-namespace:Iecc8.UI.Equipment"
+		xmlns:a="clr-namespace:Iecc8.UI.Assembly"
+		x:Class="Iecc8.UI.Assembly.SingleTrackSiding"
+		Grid.RowSpan="5"
+		Grid.ColumnSpan="21">
+	<Grid.Resources>
+		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Common/Resources.xaml"/>
+	</Grid.Resources>
+	<Grid.RowDefinitions>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+	</Grid.RowDefinitions>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+	</Grid.ColumnDefinitions>
+	<TextBlock Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="11" Text="{Binding SidingName, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<Grid Grid.RowSpan="5" Grid.ColumnSpan="21" LayoutTransform="{Binding InvertTransform, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="16"/>
+			<RowDefinition Height="16"/>
+			<RowDefinition Height="16"/>
+			<RowDefinition Height="16"/>
+			<RowDefinition Height="16"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+			<ColumnDefinition Width="8"/>
+		</Grid.ColumnDefinitions>
+		<!-- Signals -->
+		<e:Signal Grid.Row="{Binding LeftSingleSignalGridRow, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" SignalID="{Binding LeftSingleSignal, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" LayoutTransform="{Binding HFlipVFlipInvertTransform, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}"/>
+		<e:Signal Grid.Row="{Binding RightSingleSignalGridRow, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" Grid.Column="18" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" SignalID="{Binding RightSingleSignal, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" LayoutTransform="{Binding InvertTransform, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}"/>
+		<e:Signal Grid.Row="0" Grid.Column="5" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" SignalID="{Binding LeftMainSignal, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}"/>
+		<e:Signal Grid.Row="4" Grid.Column="5" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" SignalID="{Binding LeftSidingSignal, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" LayoutTransform="1 0 0 -1 0 0"/>
+		<e:Signal Grid.Row="0" Grid.Column="14" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" SignalID="{Binding RightMainSignal, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" LayoutTransform="-1 0 0 1 0 0"/>
+		<e:Signal Grid.Row="4" Grid.Column="14" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" SignalID="{Binding RightSidingSignal, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" LayoutTransform="-1 0 0 -1 0 0"/>
+
+		<!-- Left section -->
+		<e:HSection Grid.Row="1" Grid.Column="2" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding LeftTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" BlinkForSignal="{Binding LeftSingleSignal, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}"/>
+		<e:Points Grid.Row="1" Grid.Column="3" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding LeftTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" PointsID="{Binding LeftPoints, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}"/>
+		<e:HSection Grid.Row="1" Grid.Column="4" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding LeftTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" PointPositions="{Binding LeftNormalSPP, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}"/>
+		<e:HSection Grid.Row="1" Grid.Column="5" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding LeftTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" PointPositions="{Binding LeftNormalSPP, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" BlinkForSignal="{Binding LeftMainSignal, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}"/>
+		<e:DiagonalSection Grid.Row="2" Grid.Column="3" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding LeftTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" PointPositions="{Binding LeftReverseSPP, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}"/>
+		<e:DiagonalSection Grid.Row="2" Grid.Column="4" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding LeftTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" PointPositions="{Binding LeftReverseSPP, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" LayoutTransform="-1 0 0 -1 0 0"/>
+		<e:DiagonalSection Grid.Row="3" Grid.Column="4" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding LeftTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" PointPositions="{Binding LeftReverseSPP, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}"/>
+		<e:HSection Grid.Row="3" Grid.Column="5" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding LeftTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" PointPositions="{Binding LeftReverseSPP, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" BlinkForSignal="{Binding LeftSidingSignal, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}"/>
+
+		<!-- Right section -->
+		<e:HSection Grid.Row="1" Grid.Column="18" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding RightTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" BlinkForSignal="{Binding RightSingleSignal, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}"/>
+		<e:Points Grid.Row="1" Grid.Column="17" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding RightTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" PointsID="{Binding RightPoints, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" LayoutTransform="-1 0 0 1 0 0"/>
+		<e:HSection Grid.Row="1" Grid.Column="16" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding RightTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" PointPositions="{Binding RightNormalSPP, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}"/>
+		<e:HSection Grid.Row="1" Grid.Column="15" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding RightTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" PointPositions="{Binding RightNormalSPP, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" BlinkForSignal="{Binding RightMainSignal, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}"/>
+		<e:DiagonalSection Grid.Row="2" Grid.Column="17" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding RightTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" PointPositions="{Binding RightReverseSPP, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" LayoutTransform="-1 0 0 1 0 0"/>
+		<e:DiagonalSection Grid.Row="2" Grid.Column="16" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding RightTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" PointPositions="{Binding RightReverseSPP, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" LayoutTransform="1 0 0 -1 0 0"/>
+		<e:DiagonalSection Grid.Row="3" Grid.Column="16" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding RightTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" PointPositions="{Binding RightReverseSPP, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" LayoutTransform="-1 0 0 1 0 0"/>
+		<e:HSection Grid.Row="3" Grid.Column="15" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding RightTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" PointPositions="{Binding RightReverseSPP, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" BlinkForSignal="{Binding RightSidingSignal, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}"/>
+
+		<!-- Mainline section -->
+		<e:HSection Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="9" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding MainTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TCBLeft="True" TCBRight="True"/>
+		<e:TDBerth Grid.Row="1" Grid.Column="9" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding MainTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" LayoutTransform="{Binding InvertTransform, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}"/>
+
+		<!-- Siding section -->
+		<e:HSection Grid.Row="3" Grid.Column="6" Grid.ColumnSpan="9" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding SidingTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TCBLeft="True" TCBRight="True"/>
+		<e:TDBerth Grid.Row="3" Grid.Column="9" SubAreaID="{Binding SubAreaID, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" TrackCircuitID="{Binding SidingTrackCircuit, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}" LayoutTransform="{Binding InvertTransform, Mode=OneTime, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type a:SingleTrackSiding}}}"/>
+	</Grid>
+</Grid>
