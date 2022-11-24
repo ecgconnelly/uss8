@@ -1,0 +1,22 @@
+﻿<SubArea xmlns="clr-namespace:Iecc8.Schema"
+		xmlns:s="clr-namespace:System;assembly=mscorlib"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		Name="Bakersfield">
+    <SubArea.AutomaticSignals>
+        <AutomaticSignal/>
+    </SubArea.AutomaticSignals>
+
+    <SubArea.ControlledSignals>
+        <ControlledSignal/>
+    </SubArea.ControlledSignals>
+
+	<SubArea.TrackCircuits>
+		<!-- CP Summit, main 2 -->
+		<TrackCircuit ID="0" LocationName="Somewhere"/>
+		
+	</SubArea.TrackCircuits>
+
+    <SubArea.Points>
+        <Points/>
+    </SubArea.Points>
+</SubArea>

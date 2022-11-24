@@ -8,6 +8,7 @@
 			<RegionEntry ID="110" Name="Needles"/>
 			<RegionEntry ID="120" Name="Cajon"/>
 			<RegionEntry ID="150" Name="BarstowYermo"/>
-		</Region.SubAreas>
+            <RegionEntry ID="250" Name="Bakersfield"/> 
+        </Region.SubAreas>
 	</Region>
 </Regions>
