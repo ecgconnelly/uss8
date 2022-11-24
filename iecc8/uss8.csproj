@@ -498,6 +498,59 @@
     <Resource Include="Images\PanelSegments\uss-15-dual.gif" />
     <Resource Include="Images\PanelSegments\uss-15.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\TrackSegments\os-left-crossover-closed.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\TrackSegments\b-45-dark.gif" />
+    <Resource Include="Images\TrackSegments\b-45-outline.gif" />
+    <Resource Include="Images\TrackSegments\b-45-short.gif" />
+    <Resource Include="Images\TrackSegments\b-45.gif" />
+    <Resource Include="Images\TrackSegments\b-dark.gif" />
+    <Resource Include="Images\TrackSegments\b-outline.gif" />
+    <Resource Include="Images\TrackSegments\b-short.gif" />
+    <Resource Include="Images\TrackSegments\blackgap.gif" />
+    <Resource Include="Images\TrackSegments\block.gif" />
+    <Resource Include="Images\TrackSegments\crossing-dark.gif" />
+    <Resource Include="Images\TrackSegments\crossing.gif" />
+    <Resource Include="Images\TrackSegments\diamond-l-dark.gif" />
+    <Resource Include="Images\TrackSegments\diamond-l.gif" />
+    <Resource Include="Images\TrackSegments\diamond-r-dark.gif" />
+    <Resource Include="Images\TrackSegments\diamond-r.gif" />
+    <Resource Include="Images\TrackSegments\east-r.gif" />
+    <Resource Include="Images\TrackSegments\os-90-diamond-closed.gif" />
+    <Resource Include="Images\TrackSegments\os-90-diamond-thrown.gif" />
+    <Resource Include="Images\TrackSegments\os-dc-closed.gif" />
+    <Resource Include="Images\TrackSegments\os-l-diamond-closed.gif" />
+    <Resource Include="Images\TrackSegments\os-l-e-thrown.gif" />
+    <Resource Include="Images\TrackSegments\os-l-sc-closed.gif" />
+    <Resource Include="Images\TrackSegments\os-l-w-thrown.gif" />
+    <Resource Include="Images\TrackSegments\os-lefthand-east-closed.gif" />
+    <Resource Include="Images\TrackSegments\os-lefthand-east-thrown.gif" />
+    <Resource Include="Images\TrackSegments\os-lefthand-west-closed.gif" />
+    <Resource Include="Images\TrackSegments\os-lefthand-west-thrown.gif" />
+    <Resource Include="Images\TrackSegments\os-r-diamond-closed.gif" />
+    <Resource Include="Images\TrackSegments\os-r-diamond-thrown.gif" />
+    <Resource Include="Images\TrackSegments\os-r-e-closed.gif" />
+    <Resource Include="Images\TrackSegments\os-r-e-thrown.gif" />
+    <Resource Include="Images\TrackSegments\os-r-sc-closed.gif" />
+    <Resource Include="Images\TrackSegments\os-r-w-closed.gif" />
+    <Resource Include="Images\TrackSegments\os-r-w-thrown.gif" />
+    <Resource Include="Images\TrackSegments\os-right-crossover-closed.gif" />
+    <Resource Include="Images\TrackSegments\os-righthand-east-closed.gif" />
+    <Resource Include="Images\TrackSegments\os-righthand-east-thrown.gif" />
+    <Resource Include="Images\TrackSegments\os-righthand-west-closed.gif" />
+    <Resource Include="Images\TrackSegments\os-righthand-west-thrown.gif" />
+    <Resource Include="Images\TrackSegments\west-r.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DiagramItems\sig-h-1.gif" />
+    <Resource Include="Images\DiagramItems\sig-h-2.gif" />
+    <Resource Include="Images\DiagramItems\sig-h-3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DiagramItems\Station.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
