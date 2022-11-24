@@ -153,20 +153,14 @@
     <Compile Include="UI\Assembly\USS\SwitchModule.xaml.cs">
       <DependentUpon>SwitchModule.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Equipment\USS\SmallSwitchUD.xaml.cs">
-      <DependentUpon>SmallSwitchUD.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Equipment\USS\ToggleLCR.xaml.cs">
-      <DependentUpon>ToggleLCR.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Equipment\USS\ToggleLR.xaml.cs">
-      <DependentUpon>ToggleLR.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UI\Equipment\VSection.xaml.cs">
       <DependentUpon>VSection.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\Equipment\Wye.xaml.cs">
       <DependentUpon>Wye.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Panels\BakersfieldPanel.xaml.cs">
+      <DependentUpon>BakersfieldPanel.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\Region\California\Cajon\BaselineToSilverwood.xaml.cs">
       <DependentUpon>BaselineToSilverwood.xaml</DependentUpon>
@@ -330,23 +324,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\Equipment\USS\SmallSwitchUD.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UI\Equipment\USS\ToggleLCR.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UI\Equipment\USS\ToggleLR.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="UI\Equipment\VSection.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\Equipment\Wye.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Panels\BakersfieldPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -476,6 +462,41 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="UI\Assembly\USS\s-unknown.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\PanelSegments\Panel-blank-7.gif" />
+    <Resource Include="Images\PanelSegments\Panel-blank-8.gif" />
+    <Resource Include="Images\PanelSegments\Panel-blank-9.gif" />
+    <Resource Include="Images\PanelSegments\Panel-blank.gif" />
+    <Resource Include="Images\PanelSegments\Panel-left-7.gif" />
+    <Resource Include="Images\PanelSegments\Panel-left-8.gif" />
+    <Resource Include="Images\PanelSegments\Panel-left-9.gif" />
+    <Resource Include="Images\PanelSegments\Panel-left.gif" />
+    <Resource Include="Images\PanelSegments\Panel-plain.gif" />
+    <Resource Include="Images\PanelSegments\Panel-plainhalf.gif" />
+    <Resource Include="Images\PanelSegments\Panel-right-7.gif" />
+    <Resource Include="Images\PanelSegments\Panel-right-8.gif" />
+    <Resource Include="Images\PanelSegments\Panel-right-9.gif" />
+    <Resource Include="Images\PanelSegments\Panel-right.gif" />
+    <Resource Include="Images\PanelSegments\Panel-signal-7.gif" />
+    <Resource Include="Images\PanelSegments\Panel-signal-8.gif" />
+    <Resource Include="Images\PanelSegments\Panel-signal-9.gif" />
+    <Resource Include="Images\PanelSegments\Panel-signal.gif" />
+    <Resource Include="Images\PanelSegments\Panel-signalblk.gif" />
+    <Resource Include="Images\PanelSegments\Panel-slimblankblk.gif" />
+    <Resource Include="Images\PanelSegments\Panel-sw-sig-7.gif" />
+    <Resource Include="Images\PanelSegments\Panel-sw-sig-8.gif" />
+    <Resource Include="Images\PanelSegments\Panel-sw-sig-9.gif" />
+    <Resource Include="Images\PanelSegments\Panel-sw-sig.gif" />
+    <Resource Include="Images\PanelSegments\Panel-sw-sigblkbranch.gif" />
+    <Resource Include="Images\PanelSegments\Panel-sw-sigbranch.gif" />
+    <Resource Include="Images\PanelSegments\Panel-switch-7.gif" />
+    <Resource Include="Images\PanelSegments\Panel-switch-8.gif" />
+    <Resource Include="Images\PanelSegments\Panel-switch-9.gif" />
+    <Resource Include="Images\PanelSegments\Panel-switch.gif" />
+    <Resource Include="Images\PanelSegments\Panel-switchblk.gif" />
+    <Resource Include="Images\PanelSegments\uss-15-dual.gif" />
+    <Resource Include="Images\PanelSegments\uss-15.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

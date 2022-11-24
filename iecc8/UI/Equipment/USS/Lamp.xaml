@@ -13,7 +13,7 @@
         Margin="0,0,0,0" 
         VerticalAlignment="Top" 
         Width="21" 
-        Source="/Images/Lamps/red-off.gif"
+        Source="/Images/Lamps/red-on.gif"
      />
 
     <UserControl.Resources>
