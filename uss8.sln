@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iecc8", "iecc8\iecc8.csproj", "{A1559F74-B532-4A21-8898-92D594D61AFC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uss8", "iecc8\uss8.csproj", "{A1559F74-B532-4A21-8898-92D594D61AFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAEE3E12-8D12-4DD7-9E53-BDBD132DF6D0}
 	EndGlobalSection
 EndGlobal

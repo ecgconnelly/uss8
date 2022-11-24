@@ -141,6 +141,27 @@
       <DependentUpon>TDBerth.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\Equipment\TrackSection.cs" />
+    <Compile Include="UI\Equipment\USS\CodeButton.xaml.cs">
+      <DependentUpon>CodeButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Equipment\USS\Lamp.xaml.cs">
+      <DependentUpon>Lamp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Assembly\USS\SignalModule.xaml.cs">
+      <DependentUpon>SignalModule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Assembly\USS\SwitchModule.xaml.cs">
+      <DependentUpon>SwitchModule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Equipment\USS\SmallSwitchUD.xaml.cs">
+      <DependentUpon>SmallSwitchUD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Equipment\USS\ToggleLCR.xaml.cs">
+      <DependentUpon>ToggleLCR.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Equipment\USS\ToggleLR.xaml.cs">
+      <DependentUpon>ToggleLR.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\Equipment\VSection.xaml.cs">
       <DependentUpon>VSection.xaml</DependentUpon>
     </Compile>
@@ -293,6 +314,34 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UI\Equipment\USS\CodeButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Equipment\USS\Lamp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Assembly\USS\SignalModule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Assembly\USS\SwitchModule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Equipment\USS\SmallSwitchUD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Equipment\USS\ToggleLCR.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Equipment\USS\ToggleLR.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UI\Equipment\VSection.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -358,7 +407,23 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\Lamps\amber-off.gif" />
+    <Resource Include="Images\Lamps\amber-on.gif" />
+    <Resource Include="Images\Lamps\blue-off.gif" />
+    <Resource Include="Images\Lamps\blue-on.gif" />
+    <Resource Include="Images\Lamps\dark.gif" />
+    <Resource Include="Images\Lamps\green-off.gif" />
+    <Resource Include="Images\Lamps\green-on.gif" />
+    <Resource Include="Images\Lamps\purple-off.gif" />
+    <Resource Include="Images\Lamps\purple-on.gif" />
+    <Resource Include="Images\Lamps\red-off.gif" />
+    <Resource Include="Images\Lamps\red-on.gif" />
+    <Resource Include="Images\Lamps\s-inconsistent.gif" />
+    <Resource Include="Images\Lamps\s-unknown.gif" />
+    <Resource Include="Images\Lamps\white-off.gif" />
+    <Resource Include="Images\Lamps\white-on.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
