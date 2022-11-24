@@ -16,14 +16,30 @@ using System.Windows.Shapes;
 namespace Iecc8.UI.Equipment.USS
 {
     /// <summary>
-    /// Interaction logic for SwitchToggle.xaml
+    /// Interaction logic for SwitchModule.xaml
     /// </summary>
-    public partial class SwitchToggle : UserControl
+    public partial class SwitchModule : UserControl
     {
-        public SwitchToggle()
+        public SwitchModule()
         {
             InitializeComponent();
         }
+
+        public int LeverState
+        {
+            get
+            {
+                return (int) GetValue(LeverStateProperty);
+            }
+
+            set
+            {
+                SetValue(LeverStateProperty, value);
+            }
+        }
+        public static readonly DependencyProperty LeverStateProperty = 
+            DependencyProperty.Register(nameof(LeverState), typeof(int), typeof(SwitchModule), new PropertyMetadata(0));
+
 
         private void Lamp_Loaded(object sender, RoutedEventArgs e)
         {
@@ -38,6 +54,11 @@ namespace Iecc8.UI.Equipment.USS
         private void Lamp_Loaded_1(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void LeverImage_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            
         }
     }
 }

@@ -4,23 +4,24 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Iecc8.UI.Equipment.USS"
-             xmlns:Equipment="clr-namespace:Iecc8.UI.Equipment" x:Class="Iecc8.UI.Equipment.USS.SwitchToggle"
+             xmlns:Equipment="clr-namespace:Iecc8.UI.Equipment" x:Class="Iecc8.UI.Equipment.USS.SwitchModule"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Margin="12,0,-12,0">
-        <Image x:Name="Plate" HorizontalAlignment="Left" Height="79" Margin="0,0,0,0" VerticalAlignment="Top" Width="60" Source="/Images/Plates/turnout.gif"/>
-
-
-        <local:Lamp x:Name="RightLamp" HorizontalAlignment="Left" Height="16" Margin="34,4,0,0" VerticalAlignment="Top" Width="16" LampColor="yellow"/>
-
-        <local:Lamp x:Name="LeftLamp" HorizontalAlignment="Left" Height="16" Margin="3,4,0,0" VerticalAlignment="Top" Width="16" LampColor="green"/>
-        <Label x:Name="SwitchNumberLabel" Content="##" HorizontalAlignment="Left" Height="12" Margin="20,21 ,0,0" VerticalAlignment="Top" Width="19" RenderTransformOrigin="0.515,0.5" Foreground="#FFCACACA" FontFamily="Arial" FontSize="11" Padding="0,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <Button x:Name="LeverButton" Content="Button" HorizontalAlignment="Left" Height="33" Margin="6,43,0,0" VerticalAlignment="Top" Width="50" Foreground="{x:Null}">
-            <Button.Background>
-                <ImageBrush ImageSource="/Images/Levers/lever-left-wide.gif" Stretch="None"/>
-            </Button.Background>
-        </Button>
+             d:DesignHeight="79" d:DesignWidth="60" Width="60" Height="79">
+    <Grid Margin="0,0,0,0" Width="60" Height="79" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Image x:Name="Plate" HorizontalAlignment="Left" Height="79" Margin="0,0,0,0" VerticalAlignment="Top" Width="60" Source="/iecc8;component/Images/Plates/turnout.gif"/>
+        <Label x:Name="SwitchNumberLabel" Content="##" HorizontalAlignment="Left" Height="12" Margin="20,21 ,0,0" VerticalAlignment="Top" Width="19"  Foreground="#FFCACACA" FontFamily="Arial" FontSize="11" Padding="0,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <local:Lamp x:Name="LeftLamp" HorizontalAlignment="Left" Height="21" Margin="3,4,0,0" VerticalAlignment="Top" Width="21" LampColor="green"/>
+        <Image x:Name="LeverImage" HorizontalAlignment="Left" Height="33" VerticalAlignment="Bottom" Width="50" Margin="6,0,0,3" Source="/iecc8;component/Images/Levers/lever-right-wide.gif" MouseUp="LeverImage_MouseUp" />
+        <local:Lamp x:Name="RightLamp" HorizontalAlignment="Left" Height="21" Margin="34,4,0,0" VerticalAlignment="Top" Width="21" LampColor="yellow"/>
 
 
     </Grid>
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <BitmapImage x:Key="left" UriSource="/iecc8;component/Images/Levers/lever-left-wide.gif"/>
+            <BitmapImage x:Key="center" UriSource="/iecc8;component/Images/Levers/lever-vertical-wide.gif"/>
+            <BitmapImage x:Key="right" UriSource="/iecc8;component/Images/Levers/lever-right-wide.gif"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
 </UserControl>

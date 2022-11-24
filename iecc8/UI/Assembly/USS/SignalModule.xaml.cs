@@ -18,9 +18,9 @@ namespace Iecc8.UI.Equipment.USS
     /// <summary>
     /// Interaction logic for SignalToggle.xaml
     /// </summary>
-    public partial class SignalToggle : UserControl
+    public partial class SignalModule : UserControl
     {
-        public SignalToggle()
+        public SignalModule()
         {
             InitializeComponent();
         }
