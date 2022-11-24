@@ -13,6 +13,12 @@ namespace Iecc8.Schema {
 			set;
 		}
 
+		public ushort SignalID
+		{
+			get;
+			set;
+		}
+
 		/// <summary>
 		/// How many signals ahead this signal looks for a divergence to report.
 		/// </summary>

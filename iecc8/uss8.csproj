@@ -141,6 +141,9 @@
       <DependentUpon>TDBerth.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\Equipment\TrackSection.cs" />
+    <Compile Include="UI\Equipment\USS\BlockLamp.xaml.cs">
+      <DependentUpon>BlockLamp.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\Equipment\USS\CodeButton.xaml.cs">
       <DependentUpon>CodeButton.xaml</DependentUpon>
     </Compile>
@@ -238,6 +241,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Region\California\Bakersfield.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Region\California\Cajon.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -305,6 +312,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\Equipment\TDBerth.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Equipment\USS\BlockLamp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

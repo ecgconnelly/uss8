@@ -98,7 +98,7 @@ namespace Iecc8.World {
 		/// </summary>
 		/// <param name="message">The received data.</param>
 		public void UpdateFromRun8(OccupiedBlocksMessage message) {
-			SubArea subArea;
+			SubArea subArea; 
 			if (SubAreas.TryGetValue((ushort) message.Route, out subArea)) {
 				subArea.UpdateFromRun8(message);
 			} else if (squelchUnknownSubAreas.Add(message.Route)) {

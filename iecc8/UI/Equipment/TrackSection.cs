@@ -164,6 +164,7 @@ namespace Iecc8.UI.Equipment {
 			}
 		}
 
+
 		/// <summary>
 		/// Whether this track section is points that have been keyed.
 		/// </summary>
@@ -176,7 +177,7 @@ namespace Iecc8.UI.Equipment {
 		/// <summary>
 		/// The track circuit that this section is part of.
 		/// </summary>
-		private TrackCircuit TrackCircuit;
+		protected TrackCircuit TrackCircuit;
 
 		/// <summary>
 		/// Computes whether this section is excluded from the current route due to point positions.
