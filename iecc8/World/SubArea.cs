@@ -128,6 +128,15 @@ namespace Iecc8.World {
 		/// </summary>
 		/// <param name="message">The received data.</param>
 		public void UpdateFromRun8(OccupiedBlocksMessage message) {
+			if (this.ID == 250)
+			{
+				string msg = "BAK occupied blocks: ";
+				foreach (int block in message.OccupiedBlocks)
+				{
+					msg += block.ToString() + " ";
+				}
+				Debug.Print(msg);
+			}
 			message.OccupiedBlocks.Sort();
 			message.OpenManualSwitchBlocks.Sort();
 			IReadOnlyList<TrackCircuit> tcs = TrackCircuits;

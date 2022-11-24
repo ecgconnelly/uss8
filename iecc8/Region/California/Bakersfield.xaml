@@ -12,9 +12,13 @@
 
 	<SubArea.TrackCircuits>
 		<!-- CP Summit, main 2 -->
-		<TrackCircuit ID="0" LocationName="Somewhere"/>
-		
-	</SubArea.TrackCircuits>
+		<TrackCircuit ID="0"        LocationName="Somewhere"/>
+        <TrackCircuit ID="125"      LocationName="Fresno"/>
+        <TrackCircuit ID="138"      LocationName="CP Fresno OS"/>
+        <TrackCircuit ID="136"      LocationName="Fresno M2"/>
+        
+
+    </SubArea.TrackCircuits>
 
     <SubArea.Points>
         <Points/>

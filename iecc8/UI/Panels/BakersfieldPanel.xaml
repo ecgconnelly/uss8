@@ -169,13 +169,9 @@
         <Image HorizontalAlignment="Left" Height="15" Margin="631,159,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="631,136,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <Label Content="CALWA" HorizontalAlignment="Left" Height="24" Margin="520,78,0,0" VerticalAlignment="Top" Width="61" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="32,137,0,0" VerticalAlignment="Top" Width="16" SubAreaID="120" TrackCircuitID="101" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="163,136,0,0" VerticalAlignment="Top" Width="16" SubAreaID="120" TrackCircuitID="101" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="163,160,0,0" VerticalAlignment="Top" Width="16" SubAreaID="120" TrackCircuitID="101" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="441,137,0,0" VerticalAlignment="Top" Width="16" SubAreaID="120" TrackCircuitID="101" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="441,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="120" TrackCircuitID="101" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="637,137,0,0" VerticalAlignment="Top" Width="16" SubAreaID="120" TrackCircuitID="101" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="637,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="120" TrackCircuitID="101" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="32,136,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="125" LampColor="amber" TCBLeft="True"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="163,160,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="136" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="107,136,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="138" LampColor="red"/>
 
 
     </Grid>
