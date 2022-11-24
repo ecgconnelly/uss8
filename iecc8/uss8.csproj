@@ -424,6 +424,59 @@
     <Resource Include="Images\Lamps\white-off.gif" />
     <Resource Include="Images\Lamps\white-on.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Plates\l-r-signal.gif" />
+    <Resource Include="Images\Plates\n-r-traffic.gif" />
+    <Resource Include="Images\Plates\s-n-signal.gif" />
+    <Resource Include="Images\Plates\s-n-traffic.gif" />
+    <Resource Include="Images\Plates\traffic.gif" />
+    <Resource Include="Images\Plates\w-e-signal.gif" />
+    <Resource Include="Images\Plates\w-e-traffic.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Plates\turnout-lock.gif" />
+    <Resource Include="Images\Plates\turnout.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Levers\ATSFLever-C.png" />
+    <Resource Include="Images\Levers\ATSFLever-inconsistent.png" />
+    <Resource Include="Images\Levers\ATSFLever-L.png" />
+    <Resource Include="Images\Levers\ATSFLever-R.png" />
+    <Resource Include="Images\Levers\ATSFLever-unknown.png" />
+    <Resource Include="Images\Levers\code-inconsistent-wide.gif" />
+    <Resource Include="Images\Levers\code-inconsistent.gif" />
+    <Resource Include="Images\Levers\code-press-wide.gif" />
+    <Resource Include="Images\Levers\code-press.gif" />
+    <Resource Include="Images\Levers\code-unknown-wide.gif" />
+    <Resource Include="Images\Levers\code-unknown.gif" />
+    <Resource Include="Images\Levers\code-wide.gif" />
+    <Resource Include="Images\Levers\code.gif" />
+    <Resource Include="Images\Levers\codeButton-Active.gif" />
+    <Resource Include="Images\Levers\codeButton-Inactive.gif" />
+    <Resource Include="Images\Levers\codeButton-inconsistent.gif" />
+    <Resource Include="Images\Levers\codeButton-unknown.gif" />
+    <Resource Include="Images\Levers\l-inactive.gif" />
+    <Resource Include="Images\Levers\l-inconsistent.gif" />
+    <Resource Include="Images\Levers\l-left.gif" />
+    <Resource Include="Images\Levers\l-right.gif" />
+    <Resource Include="Images\Levers\l-transparent.gif" />
+    <Resource Include="Images\Levers\l-unknown.gif" />
+    <Resource Include="Images\Levers\l-vertical.gif" />
+    <Resource Include="Images\Levers\lever-inactive-wide.gif" />
+    <Resource Include="Images\Levers\lever-inconsistent-wide.gif" />
+    <Resource Include="Images\Levers\lever-left-wide.gif" />
+    <Resource Include="Images\Levers\lever-right-wide.gif" />
+    <Resource Include="Images\Levers\lever-unknown-wide.gif" />
+    <Resource Include="Images\Levers\lever-vertical-wide.gif" />
+    <Resource Include="Images\Levers\switch-inconsistent.gif" />
+    <Resource Include="Images\Levers\switch-mid.gif" />
+    <Resource Include="Images\Levers\switch-off.gif" />
+    <Resource Include="Images\Levers\switch-on.gif" />
+    <Resource Include="Images\Levers\switch-unknown.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Assembly\USS\s-unknown.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

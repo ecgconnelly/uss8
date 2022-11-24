@@ -24,5 +24,20 @@ namespace Iecc8.UI.Equipment.USS
         {
             InitializeComponent();
         }
+
+        private void Lamp_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SetLampStates(bool left, bool right)
+        {
+
+        }
+
+        private void Lamp_Loaded_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
