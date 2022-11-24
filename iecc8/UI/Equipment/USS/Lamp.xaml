@@ -5,8 +5,36 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Iecc8.UI.Equipment.USS"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+             d:DesignHeight="21 " d:DesignWidth="21 ">
+    <Image
+        x:Name="LampImage" 
+        HorizontalAlignment="Left" 
+        Height="21" 
+        Margin="0,0,0,0" 
+        VerticalAlignment="Top" 
+        Width="21" 
+        Source="/Images/Lamps/red-off.gif"
+     />
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <BitmapImage x:Key="amber-off" UriSource="/iecc8;component/Images/Lamps/amber-off.gif"/>
+            <BitmapImage x:Key="amber-on" UriSource="/iecc8;component/Images/Lamps/amber-on.gif"/>
+            <BitmapImage x:Key="blue-off" UriSource="/iecc8;component/Images/Lamps/blue-off.gif"/>
+            <BitmapImage x:Key="blue-on" UriSource="/iecc8;component/Images/Lamps/blue-on.gif"/>
+            <BitmapImage x:Key="green-off" UriSource="/iecc8;component/Images/Lamps/green-off.gif"/>
+            <BitmapImage x:Key="green-on" UriSource="/iecc8;component/Images/Lamps/green-on.gif"/>
+            <BitmapImage x:Key="purple-off" UriSource="/iecc8;component/Images/Lamps/purple-off.gif"/>
+            <BitmapImage x:Key="purple-on" UriSource="/iecc8;component/Images/Lamps/purple-on.gif"/>
+            <BitmapImage x:Key="red-off" UriSource="/iecc8;component/Images/Lamps/red-off.gif"/>
+            <BitmapImage x:Key="red-on" UriSource="/iecc8;component/Images/Lamps/red-on.gif"/>
+            <BitmapImage x:Key="white-off" UriSource="/iecc8;component/Images/Lamps/white-off.gif"/>
+            <BitmapImage x:Key="white-on" UriSource="/iecc8;component/Images/Lamps/white-on.gif"/>
+            <BitmapImage x:Key="dark" UriSource="/iecc8;component/Images/Lamps/dark.gif"/>
+            <BitmapImage x:Key="inconsistent" UriSource="/iecc8;component/Images/Lamps/s-inconsistent.gif"/>
+            <BitmapImage x:Key="unknown" UriSource="/iecc8;component/Images/Lamps/s-unknown.gif"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+
 </UserControl>
