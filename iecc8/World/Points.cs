@@ -175,9 +175,18 @@ namespace Iecc8.World {
 		}
 
 		public void UpdateReversedFromRun8(bool reversed) {
-			if (AnyProtectingTCRouteLocked) {
+            if (Reversed != reversed)
+            {
+                string dmsg = string.Format(
+                    "Switch change: {0}/{1} is now ", this.SubArea, this.ID);
+                dmsg += reversed ? "reversed" : "normal";
+                Debug.Print(dmsg);
+            }
+
+            if (AnyProtectingTCRouteLocked) {
 				Proved = Reversed == reversed;
 			} else {
+
 				Reversed = reversed;
 				Proved = true;
 			}
