@@ -128,15 +128,15 @@ namespace Iecc8.World {
 		/// </summary>
 		/// <param name="message">The received data.</param>
 		public void UpdateFromRun8(OccupiedBlocksMessage message) {
-			if (this.ID == 250)
-			{
-				string msg = "BAK occupied blocks: ";
-				foreach (int block in message.OccupiedBlocks)
-				{
-					msg += block.ToString() + " ";
-				}
-				Debug.Print(msg);
-			}
+			//if (this.ID == 250)
+			//{
+			//	string msg = "BAK occupied blocks: ";
+			//	foreach (int block in message.OccupiedBlocks)
+			//	{
+			//		msg += block.ToString() + " ";
+			//	}
+			//	Debug.Print(msg);
+			//}
 			message.OccupiedBlocks.Sort();
 			message.OpenManualSwitchBlocks.Sort();
 			IReadOnlyList<TrackCircuit> tcs = TrackCircuits;
@@ -155,11 +155,13 @@ namespace Iecc8.World {
 						reversedEnum = reversedEnum.MoveNext() ? reversedEnum : null;
 					}
 				} else {
-					Debug.Assert(!occupied && !reversed);
+					// disabled for developing subdivision defs
+					//Debug.Assert(!occupied && !reversed);
 				}
 			}
 			if (occupiedEnum != null) {
-				Debug.Print("Run8 sent occupied track circuit number " + occupiedEnum.Current + " which sub-area " + ID + " doesn't know about.");
+				// TODO: put this back!
+				//Debug.Print("Run8 sent occupied track circuit number " + occupiedEnum.Current + " which sub-area " + ID + " doesn't know about.");
 			}
 			if (reversedEnum != null) {
 				Debug.Print("Run8 sent track circuit with reversed hand points number " + reversedEnum.Current + " which sub-area " + ID + " doesn't know about.");
