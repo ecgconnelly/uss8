@@ -43,6 +43,38 @@ namespace Iecc8.UI.Equipment.USS
         public static readonly DependencyProperty LeverStateProperty = 
             DependencyProperty.Register(nameof(LeverState), typeof(int), typeof(SwitchModule), new PropertyMetadata(0));
 
+        public bool LeftLampState
+        {
+            get
+            {
+                return (bool)GetValue(LeftLampStateProperty);
+            }
+            set
+            {
+                SetValue(LeftLampStateProperty, value);
+            }
+        }
+
+        [Category("USS"), Description("Gets or sets the state of the left lamp")]
+        public static readonly DependencyProperty LeftLampStateProperty=
+            DependencyProperty.Register(nameof(LeftLampState), typeof(bool), typeof(SwitchModule), new PropertyMetadata(true));
+
+        public bool RightLampState
+        {
+            get
+            {
+                return (bool)GetValue(RightLampStateProperty);
+            }
+            set
+            {
+                SetValue(RightLampStateProperty, value);
+            }
+        }
+
+        [Category("USS"), Description("Gets or sets the state of the left lamp")]
+        public static readonly DependencyProperty RightLampStateProperty =
+            DependencyProperty.Register(nameof(RightLampState), typeof(bool), typeof(SwitchModule), new PropertyMetadata(false));
+
 
 
         public int PlateNumber
@@ -91,23 +123,23 @@ namespace Iecc8.UI.Equipment.USS
         public static readonly DependencyProperty RightLampColorProperty =
             DependencyProperty.Register(nameof(RightLampColor), typeof(string), typeof(SwitchModule), new PropertyMetadata("amber"));
 
-
-       
-
-        private void Lamp_Loaded(object sender, RoutedEventArgs e)
+        private void UpdateLamps()
         {
+            if (DesignerProperties.GetIsInDesignMode(this)) return;
 
+            string lkey = "uss-lamp-";
+            string rkey = "uss-lamp-";
+
+            lkey += LeftLampColor + "-";
+            rkey += RightLampColor + "-";
+
+            lkey += LeftLampState ? "on" : "off";
+            rkey += RightLampState ? "on" : "off";
+
+            LeftLampImage.Source = (ImageSource)FindResource(resourceKey: lkey);
+            RightLampImage.Source = (ImageSource)FindResource(resourceKey: rkey);
         }
 
-        private void SetLampStates(bool left, bool right)
-        {
-
-        }
-
-        private void Lamp_Loaded_1(object sender, RoutedEventArgs e)
-        {
-
-        }
 
         private void LeverImage_MouseUp(object sender, MouseButtonEventArgs e)
         {
@@ -120,6 +152,13 @@ namespace Iecc8.UI.Equipment.USS
         private void SwitchNumberLabel_Loaded(object sender, RoutedEventArgs e)
         {
             this.SwitchNumberLabel.Content = this.PlateNumber.ToString();
+        }
+
+        private void SwitchModuleControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (DesignerProperties.GetIsInDesignMode(this)) return; 
+
+            UpdateLamps();
         }
     }
 }
