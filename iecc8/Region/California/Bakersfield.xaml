@@ -7,252 +7,252 @@
     </SubArea.AutomaticSignals>
 
     <SubArea.ControlledSignals>
-        <!--0-->
+        <!--0 E Una MT NB-->
         <ControlledSignal/> 
-        <!--1-->
+        <!--1 E Una MT SB-->
         <ControlledSignal/> 
-        <!--2-->
+        <!--2 E Una SDG SB-->
         <ControlledSignal/> 
         
-        <!--3-->
+        <!--3 W Una SDG NB-->
         <ControlledSignal/> 
-        <!--4-->
+        <!--4 W Una MT NB-->
         <ControlledSignal/>
-        <!--5-->
+        <!--5 W Una MT SB-->
         <ControlledSignal/>
-        <!--6-->
+        <!--6 E Shafter MT NB-->
         <ControlledSignal/>
-        <!--7-->
+        <!--7 E Shafter SDG SB-->
         <ControlledSignal/>
-        <!--8-->
+        <!--8 E Shafter MT SB-->
         <ControlledSignal/>
-        <!--9-->
+        <!--9 Shafter XOVER MT NB-->
         <ControlledSignal/>
-        <!--10-->
+        <!--10 Shafter XOVER MT SB-->
         <ControlledSignal/>
-        <!--11-->
+        <!--11 Shafter XOVER SDG NB-->
         <ControlledSignal/>
-        <!--12-->
+        <!--12 Shafter XOVER SDG SB-->
         <ControlledSignal/>
-        <!--13-->
+        <!--13 W Shafter MT NB-->
         <ControlledSignal/>
-        <!--14-->
+        <!--14 W Shafter SDG NB-->
         <ControlledSignal/>
-        <!--15-->
+        <!--15 W Shafter MT SB-->
         <ControlledSignal/>
-        <!--16-->
+        <!--16 E Wasco MT NB-->
         <ControlledSignal/>
-        <!--17-->
+        <!--17 E Wasco SDG SB-->
         <ControlledSignal/>
-        <!--18-->
+        <!--18 E Wasco MT SB-->
         <ControlledSignal/>
-        <!--19-->
+        <!--19 W Wasco MT NB-->
         <ControlledSignal/>
-        <!--20-->
+        <!--20 W Wasco SDG NB-->
         <ControlledSignal/>
-        <!--21-->
+        <!--21 W Wasco MT SB-->
         <ControlledSignal/>
-        <!--22-->
+        <!--22 E Elmo MT NB-->
         <ControlledSignal/>
-        <!--23-->
+        <!--23 E Elmo SDG SB-->
         <ControlledSignal/>
-        <!--24-->
+        <!--24 E Elmo SDG SB-->
         <ControlledSignal/>
-        <!--25-->
+        <!--25 W Elmo SDG NB-->
         <ControlledSignal/>
-        <!--26-->
+        <!--26 W Elmo MT NB-->
         <ControlledSignal/>
-        <!--27-->
+        <!--27 W Elmo MT SB-->
         <ControlledSignal/>
-        <!--28-->
+        <!--28 E Sandrini SDG SB-->
         <ControlledSignal/>
-        <!--29-->
+        <!--29 E Sandrini MT NB-->
         <ControlledSignal/>
-        <!--30-->
+        <!--30 E Sandrini MT SB-->
         <ControlledSignal/>
-        <!--31-->
+        <!--31 W Sandrini SDG NB-->
         <ControlledSignal/>
-        <!--32-->
+        <!--32 W Sandrini MT NB-->
         <ControlledSignal/>
-        <!--33-->
+        <!--33 W Sandrini MT SB-->
         <ControlledSignal/>
-        <!--34-->
+        <!--34 E Allensworth MT NB-->
         <ControlledSignal/>
-        <!--35-->
+        <!--35 E Allensworth MT SB-->
         <ControlledSignal/>
-        <!--36-->
+        <!--36 E Allensworth SDG SB-->
         <ControlledSignal/>
-        <!--37-->
+        <!--37 W Allensworth SDG NB-->
         <ControlledSignal/>
-        <!--38-->
+        <!--38 W Allensworth MT NB-->
         <ControlledSignal/>
-        <!--39-->
+        <!--39 W Allensworth MT SB-->
         <ControlledSignal/>
-        <!--40-->
+        <!--40 E Angiola MT NB-->
         <ControlledSignal/>
-        <!--41-->
+        <!--41 E Angiola SDG SB-->
         <ControlledSignal/>
-        <!--42-->
+        <!--42 E Angiola MT SB-->
         <ControlledSignal/>
-        <!--43-->
+        <!--43 W Angiola Siding NB-->
         <ControlledSignal/>
-        <!--44-->
+        <!--44 W Angiola MT NB-->
         <ControlledSignal/>
-        <!--45-->
+        <!--45 E Corcoran SDG SB-->
         <ControlledSignal/>
-        <!--46-->
+        <!--46 E Corcoran MT NB-->
         <ControlledSignal/>
-        <!--47-->
+        <!--47 Corcoran NSDG NB-->
         <ControlledSignal/>
-        <!--48-->
+        <!--48 Corcoran MT NB-->
         <ControlledSignal/>
-        <!--49-->
+        <!--49 Corcoran MT SB-->
         <ControlledSignal/>
-        <!--50-->
+        <!--50 Corcoran SSDG SB-->
         <ControlledSignal/>
-        <!--51-->
+        <!--51 W Corcoran MT NB-->
         <ControlledSignal/>
-        <!--52-->
+        <!--52 W Corcoran SDG NB-->
         <ControlledSignal/>
-        <!--53-->
+        <!--53 W Corocoran MT SB-->
         <ControlledSignal/>
-        <!--54-->
+        <!--54 E Corcoran MT SB-->
         <ControlledSignal/>
-        <!--55-->
+        <!--55 W Angiola MT SB-->
         <ControlledSignal/>
-        <!--56-->
+        <!--56 Guernsey MT NB-->
         <ControlledSignal/>
-        <!--57-->
+        <!--57 Guernsey M1 SB-->
         <ControlledSignal/>
-        <!--58-->
+        <!--58 Guernsey M2 SB-->
         <ControlledSignal/>
-        <!--59-->
+        <!--59 Guernsey XOVER M1 NB-->
         <ControlledSignal/>
-        <!--60-->
+        <!--60 Guernsey XOVER M2 NB-->
         <ControlledSignal/>
-        <!--61-->
+        <!--61 Guernsey XOVER M1 SB-->
         <ControlledSignal/>
-        <!--62-->
+        <!--62 Guernsey XOVER M2 SB-->
         <ControlledSignal/>
-        <!--63-->
+        <!--63 Calabrese M1 NB-->
         <ControlledSignal/>
-        <!--64-->
+        <!--64 Calabrese M2 NB-->
         <ControlledSignal/>
-        <!--65-->
+        <!--65 Calabrese M2 SB-->
         <ControlledSignal/>
-        <!--66-->
+        <!--66 Calabrese M1 SB-->
         <ControlledSignal/>
         <!--67-->
         <ControlledSignal/>
-        <!--68-->
+        <!--68 Hanford M1 NB-->
         <ControlledSignal/>
-        <!--69-->
+        <!--69 Hanford M2 NB-->
         <ControlledSignal/>
-        <!--70-->
+        <!--70 Wagner M2 SB-->
         <ControlledSignal/>
-        <!--71-->
+        <!--71 Wagner M1 SB-->
         <ControlledSignal/>
-        <!--72-->
+        <!--72 Wagner M1 NB-->
         <ControlledSignal/>
-        <!--73-->
+        <!--73 Wagner M2 NB-->
         <ControlledSignal/>
         <!--74-->
         <ControlledSignal/>
-        <!--75-->
+        <!--75 Hanford M2 SB-->
         <ControlledSignal/>
-        <!--76-->
+        <!--76 Hanford M1 SB-->
         <ControlledSignal/>
-        <!--77-->
+        <!--77 Mingo M1 NB-->
         <ControlledSignal/>
-        <!--78-->
+        <!--78 Mingo M2 NB-->
         <ControlledSignal/>
-        <!--79-->
+        <!--79 Mingo M2 SB-->
         <ControlledSignal/>
-        <!--80-->
+        <!--80 Mingo M1 SB-->
         <ControlledSignal/>
-        <!--81-->
+        <!--81 E Shirley M2 NB-->
         <ControlledSignal/>
-        <!--82-->
+        <!--82 E Shirley M1 NB-->
         <ControlledSignal/>
-        <!--83-->
+        <!--83: Calwa XING M1 SB-->
         <ControlledSignal/>
-        <!--84-->
+        <!--84: Calwa XING M2 SB-->
         <ControlledSignal/>
-        <!--85-->
+        <!--85: Calwa XING EYL SB-->
         <ControlledSignal/>
-        <!--86-->
+        <!--86: Fresno M2 NB-->
         <ControlledSignal/>
-        <!--87-->
+        <!--87: Fresno M1 NB-->
         <ControlledSignal/>
-        <!--88-->
+        <!--88 Sunmaid XING M2 SB-->
         <ControlledSignal/>
-        <!--89-->
+        <!--89: Sunmaid XING M1 SB-->
         <ControlledSignal/>
-        <!--90-->
+        <!--90: Sunmaid XING M2 NB-->
         <ControlledSignal/>
-        <!--91-->
+        <!--91: Sunmaid XING M1 NB-->
         <ControlledSignal/>
-        <!--92-->
+        <!--92: Calwa M2 SB-->
         <ControlledSignal/>
-        <!--93-->
+        <!--93: Calwa M1 SB-->
         <ControlledSignal/>
-        <!--94-->
+        <!--94: Sunmaid XING YL NB-->
         <ControlledSignal/>
-        <!--95-->
+        <!--95: Calwa XING M2 NB-->
         <ControlledSignal/>
-        <!--96-->
+        <!--96: Calwa XING M1 NB-->
         <ControlledSignal/>
-        <!--97-->
+        <!--97: Calwa M2 NB-->
         <ControlledSignal/>
-        <!--98-->
+        <!--98: Calwa M1 NB-->
         <ControlledSignal/>
-        <!--99-->
+        <!--99: Calwa Industry NB-->
         <ControlledSignal/>
-        <!--100-->
+        <!--100: Calwa YL SB-->
         <ControlledSignal/>
-        <!--101-->
+        <!--101 E Conejo MT NB-->
         <ControlledSignal/>
-        <!--102-->
+        <!--102: E Conejo MT SB-->
         <ControlledSignal/>
-        <!--103-->
+        <!--103 E Conejo Siding SB-->
         <ControlledSignal/>
-        <!--104-->
+        <!--104 W Conejo MT NB-->
         <ControlledSignal/>
-        <!--105-->
+        <!--105: W Conejo Siding NB-->
         <ControlledSignal/>
-        <!--106-->
+        <!--106: W Conejo MT SB-->
         <ControlledSignal/>
-        <!--107-->
+        <!--107: Floral MT NB-->
         <ControlledSignal/>
-        <!--108-->
+        <!--108: EE Bowles M2 NB-->
         <ControlledSignal/>
-        <!--109-->
+        <!--109: Floral M1 SB-->
         <ControlledSignal/>
-        <!--110-->
+        <!--110: Floral M2 SB-->
         <ControlledSignal/>
-        <!--111-->
+        <!--111: EE Bowles Siding SB-->
         <ControlledSignal/>
-        <!--112-->
+        <!--112: EE Bowles M2 SB-->
         <ControlledSignal/>
-        <!--113-->
+        <!--113 WE Bowles Siding NB-->
         <ControlledSignal/>
-        <!--114-->
+        <!--114 WE Bowles M2 NB-->
         <ControlledSignal/>
-        <!--115-->
+        <!--115 WE Bowles M1 NB-->
         <ControlledSignal/>
-        <!--116-->
+        <!--116 WE Bowles M2 SB-->
         <ControlledSignal/>
-        <!--117-->
+        <!--117: WE Bowles M1 SB-->
         <ControlledSignal/>
-        <!--118-->
+        <!--118 E Shirley MT SB-->
         <ControlledSignal/>
-        <!--119-->
+        <!--119 E Shirley SDG SB-->
         <ControlledSignal/>
-        <!--120-->
+        <!--120 W Shirley MT SB-->
         <ControlledSignal/>
-        <!--121-->
+        <!--121 W Shirley MT NB-->
         <ControlledSignal/>
-        <!--122-->
+        <!--122 W Shirley Siding NB-->
         <ControlledSignal/>
         <!--123-->
         <ControlledSignal/>
@@ -282,7 +282,7 @@
         <ControlledSignal/>
         <!--136-->
         <ControlledSignal/>
-        <!--137-->
+        <!--137: Fresno M SB-->
         <ControlledSignal/>
         <!--138: Sunmaid XING UP EB-->
         <ControlledSignal/>
@@ -295,9 +295,13 @@
         <TrackCircuit ID="0"        LocationName="Somewhere"/>
         <TrackCircuit ID="125"      LocationName="Fresno"/>
         <TrackCircuit ID="129"      LocationName="Calwa M1"/>
+        <TrackCircuit ID="130"      LocationName="Calwa M2"/>
+        <TrackCircuit ID="134"      LocationName="Sunmaid XING M2"/>
         <TrackCircuit ID="136"      LocationName="Fresno M2"/>
         <TrackCircuit ID="137"      LocationName="Fresno M1"/>
         <TrackCircuit ID="138"      LocationName="CP Fresno OS"/>
+        <TrackCircuit ID="163"      LocationName="Sunmaid XING M2"/>
+        <TrackCircuit ID="164"      LocationName="Sunmaid XING M2"/>
         <TrackCircuit ID="165"      LocationName="Sunmain XING M1"/>
         <TrackCircuit ID="166"      LocationName="Sunmain XING M1"/>
         
