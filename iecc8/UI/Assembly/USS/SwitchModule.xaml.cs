@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,10 +37,62 @@ namespace Iecc8.UI.Equipment.USS
             {
                 SetValue(LeverStateProperty, value);
             }
-        }
+        }    
+
+        [Category("USS"), Description("Gets or sets the lever position (left 0)")]
         public static readonly DependencyProperty LeverStateProperty = 
             DependencyProperty.Register(nameof(LeverState), typeof(int), typeof(SwitchModule), new PropertyMetadata(0));
 
+
+
+        public int PlateNumber
+        {
+            get
+            {
+                return (int)GetValue(PlateNumberProperty);
+            }
+            set
+            {
+                SetValue(PlateNumberProperty, value);
+            }
+        }
+        [Category("USS"), Description("Gets or sets the number on the lever plate")]
+        public static readonly DependencyProperty PlateNumberProperty =
+            DependencyProperty.Register(nameof(PlateNumber), typeof(int), typeof(SwitchModule), new PropertyMetadata(99));
+
+
+        public string LeftLampColor
+        {
+            get
+            {
+                return (string)GetValue(LeftLampColorProperty);
+            }
+            set
+            {
+                SetValue(LeftLampColorProperty, value);
+            }
+        }
+        [Category("USS"), Description("Gets or sets the color of the left lamp")]
+        public static readonly DependencyProperty LeftLampColorProperty =
+            DependencyProperty.Register(nameof(LeftLampColor), typeof(string), typeof(SwitchModule), new PropertyMetadata("green"));
+
+        public string RightLampColor
+        {
+            get
+            {
+                return (string)GetValue(RightLampColorProperty);
+            }
+            set
+            {
+                SetValue(RightLampColorProperty, value);
+            }
+        }
+        [Category("USS"), Description("Gets or sets the color of the right lamp")]
+        public static readonly DependencyProperty RightLampColorProperty =
+            DependencyProperty.Register(nameof(RightLampColor), typeof(string), typeof(SwitchModule), new PropertyMetadata("amber"));
+
+
+       
 
         private void Lamp_Loaded(object sender, RoutedEventArgs e)
         {
@@ -58,7 +111,15 @@ namespace Iecc8.UI.Equipment.USS
 
         private void LeverImage_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            
+            LeverState = 1 - LeverState; //toggle
+
+            string key = "uss-lever-" + (LeverState == 1 ? "right" : "left");
+            LeverImage.Source = (ImageSource)FindResource(resourceKey: key);
+        }
+
+        private void SwitchNumberLabel_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.SwitchNumberLabel.Content = this.PlateNumber.ToString();
         }
     }
 }

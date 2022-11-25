@@ -16,6 +16,10 @@
     <BitmapImage x:Key="uss-lamp-dark" UriSource="/iecc8;component/Images/Lamps/dark.gif"/>
     <BitmapImage x:Key="uss-lamp-s-inconsistent" UriSource="/iecc8;component/Images/Lamps/s-inconsistent.gif"/>
     <BitmapImage x:Key="uss-lamp-s-unknown" UriSource="/iecc8;component/Images/Lamps/s-unknown.gif"/>
+    <BitmapImage x:Key="uss-lever-left" UriSource="/iecc8;component/Images/Levers/lever-left-wide.gif"/>
+    <BitmapImage x:Key="uss-lever-vertical" UriSource="/iecc8;component/Images/Levers/lever-vertical-wide.gif"/>
+    <BitmapImage x:Key="uss-lever-right" UriSource="/iecc8;component/Images/Levers/lever-right-wide.gif"/>
+
     
     <SolidColorBrush x:Key="BG" Color="Black"/>
 	<SolidColorBrush x:Key="FG" Color="White"/>

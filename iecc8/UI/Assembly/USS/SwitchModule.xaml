@@ -9,8 +9,8 @@
              d:DesignHeight="79" d:DesignWidth="60" Width="60" Height="79">
     <Grid Margin="0,0,0,0" Width="60" Height="79" HorizontalAlignment="Left" VerticalAlignment="Top">
         <Image x:Name="Plate" HorizontalAlignment="Left" Height="79" Margin="0,0,0,0" VerticalAlignment="Top" Width="60" Source="/iecc8;component/Images/Plates/turnout.gif"/>
-        <Label x:Name="SwitchNumberLabel" Content="##" HorizontalAlignment="Left" Height="12" Margin="20,21 ,0,0" VerticalAlignment="Top" Width="19"  Foreground="#FFCACACA" FontFamily="Arial" FontSize="11" Padding="0,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <Image x:Name="LeverImage" HorizontalAlignment="Left" Height="33" VerticalAlignment="Bottom" Width="50" Margin="6,0,0,3" Source="/iecc8;component/Images/Levers/lever-right-wide.gif" MouseUp="LeverImage_MouseUp" />
+        <Label x:Name="SwitchNumberLabel" Content="##" HorizontalAlignment="Left" Height="12" Margin="20,21 ,0,0" VerticalAlignment="Top" Width="19"  Foreground="#FFCACACA" FontFamily="Arial" FontSize="11" Padding="0,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Loaded="SwitchNumberLabel_Loaded"/>
+        <Image x:Name="LeverImage" HorizontalAlignment="Left" Height="33" VerticalAlignment="Bottom" Width="50" Margin="6,0,0,3" Source="/iecc8;component/Images/Levers/lever-left-wide.gif" MouseUp="LeverImage_MouseUp" />
         <Image x:Name="NormalLampImage" HorizontalAlignment="Left" Height="21" Margin="3,4,0,0" VerticalAlignment="Top" Width="21" Source="/iecc8;component/Images/Lamps/green-on.gif"/>
         <Image x:Name="ReverseLampImage" HorizontalAlignment="Left" Height="21" Margin="36,4,0,0" VerticalAlignment="Top" Width="22" Source="/iecc8;component/Images/Lamps/amber-off.gif"/>
 
