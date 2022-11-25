@@ -8,24 +8,6 @@
 
     <UserControl.Resources>
         <ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Common/Resources.xaml"/>
-
-        <!--<ResourceDictionary>
-            <BitmapImage x:Key="uss-lamp-amber-off" UriSource="/iecc8;component/Images/Lamps/amber-off.gif"/>
-            <BitmapImage x:Key="uss-lamp-amber-on" UriSource="/iecc8;component/Images/Lamps/amber-on.gif"/>
-            <BitmapImage x:Key="uss-lamp-blue-off" UriSource="/iecc8;component/Images/Lamps/blue-off.gif"/>
-            <BitmapImage x:Key="uss-lamp-blue-on" UriSource="/iecc8;component/Images/Lamps/blue-on.gif"/>
-            <BitmapImage x:Key="uss-lamp-green-off" UriSource="/iecc8;component/Images/Lamps/green-off.gif"/>
-            <BitmapImage x:Key="uss-lamp-green-on" UriSource="/iecc8;component/Images/Lamps/green-on.gif"/>
-            <BitmapImage x:Key="uss-lamp-purple-off" UriSource="/iecc8;component/Images/Lamps/purple-off.gif"/>
-            <BitmapImage x:Key="uss-lamp-purple-on" UriSource="/iecc8;component/Images/Lamps/purple-on.gif"/>
-            <BitmapImage x:Key="uss-lamp-red-off" UriSource="/iecc8;component/Images/Lamps/red-off.gif"/>
-            <BitmapImage x:Key="uss-lamp-red-on" UriSource="/iecc8;component/Images/Lamps/red-on.gif"/>
-            <BitmapImage x:Key="uss-lamp-white-off" UriSource="/iecc8;component/Images/Lamps/white-off.gif"/>
-            <BitmapImage x:Key="uss-lamp-white-on" UriSource="/iecc8;component/Images/Lamps/white-on.gif"/>
-            <BitmapImage x:Key="uss-lamp-dark" UriSource="/iecc8;component/Images/Lamps/dark.gif"/>
-            <BitmapImage x:Key="uss-lamp-inconsistent" UriSource="/iecc8;component/Images/Lamps/s-inconsistent.gif"/>
-            <BitmapImage x:Key="uss-lamp-unknown" UriSource="/iecc8;component/Images/Lamps/s-unknown.gif"/>
-        </ResourceDictionary>-->
     </UserControl.Resources>
     
     <Image x:Name="LampImage" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="16" Source="/iecc8;component/Images/Lamps/white-on.gif"/>
