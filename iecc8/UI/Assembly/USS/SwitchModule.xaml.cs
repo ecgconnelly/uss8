@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Iecc8.UI.Common;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -30,17 +31,17 @@ namespace Iecc8.UI.Equipment.USS
         {
             get
             {
-                return (int) GetValue(LeverStateProperty);
+                return (int)GetValue(LeverStateProperty);
             }
 
             set
             {
                 SetValue(LeverStateProperty, value);
             }
-        }    
+        }
 
         [Category("USS"), Description("Gets or sets the lever position (left 0)")]
-        public static readonly DependencyProperty LeverStateProperty = 
+        public static readonly DependencyProperty LeverStateProperty =
             DependencyProperty.Register(nameof(LeverState), typeof(int), typeof(SwitchModule), new PropertyMetadata(0));
 
         public bool LeftLampState
@@ -56,7 +57,7 @@ namespace Iecc8.UI.Equipment.USS
         }
 
         [Category("USS"), Description("Gets or sets the state of the left lamp")]
-        public static readonly DependencyProperty LeftLampStateProperty=
+        public static readonly DependencyProperty LeftLampStateProperty =
             DependencyProperty.Register(nameof(LeftLampState), typeof(bool), typeof(SwitchModule), new PropertyMetadata(true));
 
         public bool RightLampState
@@ -123,7 +124,26 @@ namespace Iecc8.UI.Equipment.USS
         public static readonly DependencyProperty RightLampColorProperty =
             DependencyProperty.Register(nameof(RightLampColor), typeof(string), typeof(SwitchModule), new PropertyMetadata("amber"));
 
-        private void UpdateLamps()
+        public string SwitchStr
+        {
+            get
+            {
+                return (string)GetValue(SwitchStrProperty);
+            }
+            set
+            {
+                SetValue(SwitchStrProperty, value);
+            }
+        }
+        [Category("USS"), Description("\"SUBAREA/SWITCHNUM\"")]
+        public static readonly DependencyProperty SwitchStrProperty =
+            DependencyProperty.Register(nameof(SwitchStr), typeof(string), typeof(SwitchModule), new PropertyMetadata(""));
+
+
+
+
+
+        private void DrawLamps()
         {
             if (DesignerProperties.GetIsInDesignMode(this)) return;
 
@@ -154,11 +174,50 @@ namespace Iecc8.UI.Equipment.USS
             this.SwitchNumberLabel.Content = this.PlateNumber.ToString();
         }
 
+        public World.Points PointsObject;
+
+        private void OnPointsPropChanged(object sender, PropertyChangedEventArgs e)
+        {
+            //if (e.PropertyName == nameof(World.Points.Reversed) || e.PropertyName == nameof(World.Points.HandCrankable))
+            {
+                if (PointsObject.Inconsistent || !PointsObject.Proved)
+                {
+                    LeftLampState = false;
+                    RightLampState = false;
+                }
+                else if (PointsObject.Reversed)
+                {
+                    LeftLampState = false;
+                    RightLampState = true;
+                }
+                else
+                {
+                    LeftLampState = true;
+                    RightLampState = false;
+                }
+
+                DrawLamps();
+            }
+        }
+
+
+
         private void SwitchModuleControl_Loaded(object sender, RoutedEventArgs e)
         {
-            if (DesignerProperties.GetIsInDesignMode(this)) return; 
+            if (DesignerProperties.GetIsInDesignMode(this)) return;
+            ushort SubAreaID = ushort.Parse((SwitchStr.Split('/')[0]));
+            ushort SwitchID  = ushort.Parse((SwitchStr.Split('/')[1]));
 
-            UpdateLamps();
+            MainViewModel vm = DataContext as MainViewModel;
+            if (vm != null)
+            {
+                PointsObject = vm.World.Region.SubAreas[SubAreaID].PowerPoints[SwitchID];
+                PointsObject.PropertyChanged += OnPointsPropChanged;
+                
+            }
+
+
+            DrawLamps();
         }
     }
 }
