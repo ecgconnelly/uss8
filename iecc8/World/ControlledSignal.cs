@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.ServiceModel.Channels;
 using System.Threading.Tasks;
 
 namespace Iecc8.World {
@@ -205,6 +206,11 @@ namespace Iecc8.World {
 		public async Task UpdateFromRun8Async(ESignalIndication indication) {
 			// Update indication.
 			if (LastIndication != indication) {
+				string dmsg = (
+					"Signal change: " +
+					this.SubArea.ToString() + "/" + this.ID.ToString() +
+					": " + LastIndication.ToString() + " --> " + indication.ToString());
+				Debug.Print(dmsg);
 				LastIndication = indication;
 				UpdateAspects();
 			}
