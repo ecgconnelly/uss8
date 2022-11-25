@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Iecc8.UI.Common;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -92,8 +94,6 @@ namespace Iecc8.UI.Equipment.USS
         public static readonly DependencyProperty RightLampStateProperty =
             DependencyProperty.Register(nameof(RightLampState), typeof(bool), typeof(SignalModule), new PropertyMetadata(false));
 
-
-
         public int PlateNumber
         {
             get
@@ -109,9 +109,7 @@ namespace Iecc8.UI.Equipment.USS
         public static readonly DependencyProperty PlateNumberProperty =
             DependencyProperty.Register(nameof(PlateNumber), typeof(int), typeof(SignalModule), new PropertyMetadata(99));
 
-
-
-        public string LeftLampColor
+            public string LeftLampColor
         {
             get
             {
@@ -186,16 +184,109 @@ namespace Iecc8.UI.Equipment.USS
         public static readonly DependencyProperty RightSignalStrProperty =
             DependencyProperty.Register(nameof(RightSignalStr), typeof(string), typeof(SignalModule), new PropertyMetadata(""));
 
+        public List<World.ControlledSignal> LeftSignals
+            = new List<World.ControlledSignal>();
+        public List<World.ControlledSignal> RightSignals
+            = new List<World.ControlledSignal>();
+
+        private void PopulateSignalArrays()
+        {
+            MainViewModel vm = DataContext as MainViewModel;
+            if (vm == null) return;
+
+            // link to the signal objects in the world
+            string[] lstrs = LeftSignalStr.Split(',');
+            string[] rstrs = RightSignalStr.Split(',');
+            foreach (string lstr in lstrs)
+            {
+                ushort subarea, signalid;   
+                try
+                {
+                    subarea = ushort.Parse(lstr.Split('/')[0]);
+                    signalid = ushort.Parse(lstr.Split('/')[1]);
+                }
+                catch (Exception)
+                {
+                    continue;
+                    // don't fail just because of an extra space in the signal string
+                }
+
+                World.ControlledSignal sig =
+                    vm.World.Region.SubAreas[subarea].ControlledSignals[signalid];
+                if (sig == null)
+                {
+                    Debug.Print("Not attempting to link to a null signal");
+                    continue;
+                }
+                LeftSignals.Add(sig);
+                Debug.Print("Signal module {0}L linked to {1}",
+                    this.PlateNumber.ToString(), sig.ID);
+            }
+            foreach (string rstr in rstrs)
+            {
+                ushort subarea, signalid;
+                try
+                {
+                    subarea = ushort.Parse(rstr.Split('/')[0]);
+                    signalid = ushort.Parse(rstr.Split('/')[1]);
+                }
+                catch (Exception)
+                {
+                    continue;
+                    // don't fail just because of an extra space in the signal string
+                }
+
+                World.ControlledSignal sig =
+                    vm.World.Region.SubAreas[subarea].ControlledSignals[signalid];
+                if (sig == null)
+                {
+                    Debug.Print("Not attempting to link to a null signal");
+                    continue;
+                }
+                RightSignals.Add(sig);             
+                Debug.Print("Signal module {0}R linked to {1}",
+                    this.PlateNumber.ToString(), sig.ID);
+            }
+        }
+
+        /// <summary>
+        /// Invoked when a property changes on the observed signal.
+        /// </summary>
+        /// <param name="sender">The signal.</param>
+        /// <param name="e">Details about the change.</param>
+        private void OnSignalPropChanged(object sender, PropertyChangedEventArgs e)
+        {
+            Debug.Print("OnSignalPropChanged");
+            UpdateLampStates();
+            DrawLamps();
+        }
+
+        private void UpdateLampStates()
+        {
+            bool left = false, center = false, right = false;
+
+            foreach (World.ControlledSignal sig in LeftSignals)
+            {
+                if (sig.Indication != Messages.ESignalIndication.Stop) left = true;
+            }
+
+            foreach (World.ControlledSignal sig in RightSignals)
+            {
+                if (sig.Indication != Messages.ESignalIndication.Stop) right = true;
+            }
+
+            if (!left && !right) center = true;
+
+            LeftLampState = left;
+            CenterLampState = center;
+            RightLampState = right;
+        }
 
 
-
-
-
-        private void UpdateLamps()
+        private void DrawLamps()
         {
             if (DesignerProperties.GetIsInDesignMode(this)) return;
-
-            
+           
 
             string lkey = "uss-lamp-";
             string ckey = "uss-lamp-";
@@ -217,14 +308,12 @@ namespace Iecc8.UI.Equipment.USS
 
         private void LeverImage_MouseUp(object sender, MouseButtonEventArgs e)
         {
-
             int delta;
 
             if (e.GetPosition(LeverImage).X > LeverImage.ActualWidth / 2) delta = 1;
             else delta = -1;
 
             LeverState += delta; 
-
 
             string key = "uss-lever";
             if (LeverState == 0) key += "-left";
@@ -244,7 +333,22 @@ namespace Iecc8.UI.Equipment.USS
         {
             if (DesignerProperties.GetIsInDesignMode(this)) return;
 
-            UpdateLamps();
+            PopulateSignalArrays();
+            Debug.Print("{0} left signals, {1} right signals",
+                LeftSignals.Count(), RightSignals.Count());
+            
+            foreach (World.Signal sig in LeftSignals)
+            {
+                sig.PropertyChanged += OnSignalPropChanged;
+
+            }
+            foreach (World.Signal sig in RightSignals)
+            {
+                sig.PropertyChanged += OnSignalPropChanged;
+            }
+
+            UpdateLampStates();
+            DrawLamps();
         }
 
     }

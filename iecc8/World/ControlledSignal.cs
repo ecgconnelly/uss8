@@ -70,10 +70,21 @@ namespace Iecc8.World {
 			}
 		}
 
-		/// <summary>
-		/// Whether this signal is waiting for approach locking to time out.
-		/// </summary>
-		public bool ApproachLocked {
+        /// <summary>
+        /// Gets the most recently received state of the signal.
+        /// </summary>
+        public ESignalIndication Indication
+        {
+            get
+            {
+                return LastIndication;
+            }
+        }
+
+        /// <summary>
+        /// Whether this signal is waiting for approach locking to time out.
+        /// </summary>
+        public bool ApproachLocked {
 			get {
 				return ApproachLockedImpl;
 			}

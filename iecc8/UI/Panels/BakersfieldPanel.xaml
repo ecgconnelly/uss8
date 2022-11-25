@@ -183,7 +183,7 @@
         <USS:SwitchModule HorizontalAlignment="Left" Height="80" Margin="405,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="13" SwitchStr="250/25"/>
         <USS:SwitchModule HorizontalAlignment="Left" Height="80" Margin="472,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="15" SwitchStr="250/38"/>
         <USS:SwitchModule HorizontalAlignment="Left" Height="80" Margin="538,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="17" SwitchStr="250/39"/>
-        <USS:SignalModule HorizontalAlignment="Left" Height="93" Margin="76,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="4"/>
+        <USS:SignalModule HorizontalAlignment="Left" Height="93" Margin="76,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="4" RightSignalStr="250/137"/>
         <USS:SignalModule HorizontalAlignment="Left" Height="93" Margin="142,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="6" RightLampColor="green"/>
         <USS:SignalModule HorizontalAlignment="Left" Height="93" Margin="208,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="8" RightLampColor="green"/>
 
