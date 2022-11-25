@@ -147,9 +147,6 @@
     <Compile Include="UI\Equipment\USS\CodeButton.xaml.cs">
       <DependentUpon>CodeButton.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Equipment\USS\Lamp.xaml.cs">
-      <DependentUpon>Lamp.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UI\Assembly\USS\SignalModule.xaml.cs">
       <DependentUpon>SignalModule.xaml</DependentUpon>
     </Compile>
@@ -320,10 +317,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\Equipment\USS\CodeButton.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UI\Equipment\USS\Lamp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
