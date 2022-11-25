@@ -13,7 +13,7 @@
         <Image HorizontalAlignment="Left" Height="718" Margin="2020,0,0,0" VerticalAlignment="Top" Width="1000" Source="/Images/PanelSegments/uss-15.gif"/>
         <Image HorizontalAlignment="Left" Height="718" Margin="3030,0,0,0" VerticalAlignment="Top" Width="1000" Source="/Images/PanelSegments/uss-15.gif"/>
 
-        <USS:SwitchModule HorizontalAlignment="Left" Height="80" Margin="206,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="7"/>
+        <USS:SwitchModule HorizontalAlignment="Left" Height="80" Margin="206,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="7" />
         <USS:SwitchModule HorizontalAlignment="Left" Height="79" Margin="74,336,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="3"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="19,136,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="62,198,0,0" VerticalAlignment="Top" Width="100"/>
@@ -183,6 +183,9 @@
         <USS:SwitchModule HorizontalAlignment="Left" Height="80" Margin="405,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="13"/>
         <USS:SwitchModule HorizontalAlignment="Left" Height="80" Margin="472,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="15"/>
         <USS:SwitchModule HorizontalAlignment="Left" Height="80" Margin="538,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="17"/>
+        <USS:SignalModule HorizontalAlignment="Left" Height="93" Margin="76,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="4" RightLampColor="green"/>
+        <USS:SignalModule HorizontalAlignment="Left" Height="93" Margin="142,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="6" RightLampColor="green"/>
+        <USS:SignalModule HorizontalAlignment="Left" Height="93" Margin="208,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="8" RightLampColor="green"/>
 
 
     </Grid>
