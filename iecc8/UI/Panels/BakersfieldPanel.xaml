@@ -176,6 +176,10 @@
         <Image HorizontalAlignment="Left" Height="15" Margin="295,136,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="376,136,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="129" LampColor="amber"/>
         <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="304,136,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="166" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="217,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="134" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="287,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="164" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="352,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="163" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="445,160,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="130" LampColor="amber"/>
 
 
     </Grid>
