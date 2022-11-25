@@ -214,6 +214,38 @@ namespace Iecc8.World {
 				SetAIRelinquish(value);
 			}
 		}
+
+		public int OldBlockID
+		{
+			get
+			{
+				return OldBlockIDImpl;
+			}
+			private set
+			{
+				OldBlockIDImpl = value;
+			}
+		}
+
+		public int BlockID
+		{
+			get 
+			{
+				return BlockIDImpl;
+			}
+			private set
+			{
+				BlockIDImpl = value;
+				if (BlockID != OldBlockID)
+				{
+					string trans_msg = this.Company + " " + this.LocoNumber.ToString();
+					trans_msg += " block change ";
+					trans_msg += this.OldBlockID.ToString() + " --> " + this.BlockID.ToString();
+					Debug.Print(trans_msg);
+					OldBlockID = BlockID;
+				}
+			}
+		}
 		#endregion
 
 		#region Data Initialization API
@@ -255,6 +287,8 @@ namespace Iecc8.World {
 			Length = data.TrainLengthFeet;
 			Weight = data.TrainWeightTons;
 			HPt = data.HpPerTon;
+			BlockID = data.BlockID;
+
 
 			// Update AI hold/relinquish orders. We don't use the property setters here because the property setters send order packets to Run8, as they are intended for invocation by the signaller. Instead set the backing fields emit property change notifications directly.
 			SetProperty(ref AIHoldImpl, data.HoldingForDispatcher, nameof(AIHold));
@@ -353,6 +387,8 @@ namespace Iecc8.World {
 		private float HPtImpl;
 		private bool AIHoldImpl;
 		private bool AIRelinquishImpl;
+		private int OldBlockIDImpl;
+		private int BlockIDImpl;
 
 		/// <summary>
 		/// The command to order an AI crew aboard a train.
