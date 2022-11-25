@@ -180,9 +180,9 @@ namespace Iecc8.UI.Equipment.USS
         {
             //if (e.PropertyName == nameof(World.Points.Reversed) || e.PropertyName == nameof(World.Points.HandCrankable))
             {
-                if (PointsObject.Inconsistent || !PointsObject.Proved)
+                if (PointsObject.Inconsistent || !PointsObject.Proved || PointsObject.HandCrankable)
                 {
-                    LeftLampState = false;
+                    LeftLampState = false; 
                     RightLampState = false;
                 }
                 else if (PointsObject.Reversed)
