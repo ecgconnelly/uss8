@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Iecc8.UI.Equipment.USS"
              mc:Ignorable="d" 
-             d:DesignHeight="93" d:DesignWidth="60">
+             d:DesignHeight="93" d:DesignWidth="60" Loaded="SignalModuleControl_Loaded">
     <Grid>
         <Image Name="BackgroundPlate" HorizontalAlignment="Left" Height="93" Margin="0,0,0,0" VerticalAlignment="Top" Width="60" Source="/iecc8;component/Images/Plates/l-r-signal.gif" Stretch="None"/>
         <Label x:Name="SignalNumberLabel" Content="##" HorizontalAlignment="Center" Height="12" Margin="-1,35,0,0" VerticalAlignment="Top" Width="20"  Foreground="#FFCACACA" FontFamily="Arial" FontSize="11" Padding="0,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Loaded="SignalNumberLabel_Loaded"/>

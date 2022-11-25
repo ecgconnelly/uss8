@@ -58,7 +58,23 @@ namespace Iecc8.UI.Equipment.USS
 
         [Category("USS"), Description("Gets or sets the state of the left lamp")]
         public static readonly DependencyProperty LeftLampStateProperty =
-            DependencyProperty.Register(nameof(LeftLampState), typeof(bool), typeof(SignalModule), new PropertyMetadata(true));
+            DependencyProperty.Register(nameof(LeftLampState), typeof(bool), typeof(SignalModule), new PropertyMetadata(false));
+
+        public bool CenterLampState
+        {
+            get
+            {
+                return (bool)GetValue(CenterLampStateProperty);
+            }
+            set
+            {
+                SetValue(CenterLampStateProperty, value);
+            }
+        }
+
+        [Category("USS"), Description("Gets or sets the state of the Center lamp")]
+        public static readonly DependencyProperty CenterLampStateProperty =
+            DependencyProperty.Register(nameof(CenterLampState), typeof(bool), typeof(SignalModule), new PropertyMetadata(false));
 
         public bool RightLampState
         {
@@ -94,6 +110,7 @@ namespace Iecc8.UI.Equipment.USS
             DependencyProperty.Register(nameof(PlateNumber), typeof(int), typeof(SignalModule), new PropertyMetadata(99));
 
 
+
         public string LeftLampColor
         {
             get
@@ -109,6 +126,21 @@ namespace Iecc8.UI.Equipment.USS
         public static readonly DependencyProperty LeftLampColorProperty =
             DependencyProperty.Register(nameof(LeftLampColor), typeof(string), typeof(SignalModule), new PropertyMetadata("green"));
 
+        public string CenterLampColor
+        {
+            get
+            {
+                return (string)GetValue(CenterLampColorProperty);
+            }
+            set
+            {
+                SetValue(CenterLampColorProperty, value);
+            }
+        }
+        [Category("USS"), Description("Gets or sets the color of the Center lamp")]
+        public static readonly DependencyProperty CenterLampColorProperty =
+            DependencyProperty.Register(nameof(CenterLampColor), typeof(string), typeof(SignalModule), new PropertyMetadata("red"));
+
         public string RightLampColor
         {
             get
@@ -122,22 +154,63 @@ namespace Iecc8.UI.Equipment.USS
         }
         [Category("USS"), Description("Gets or sets the color of the right lamp")]
         public static readonly DependencyProperty RightLampColorProperty =
-            DependencyProperty.Register(nameof(RightLampColor), typeof(string), typeof(SignalModule), new PropertyMetadata("amber"));
+            DependencyProperty.Register(nameof(RightLampColor), typeof(string), typeof(SignalModule), new PropertyMetadata("green"));
+
+        public string LeftSignalStr
+        {
+            get
+            {
+                return (string)GetValue(LeftSignalStrProperty);
+            }
+            set
+            {
+                SetValue(LeftSignalStrProperty, value);
+            }
+        }
+        [Category("USS"), Description("\"SUBAREA/SIGNALNUM[,SUBAREA/SIGNALNUM]...\"")]
+        public static readonly DependencyProperty LeftSignalStrProperty =
+            DependencyProperty.Register(nameof(LeftSignalStr), typeof(string), typeof(SignalModule), new PropertyMetadata(""));
+
+        public string RightSignalStr
+        {
+            get
+            {
+                return (string)GetValue(RightSignalStrProperty);
+            }
+            set
+            {
+                SetValue(RightSignalStrProperty, value);
+            }
+        }
+        [Category("USS"), Description("\"SUBAREA/SIGNALNUM\"")]
+        public static readonly DependencyProperty RightSignalStrProperty =
+            DependencyProperty.Register(nameof(RightSignalStr), typeof(string), typeof(SignalModule), new PropertyMetadata(""));
+
+
+
+
+
 
         private void UpdateLamps()
         {
             if (DesignerProperties.GetIsInDesignMode(this)) return;
 
+            
+
             string lkey = "uss-lamp-";
+            string ckey = "uss-lamp-";
             string rkey = "uss-lamp-";
 
             lkey += LeftLampColor + "-";
+            ckey += CenterLampColor + "-";
             rkey += RightLampColor + "-";
 
             lkey += LeftLampState ? "on" : "off";
+            ckey += CenterLampState ? "on" : "off";
             rkey += RightLampState ? "on" : "off";
 
             LeftLampImage.Source = (ImageSource)FindResource(resourceKey: lkey);
+            CenterLampImage.Source = (ImageSource)FindResource(resourceKey: ckey);
             RightLampImage.Source = (ImageSource)FindResource(resourceKey: rkey);
         }
 
@@ -173,5 +246,6 @@ namespace Iecc8.UI.Equipment.USS
 
             UpdateLamps();
         }
+
     }
 }
