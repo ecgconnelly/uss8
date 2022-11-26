@@ -223,6 +223,7 @@ namespace Iecc8.World {
 					": " + LastIndication.ToString() + " --> " + indication.ToString());
 				Debug.Print(dmsg);
 				LastIndication = indication;
+				EmitPropertyChanged(nameof(Indication));
 				UpdateAspects();
 			}
 
@@ -257,7 +258,7 @@ namespace Iecc8.World {
 			if (SwingingPoints) {
 				bool anyWrong = false;
 				foreach (RoutePointPosition i in CurrentRoute.PointPositions) {
-					if (!i.Points.Proved) {
+					if (!i.Points.Proved || i.Reverse != i.Points.Reversed) {
 						anyWrong = true;
 					}
 				}
@@ -287,7 +288,7 @@ namespace Iecc8.World {
 		/// <summary>
 		/// The containing world.
 		/// </summary>
-		private readonly World World;
+		public readonly World World;
 
 		/// <summary>
 		/// How many updates need to arrive with the signal on before any route previously set from it is dropped.

@@ -59,8 +59,13 @@ namespace Iecc8.World {
 		/// </summary>
 		public bool Available {
 			get {
+				Debug.Print("Available??");
 				// If the entrance signal already has a route and isn't approach locked, you can't set another one. If it is approach locked, you can overset exactly the same route, and this will be enforced by later code checking track circuit directions and point positions.
 				if ((Entrance.CurrentRoute != null) && !Entrance.ApproachLocked) {
+					Debug.Print("This signal already has route: {0} --> {1}",
+						Entrance.ID,
+						Entrance.CurrentRoute.Exit.ID);
+
 					return false;
 				}
 
@@ -73,6 +78,8 @@ namespace Iecc8.World {
 				foreach (RouteElement i in Elements) {
 					TrackCircuit tc = i.TrackCircuit;
 					if ((tc.RouteLocked || tc.Occupied) && tc.RouteLockedDirection != '\0' && tc.RouteLockedDirection != i.Direction) {
+						Debug.Print("TC {0} is route locked or occupied",
+							tc.ID);
 						return false;
 					}
 				}
@@ -80,7 +87,9 @@ namespace Iecc8.World {
 				// All track circuits that are required to be free must be so.
 				foreach (TrackCircuit i in FreeTrackCircuits) {
 					if (i.RouteLocked || i.Occupied) {
-						return false;
+                        Debug.Print("FTC {0} is route locked or occupied",
+                            i.ID);
+                        return false;
 					}
 				}
 
@@ -90,6 +99,8 @@ namespace Iecc8.World {
 						return false;
 					}
 					if (!i.Points.Movable && i.Points.Reversed != i.Reverse) {
+						Debug.Print("Switch {0} is not movable right now",
+							i.Points.ID);
 						return false;
 					}
 				}

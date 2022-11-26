@@ -181,9 +181,39 @@
         <!--85: Calwa XING EYL SB-->
         <ControlledSignal/>
         <!--86: Fresno M2 NB-->
-        <ControlledSignal/>
+        <ControlledSignal HeadCount="1">
+            <ControlledSignal.Routes>
+                <Route Exit="-1">
+                    <Route.Points>
+                        <RoutePointPosition Points="43" Reversed="True"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC="138" Direction="l"/>
+                        <RouteTC TC="125" Direction="l"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>138</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+            </ControlledSignal.Routes>
+        </ControlledSignal>
         <!--87: Fresno M1 NB-->
-        <ControlledSignal/>
+        <ControlledSignal HeadCount="1">
+            <ControlledSignal.Routes>
+                <Route Exit="-1">
+                    <Route.Points>
+                        <RoutePointPosition Points="43" Reversed="False"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC="138" Direction="l"/>
+                        <RouteTC TC="125" Direction="l"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>138</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+            </ControlledSignal.Routes>
+        </ControlledSignal>
         <!--88 Sunmaid XING M2 SB-->
         <ControlledSignal/>
         <!--89: Sunmaid XING M1 SB-->
@@ -283,7 +313,34 @@
         <!--136-->
         <ControlledSignal/>
         <!--137: Fresno MT SB-->
-        <ControlledSignal/>
+        <ControlledSignal HeadCount="2">
+            <ControlledSignal.Routes>
+                <Route Exit="89">
+                    <Route.Points>
+                        <RoutePointPosition Points="43" Reversed="False"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC="138" Direction="r"/>
+                        <RouteTC TC="137" Direction="r"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>138</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+                <Route Exit="88">
+                    <Route.Points>
+                        <RoutePointPosition Points="43" Reversed="True"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC="138" Direction="r"/>
+                        <RouteTC TC="136" Direction="r"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>138</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+            </ControlledSignal.Routes>
+        </ControlledSignal>
         <!--138: Sunmaid XING UP EB-->
         <ControlledSignal/>
         <!--139: Sunmaid XING UP WB-->

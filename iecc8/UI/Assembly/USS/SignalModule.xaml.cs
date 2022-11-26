@@ -1,4 +1,5 @@
 ﻿using Iecc8.UI.Common;
+using Iecc8.World;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -256,13 +257,20 @@ namespace Iecc8.UI.Equipment.USS
         /// <param name="e">Details about the change.</param>
         private void OnSignalPropChanged(object sender, PropertyChangedEventArgs e)
         {
-            Debug.Print("OnSignalPropChanged");
-            UpdateLampStates();
-            DrawLamps();
+            Debug.Print("OnSignalPropChanged: " + e.PropertyName);
+            if (e.PropertyName == nameof(ControlledSignal.Indication))
+            {
+                Debug.Print("Indication changed");
+                UpdateLampStates();
+                DrawLamps();
+            }
         }
 
         private void UpdateLampStates()
         {
+            Debug.Print("Updating lamp states for signal module {0}",
+                PlateNumber);
+
             bool left = false, center = false, right = false;
 
             foreach (World.ControlledSignal sig in LeftSignals)
@@ -280,6 +288,8 @@ namespace Iecc8.UI.Equipment.USS
             LeftLampState = left;
             CenterLampState = center;
             RightLampState = right;
+            Debug.Print("{0}, {1}, {2}",
+                left, center, right);
         }
 
 

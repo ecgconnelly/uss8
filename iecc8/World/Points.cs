@@ -40,6 +40,8 @@ namespace Iecc8.World {
 				}
 				foreach (TrackCircuit i in ProtectingTCs) {
 					if (i.RouteLocked) {
+						Debug.Print("Switch cannot be changed because TC {0} is route locked",
+							i.ID);
 						return false;
 					}
 				}
@@ -239,7 +241,7 @@ namespace Iecc8.World {
 				Proved = false;
 			}
 			await World.ThrowSwitchAsync(SubArea, ID, reverse ? ESwitchState.Reversed : ESwitchState.Normal);
-		}
+		} 
 		#endregion
 
 		#region Private Members
