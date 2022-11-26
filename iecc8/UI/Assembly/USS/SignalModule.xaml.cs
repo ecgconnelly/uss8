@@ -45,7 +45,7 @@ namespace Iecc8.UI.Equipment.USS
 
         [Category("USS"), Description("Gets or sets the lever position (left 0)")]
         public static readonly DependencyProperty LeverStateProperty =
-            DependencyProperty.Register(nameof(LeverState), typeof(int), typeof(SignalModule), new PropertyMetadata(0));
+            DependencyProperty.Register(nameof(LeverState), typeof(int), typeof(SignalModule), new PropertyMetadata(1));
 
         public bool LeftLampState
         {

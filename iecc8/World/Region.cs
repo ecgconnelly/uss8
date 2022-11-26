@@ -64,7 +64,18 @@ namespace Iecc8.World {
 				subAreaID = (ushort) (id / 1000);
 				id %= 1000;
 			}
-			TrackCircuit tc = SubAreas[subAreaID].TrackCircuits[(ushort) id];
+			TrackCircuit tc = null;
+			try
+			{
+				tc = SubAreas[subAreaID].TrackCircuits[(ushort)id];
+			}
+			catch (Exception ex)
+			{
+				Debug.Print("Undefined track circuit {0}/{1}",
+					subAreaID, id);
+				throw;
+			}
+
 			Debug.Assert(tc != null);
 			return tc;
 		}

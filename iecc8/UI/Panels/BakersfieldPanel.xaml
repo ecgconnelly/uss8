@@ -268,7 +268,7 @@
         <Image HorizontalAlignment="Left" Height="15" Margin="685,162,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="685,139,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="40" Margin="704,158,0,0" VerticalAlignment="Top" Width="40" Source="/Images/TrackSegments/os-lefthand-west-closed.gif" Stretch="None"/>
-        <Label Content="21" HorizontalAlignment="Left" Height="24" Margin="724,176,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="23" HorizontalAlignment="Left" Height="24" Margin="724,176,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="CALWA &#xA;  XING" HorizontalAlignment="Left" Height="32" Margin="781,74,0,0" VerticalAlignment="Top" Width="64" Foreground="#FFDEDEDE" Padding="0,0,0,0" VerticalContentAlignment="Center" FontFamily="Arial" HorizontalContentAlignment="Center"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="738,162,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="30" Margin="759,152,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/os-90-diamond-closed.gif" Stretch="None"/>
@@ -292,11 +292,11 @@
         <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="796,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="175" LampColor="red"/>
         <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="825,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="121" LampColor="red"/>
         <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="898,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="119" LampColor="amber"/>
-        <USS:SwitchModule x:Name="SwitchModule25" HorizontalAlignment="Left" Height="80" Margin="804,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="25"/>
-        <USS:SwitchModule x:Name="SwitchModule23" HorizontalAlignment="Left" Height="80" Margin="738,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="23"/>
-        <USS:SwitchModule x:Name="SwitchModule27" HorizontalAlignment="Left" Height="80" Margin="869,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="27"/>
-        <USS:SignalModule x:Name="SignalModule24" HorizontalAlignment="Left" Height="93" Margin="738,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="24"/>
-        <USS:SignalModule x:Name="SignalModule26" HorizontalAlignment="Left" Height="93" Margin="804,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="26"/>
+        <USS:SwitchModule x:Name="SwitchModule25" HorizontalAlignment="Left" Height="80" Margin="804,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="25" SwitchStr="250/36"/>
+        <USS:SwitchModule x:Name="SwitchModule23" HorizontalAlignment="Left" Height="80" Margin="738,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="23" SwitchStr="250/37"/>
+        <USS:SwitchModule x:Name="SwitchModule27" HorizontalAlignment="Left" Height="80" Margin="869,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="27" SwitchStr="250/35"/>
+        <USS:SignalModule x:Name="SignalModule24" HorizontalAlignment="Left" Height="93" Margin="738,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="24" LeftSignalStr="250/96" RightSignalStr="250/83"/>
+        <USS:SignalModule x:Name="SignalModule26" HorizontalAlignment="Left" Height="93" Margin="804,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="26" LeftSignalStr="250/95" RightSignalStr="250/84,250/85"/>
         <Image HorizontalAlignment="Left" Height="7" Margin="681,131,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -330,9 +330,9 @@
             </Image.RenderTransform>
         </Image>
         <Label Content="26R" HorizontalAlignment="Left" Height="24" Margin="671,196,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <Label Content="23" HorizontalAlignment="Left" Height="24" Margin="792,170,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <Label Content="25" HorizontalAlignment="Left" Height="24" Margin="838,170,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <USS:SignalModule x:Name="SignalModule28" HorizontalAlignment="Left" Height="93" Margin="869,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="28"/>
+        <Label Content="25" HorizontalAlignment="Left" Height="24" Margin="792,170,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="27" HorizontalAlignment="Left" Height="24" Margin="838,170,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <USS:SignalModule x:Name="SignalModule28" HorizontalAlignment="Left" Height="93" Margin="869,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="28" LeftSignalStr="250/123" RightSignalStr="250/129,250/130"/>
         <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="488,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule16,SignalModule18" SwitchModulesStr="SwitchModule15,SwitchModule17,SwitchModule19"/>
         <Image HorizontalAlignment="Left" Height="7" Margin="873,131,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
@@ -356,7 +356,7 @@
             </Image.RenderTransform>
         </Image>
         <Label Content="26L" HorizontalAlignment="Left" Height="24" Margin="865,176,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <Image HorizontalAlignment="Left" Height="7" Margin="758,123,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+        <Image HorizontalAlignment="Left" Height="7" Margin="758,118,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -376,8 +376,9 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Label Content="28R" HorizontalAlignment="Left" Height="24" Margin="764,191,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <Label Content="28L" HorizontalAlignment="Left" Height="24" Margin="748,101,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="28R" HorizontalAlignment="Left" Height="24" Margin="765,191,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="28L" HorizontalAlignment="Left" Height="24" Margin="748,96,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="752,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule24,SignalModule26,SignalModule28" SwitchModulesStr="SwitchModule23,SwitchModule25,SwitchModule27"/>
 
 
     </Grid>
