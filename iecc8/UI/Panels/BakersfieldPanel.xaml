@@ -538,9 +538,9 @@
         <USS:SwitchModule x:Name="SwitchModule35" HorizontalAlignment="Left" Height="80" Margin="1152,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="35" SwitchStr="250/32"/>
         <USS:SwitchModule x:Name="SwitchModule37" HorizontalAlignment="Left" Height="80" Margin="1219,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="37" SwitchStr="250/31"/>
         <USS:SwitchModule x:Name="SwitchModule39" HorizontalAlignment="Left" Height="80" Margin="1285,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="39" SwitchStr="250/24"/>
-        <USS:SignalModule x:Name="SignalModule34" HorizontalAlignment="Left" Height="93" Margin="1088,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="34"/>
-        <USS:SignalModule x:Name="SignalModule36" HorizontalAlignment="Left" Height="93" Margin="1156,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="36"/>
-        <USS:SignalModule x:Name="SignalModule38" HorizontalAlignment="Left" Height="93" Margin="1222,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="38"/>
+        <USS:SignalModule x:Name="SignalModule34" HorizontalAlignment="Left" Height="93" Margin="1088,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="34" RightSignalStr="250/116" LeftSignalStr="250/114,250/113"/>
+        <USS:SignalModule x:Name="SignalModule36" HorizontalAlignment="Left" Height="93" Margin="1156,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="36" RightSignalStr="250/112,250/111" LeftSignalStr="250/108"/>
+        <USS:SignalModule x:Name="SignalModule38" HorizontalAlignment="Left" Height="93" Margin="1222,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="38" RightSignalStr="250/110"/>
         <Label Content="31" HorizontalAlignment="Left" Height="24" Margin="1094,170,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="33" HorizontalAlignment="Left" Height="24" Margin="1159,170,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="39" HorizontalAlignment="Left" Height="24" Margin="1397,134,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
@@ -564,8 +564,9 @@
             </Image.RenderTransform>
         </Image>
         <Label Content="40L" HorizontalAlignment="Left" Height="24" Margin="1416,134,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <USS:SignalModule x:Name="SignalModule38_Copy" HorizontalAlignment="Left" Height="93" Margin="1285,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="40"/>
-        <USS:SignalModule x:Name="SignalModule32" HorizontalAlignment="Left" Height="93" Margin="1022,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="32"/>
+        <USS:SignalModule x:Name="SignalModule38_Copy" HorizontalAlignment="Left" Height="93" Margin="1285,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="40" RightSignalStr="250/109" LeftSignalStr="250/107"/>
+        <USS:SignalModule x:Name="SignalModule32" HorizontalAlignment="Left" Height="93" Margin="1022,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="32" RightSignalStr="250/117" LeftSignalStr="250/115"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="1036,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule32,SignalModule34,SignalModule36,SignalModule38,SignalModule40" SwitchModulesStr="SwitchModule31,SwitchModule33,SwitchModule35,SwitchModule37,SwitchModule39"/>
 
 
     </Grid>
