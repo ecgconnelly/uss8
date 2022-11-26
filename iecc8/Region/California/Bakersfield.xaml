@@ -1221,21 +1221,32 @@
 
         <!--101 E Conejo MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "104">                    <!-- E Conejo NB to MT -->                    <Route.Points>                        <RoutePointPosition Points = "30" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "103" Direction="l"/>                        <RouteTC TC = "104" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>103</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "105">                    <!-- E Conejo NB to MT -->                    <Route.Points>                        <RoutePointPosition Points = "30" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "103" Direction="l"/>                        <RouteTC TC = "105" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>103</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
+        
         <!--102: E Conejo MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "120">                    <!-- Conejo SB MT to Shirley -->                    <Route.Points>                        <RoutePointPosition Points = "30" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "103" Direction="r"/>                        <RouteTC TC = "102" Direction="r"/>                        <RouteTC TC = "101" Direction="r"/>                        <RouteTC TC = "100" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>103</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
+        
         <!--103 E Conejo Siding SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "120">                    <!-- Conejo SB MT to Shirley -->                    <Route.Points>                        <RoutePointPosition Points = "30" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "103" Direction="r"/>                        <RouteTC TC = "102" Direction="r"/>                        <RouteTC TC = "101" Direction="r"/>                        <RouteTC TC = "100" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>103</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
+        
         <!--104 W Conejo MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "107">                    <!-- Conejo NB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "29" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "106" Direction="l"/>                        <RouteTC TC = "107" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>106</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
+        
         <!--105: W Conejo Siding NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "107">                    <!-- Conejo NB siding to MT -->                    <Route.Points>                        <RoutePointPosition Points = "29" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "106" Direction="l"/>                        <RouteTC TC = "107" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>106</s:UInt16>                    </Route.FreeTCs>                </Route>                            </ControlledSignal.Routes>
         </ControlledSignal>
+        
         <!--106: W Conejo MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "102">                    <!-- Conejo SB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "29" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "106" Direction="r"/>                        <RouteTC TC = "104" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>106</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "103">                    <!-- Conejo SB MT to siding -->                    <Route.Points>                        <RoutePointPosition Points = "29" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "106" Direction="r"/>                        <RouteTC TC = "105" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>106</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--107: Floral MT NB-->
@@ -1687,6 +1698,31 @@
 
     <SubArea.TrackCircuits>
         <TrackCircuit ID="0"        LocationName="Somewhere"/>
+        <TrackCircuit ID="82"        LocationName="Wagner M1"/>
+        <TrackCircuit ID="83"        LocationName="Wagner M2"/>
+        <TrackCircuit ID="84"        LocationName="Hanford M2"/>
+        <TrackCircuit ID="85"        LocationName="Hanford M1"/>
+        <TrackCircuit ID="86"        LocationName="Hanford SJVR"/>
+        <TrackCircuit ID="87"        LocationName="Hanford SJVR"/>
+        <TrackCircuit ID="88"        LocationName="Hanford SJVR"/>
+        <TrackCircuit ID="89"        LocationName="Mingo"/>
+        <TrackCircuit ID="90"        LocationName="Mingo"/>
+        <TrackCircuit ID="91"        LocationName="Mingo"/>
+        <TrackCircuit ID="92"        LocationName="Mingo"/>
+        <TrackCircuit ID="93"        LocationName="Mingo"/>
+        <TrackCircuit ID="94"        LocationName="Mingo"/>
+        <TrackCircuit ID="95"        LocationName="E Shirley"/>
+        <TrackCircuit ID="96"        LocationName="E Shirley"/>
+        <TrackCircuit ID="97"        LocationName="Shirley Siding"/>
+        <TrackCircuit ID="98"        LocationName="Shirley MT"/>
+        <TrackCircuit ID="99"        LocationName="W Shirley"/>
+        <TrackCircuit ID="100"        LocationName="Shirley"/>
+        <TrackCircuit ID="101"        LocationName="Conejo/Shirley"/>
+        <TrackCircuit ID="102"        LocationName="E Conejo"/>
+        <TrackCircuit ID="103"        LocationName="E Conejo"/>
+        <TrackCircuit ID="104"        LocationName="Conejo MT"/>
+        <TrackCircuit ID="105"        LocationName="Conejo Siding"/>
+        <TrackCircuit ID="106"        LocationName="Conejo"/>
         <TrackCircuit ID="107"        LocationName="Floral/Conejo"/>
         <TrackCircuit ID="108"        LocationName="Floral"/>
         <TrackCircuit ID="109"        LocationName="Bowles"/>
@@ -1705,6 +1741,7 @@
         <TrackCircuit ID="123"      LocationName="E Calwa"/>
         <TrackCircuit ID="124"      LocationName="Calwa"/>
         <TrackCircuit ID="125"      LocationName="Fresno"/>
+        <TrackCircuit ID="126"      LocationName="E Shirley"/>
         <TrackCircuit ID="127"      LocationName="Calwa"/>
         <TrackCircuit ID="128"      LocationName="Calwa"/>
         <TrackCircuit ID="129"      LocationName="Calwa M1"/>
@@ -1715,6 +1752,7 @@
         <TrackCircuit ID="137"      LocationName="Fresno M1"/>
         <TrackCircuit ID="138"      LocationName="CP Fresno OS"/>
         <TrackCircuit ID="139"      LocationName="Bowles"/>
+        <TrackCircuit ID="140"      LocationName="E Shirley"/>
         <TrackCircuit ID="161"      LocationName="Bowles"/>
         <TrackCircuit ID="162"      LocationName="Bowles"/>
         <TrackCircuit ID="163"      LocationName="Sunmaid XING M2"/>
@@ -1722,6 +1760,8 @@
         <TrackCircuit ID="165"      LocationName="Sunmaid XING M1"/>
         <TrackCircuit ID="166"      LocationName="Sunmaid XING M1"/>
         <TrackCircuit ID="170"      LocationName="Calwa"/>
+        <TrackCircuit ID="171"      LocationName="Mingo"/>
+        <TrackCircuit ID="172"      LocationName="Mingo"/>
         <TrackCircuit ID="175"      LocationName="Calwa XING"/>
         <TrackCircuit ID="176"      LocationName="Calwa XING"/>
         <TrackCircuit ID="177"      LocationName="Calwa XING"/>
