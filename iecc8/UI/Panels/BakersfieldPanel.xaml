@@ -533,26 +533,25 @@
         </Image>
         <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="1048,136,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="118" LampColor="amber"/>
         <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="1048,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="117" LampColor="amber"/>
-        <USS:SwitchModule x:Name="SwitchModule27_Copy" HorizontalAlignment="Left" Height="80" Margin="1019,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="0"/>
-        <USS:SwitchModule x:Name="SwitchModule27_Copy1" HorizontalAlignment="Left" Height="80" Margin="1088,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="0"/>
-        <USS:SwitchModule x:Name="SwitchModule27_Copy2" HorizontalAlignment="Left" Height="80" Margin="1152,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="0"/>
-        <USS:SwitchModule x:Name="SwitchModule27_Copy3" HorizontalAlignment="Left" Height="80" Margin="1219,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="0"/>
-        <USS:SwitchModule x:Name="SwitchModule27_Copy4" HorizontalAlignment="Left" Height="80" Margin="1285,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="0"/>
-        <USS:SignalModule x:Name="SignalModule28_Copy2" HorizontalAlignment="Left" Height="93" Margin="1088,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="0"/>
-        <USS:SignalModule x:Name="SignalModule28_Copy3" HorizontalAlignment="Left" Height="93" Margin="1152,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="0"/>
-        <USS:SignalModule x:Name="SignalModule28_Copy4" HorizontalAlignment="Left" Height="93" Margin="1220,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="0"/>
-        <USS:SignalModule x:Name="SignalModule28_Copy5" HorizontalAlignment="Left" Height="93" Margin="1286,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="0"/>
+        <USS:SwitchModule x:Name="SwitchModule31" HorizontalAlignment="Left" Height="80" Margin="1019,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="31" SwitchStr="250/34"/>
+        <USS:SwitchModule x:Name="SwitchModule33" HorizontalAlignment="Left" Height="80" Margin="1088,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="33" SwitchStr="250/59"/>
+        <USS:SwitchModule x:Name="SwitchModule35" HorizontalAlignment="Left" Height="80" Margin="1152,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="35" SwitchStr="250/32"/>
+        <USS:SwitchModule x:Name="SwitchModule37" HorizontalAlignment="Left" Height="80" Margin="1219,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="37" SwitchStr="250/31"/>
+        <USS:SwitchModule x:Name="SwitchModule39" HorizontalAlignment="Left" Height="80" Margin="1285,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="39" SwitchStr="250/24"/>
+        <USS:SignalModule x:Name="SignalModule34" HorizontalAlignment="Left" Height="93" Margin="1088,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="34"/>
+        <USS:SignalModule x:Name="SignalModule36" HorizontalAlignment="Left" Height="93" Margin="1156,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="36"/>
+        <USS:SignalModule x:Name="SignalModule38" HorizontalAlignment="Left" Height="93" Margin="1222,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="38"/>
         <Label Content="31" HorizontalAlignment="Left" Height="24" Margin="1094,170,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="33" HorizontalAlignment="Left" Height="24" Margin="1159,170,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="39" HorizontalAlignment="Left" Height="24" Margin="1397,134,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <Label Content="34R" HorizontalAlignment="Left" Height="24" Margin="1055,111,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <Label Content="36R" HorizontalAlignment="Left" Height="24" Margin="1055,176,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <Label Content="34L" HorizontalAlignment="Left" Height="24" Margin="1226,111,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <Label Content="36L" HorizontalAlignment="Left" Height="24" Margin="1222,199,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <Label Content="38R" HorizontalAlignment="Left" Height="24" Margin="1255,199,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <Label Content="38L" HorizontalAlignment="Left" Height="24" Margin="1321,185,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <Label Content="42R" HorizontalAlignment="Left" Height="24" Margin="1348,185,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <Label Content="40R" HorizontalAlignment="Left" Height="24" Margin="1348,110,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="32R" HorizontalAlignment="Left" Height="24" Margin="1055,111,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="34R" HorizontalAlignment="Left" Height="24" Margin="1055,176,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="32L" HorizontalAlignment="Left" Height="24" Margin="1226,111,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="34L" HorizontalAlignment="Left" Height="24" Margin="1222,199,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="36R" HorizontalAlignment="Left" Height="24" Margin="1255,199,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="36L" HorizontalAlignment="Left" Height="24" Margin="1321,185,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="40R" HorizontalAlignment="Left" Height="24" Margin="1348,185,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="38R" HorizontalAlignment="Left" Height="24" Margin="1348,110,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="1408,162,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="7" Margin="1423,154,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
@@ -564,7 +563,9 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Label Content="42L" HorizontalAlignment="Left" Height="24" Margin="1416,134,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="40L" HorizontalAlignment="Left" Height="24" Margin="1416,134,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <USS:SignalModule x:Name="SignalModule38_Copy" HorizontalAlignment="Left" Height="93" Margin="1285,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="40"/>
+        <USS:SignalModule x:Name="SignalModule32" HorizontalAlignment="Left" Height="93" Margin="1022,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="32"/>
 
 
     </Grid>
