@@ -257,10 +257,10 @@ namespace Iecc8.UI.Equipment.USS
         /// <param name="e">Details about the change.</param>
         private void OnSignalPropChanged(object sender, PropertyChangedEventArgs e)
         {
-            Debug.Print("OnSignalPropChanged: " + e.PropertyName);
+            //Debug.Print("OnSignalPropChanged: " + e.PropertyName);
             if (e.PropertyName == nameof(ControlledSignal.Indication))
             {
-                Debug.Print("Indication changed");
+                //Debug.Print("Indication changed");
                 UpdateLampStates();
                 DrawLamps();
             }
@@ -268,8 +268,7 @@ namespace Iecc8.UI.Equipment.USS
 
         private void UpdateLampStates()
         {
-            Debug.Print("Updating lamp states for signal module {0}",
-                PlateNumber);
+            //Debug.Print("Updating lamp states for signal module {0}", PlateNumber);
 
             bool left = false, center = false, right = false;
 
@@ -288,8 +287,8 @@ namespace Iecc8.UI.Equipment.USS
             LeftLampState = left;
             CenterLampState = center;
             RightLampState = right;
-            Debug.Print("{0}, {1}, {2}",
-                left, center, right);
+            //Debug.Print("{0}, {1}, {2}",
+            //    left, center, right);
         }
 
 

@@ -205,6 +205,14 @@ namespace Iecc8.UI.Equipment.USS
         private void SwitchModuleControl_Loaded(object sender, RoutedEventArgs e)
         {
             if (DesignerProperties.GetIsInDesignMode(this)) return;
+            if (SwitchStr.Length == 0)
+            {
+                LeftLampState = false;
+                RightLampState = false;
+                DrawLamps();
+                return;
+            }
+
             ushort SubAreaID = ushort.Parse((SwitchStr.Split('/')[0]));
             ushort SwitchID  = ushort.Parse((SwitchStr.Split('/')[1]));
 
