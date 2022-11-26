@@ -180,16 +180,16 @@
         <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="287,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="164" LampColor="red"/>
         <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="352,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="163" LampColor="red"/>
         <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="449,160,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="130" LampColor="amber"/>
-        <USS:SwitchModule x:Name="SwitchModule19" HorizontalAlignment="Left" Height="80" Margin="604,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="19" SwitchStr="250/25"/>
-        <USS:SwitchModule x:Name="SwitchModule15" HorizontalAlignment="Left" Height="80" Margin="472,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="15" SwitchStr="250/38"/>
-        <USS:SwitchModule x:Name="SwitchModule17" HorizontalAlignment="Left" Height="80" Margin="538,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="17" SwitchStr="250/39"/>
+        <USS:SwitchModule x:Name="SwitchModule19" HorizontalAlignment="Left" Height="80" Margin="604,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="19" SwitchStr="250/39"/>
+        <USS:SwitchModule x:Name="SwitchModule15" HorizontalAlignment="Left" Height="80" Margin="472,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="15" SwitchStr="250/25"/>
+        <USS:SwitchModule x:Name="SwitchModule17" HorizontalAlignment="Left" Height="80" Margin="538,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="17" SwitchStr="250/38"/>
         <USS:SignalModule x:Name="SignalModule4" HorizontalAlignment="Left" Height="93" Margin="76,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="4" RightSignalStr="250/137" LeftSignalStr="250/87,250/86"/>
         <USS:SignalModule x:Name="SignalModule8" HorizontalAlignment="Left" Height="93" Margin="208,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="8" RightSignalStr="250/89" LeftSignalStr="250/91"/>
         <USS:SignalModule x:Name="SignalModule10" HorizontalAlignment="Left" Height="93" Margin="275,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="10" RightSignalStr="250/88" LeftSignalStr="250/90,250/94"/>
         <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="91,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule4" SwitchModulesStr="SwitchModule3"/>
         <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="224,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule8,SignalModule10" SwitchModulesStr="SwitchModule7,SwitchModule9,SwitchModule11"/>
-        <USS:SignalModule x:Name="SignalModule18" HorizontalAlignment="Left" Height="93" Margin="537,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="18" RightSignalStr="250/93" LeftSignalStr="250/99,250/98"/>
-        <USS:SignalModule x:Name="SignalModule16" HorizontalAlignment="Left" Height="93" Margin="474,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="16" RightSignalStr="250/92,250/100" LeftSignalStr="250/97"/>
+        <USS:SignalModule x:Name="SignalModule18" HorizontalAlignment="Left" Height="93" Margin="537,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="18" RightSignalStr="250/92,250/100" LeftSignalStr="250/97"/>
+        <USS:SignalModule x:Name="SignalModule16" HorizontalAlignment="Left" Height="93" Margin="474,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="16" RightSignalStr="250/93" LeftSignalStr="250/99,250/98"/>
         <Image HorizontalAlignment="Left" Height="7" Margin="467,131,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -335,6 +335,7 @@
         <Label Content="25" HorizontalAlignment="Left" Height="24" Margin="838,170,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <USS:SignalModule x:Name="SignalModule28" HorizontalAlignment="Left" Height="93" Margin="869,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="28"/>
         <USS:SignalModule x:Name="SignalModule30" HorizontalAlignment="Left" Height="93" Margin="936,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="30"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="488,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule16,SignalModule18" SwitchModulesStr="SwitchModule15,SwitchModule17,SwitchModule19"/>
 
 
     </Grid>
