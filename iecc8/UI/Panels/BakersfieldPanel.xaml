@@ -564,9 +564,13 @@
             </Image.RenderTransform>
         </Image>
         <Label Content="40L" HorizontalAlignment="Left" Height="24" Margin="1416,134,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <USS:SignalModule x:Name="SignalModule38_Copy" HorizontalAlignment="Left" Height="93" Margin="1285,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="40" RightSignalStr="250/109" LeftSignalStr="250/107"/>
+        <USS:SignalModule x:Name="SignalModule40" HorizontalAlignment="Left" Height="93" Margin="1285,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="40" RightSignalStr="250/109" LeftSignalStr="250/107"/>
         <USS:SignalModule x:Name="SignalModule32" HorizontalAlignment="Left" Height="93" Margin="1022,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="32" RightSignalStr="250/117" LeftSignalStr="250/115"/>
         <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="1036,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule32,SignalModule34,SignalModule36,SignalModule38,SignalModule40" SwitchModulesStr="SwitchModule31,SwitchModule33,SwitchModule35,SwitchModule37,SwitchModule39"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="1428,159,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="1449,159,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="1444,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="107" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="1376,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="108" LampColor="red"/>
 
 
     </Grid>

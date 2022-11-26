@@ -1237,8 +1237,10 @@
         <!--106: W Conejo MT SB-->
         <ControlledSignal>
         </ControlledSignal>
+        
         <!--107: Floral MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "115">                    <!-- MT to M1 -->                    <Route.Points>                        <RoutePointPosition Points = "24" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "108" Direction="l"/>                        <RouteTC TC = "110" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>108</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "108">                    <!-- MT to M2 -->                    <Route.Points>                        <RoutePointPosition Points = "24" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "108" Direction="l"/>                        <RouteTC TC = "109" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>108</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--108: EE Bowles M2 NB-->
@@ -1273,12 +1275,14 @@
             </ControlledSignal.Routes>
         </ControlledSignal>
         
-        <!--109: Floral M1 SB-->
+        <!--109: Floral M2 SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "106">                    <!-- M1 to MT -->                    <Route.Points>                        <RoutePointPosition Points = "24" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "108" Direction="r"/>                        <RouteTC TC = "107" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>108</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
-        <!--110: Floral M2 SB-->
+        <!--110: Floral M1 SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "106">                    <!-- M1 to MT -->                    <Route.Points>                        <RoutePointPosition Points = "24" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "108" Direction="r"/>                        <RouteTC TC = "107" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>108</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--111: EE Bowles Siding SB-->
@@ -1683,7 +1687,7 @@
 
     <SubArea.TrackCircuits>
         <TrackCircuit ID="0"        LocationName="Somewhere"/>
-        <TrackCircuit ID="107"        LocationName="Floral"/>
+        <TrackCircuit ID="107"        LocationName="Floral/Conejo"/>
         <TrackCircuit ID="108"        LocationName="Floral"/>
         <TrackCircuit ID="109"        LocationName="Bowles"/>
         <TrackCircuit ID="110"        LocationName="Bowles"/>
