@@ -179,7 +179,7 @@
         <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="217,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="134" LampColor="red"/>
         <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="287,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="164" LampColor="red"/>
         <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="352,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="163" LampColor="red"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="452,160,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="130" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="449,160,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="130" LampColor="amber"/>
         <USS:SwitchModule x:Name="SwitchModule13" HorizontalAlignment="Left" Height="80" Margin="405,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="13" SwitchStr="250/25"/>
         <USS:SwitchModule x:Name="SwitchModule15" HorizontalAlignment="Left" Height="80" Margin="472,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="15" SwitchStr="250/38"/>
         <USS:SwitchModule x:Name="SwitchModule17" HorizontalAlignment="Left" Height="80" Margin="538,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="17" SwitchStr="250/39"/>
@@ -188,6 +188,75 @@
         <USS:SignalModule x:Name="SignalModule10" HorizontalAlignment="Left" Height="93" Margin="275,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="10" RightSignalStr="250/88" LeftSignalStr="250/90,250/94"/>
         <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="91,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule4" SwitchModulesStr="SwitchModule3"/>
         <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="224,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule8,SignalModule10" SwitchModulesStr="SwitchModule7,SwitchModule9,SwitchModule11"/>
+        <USS:SignalModule x:Name="SignalModule14" HorizontalAlignment="Left" Height="93" Margin="407,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="14" RightSignalStr="250/88" LeftSignalStr="250/90,250/94"/>
+        <USS:SignalModule x:Name="SignalModule16" HorizontalAlignment="Left" Height="93" Margin="474,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="16" RightSignalStr="250/88" LeftSignalStr="250/90,250/94"/>
+        <Image HorizontalAlignment="Left" Height="7" Margin="467,131,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="467,172,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="467,195,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label Content="16R" HorizontalAlignment="Left" Height="24" Margin="476,164,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="16R" HorizontalAlignment="Left" Height="24" Margin="476,187,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="14R" HorizontalAlignment="Left" Height="24" Margin="457,112,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Image HorizontalAlignment="Left" Height="7" Margin="627,131,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="627,172,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label Content="14L" HorizontalAlignment="Left" Height="24" Margin="637,121,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="621,113,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/b-outline.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="7" Margin="627,107,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label Content="14L" HorizontalAlignment="Left" Height="24" Margin="637,97,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="16L" HorizontalAlignment="Left" Height="24" Margin="637,165,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
 
 
     </Grid>
