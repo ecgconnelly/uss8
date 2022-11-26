@@ -1243,7 +1243,34 @@
         
         <!--108: EE Bowles M2 NB-->
         <ControlledSignal>
-            <ControlledSignal.Routes>                <Route Exit = "114">                    <!-- M2 to M2 -->                    <Route.Points>                        <RoutePointPosition Points = "31" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "111" Direction="r"/>                        <RouteTC TC = "113" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>111</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "113">                    <!-- M2 to siding -->                    <Route.Points>                        <RoutePointPosition Points = "31" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "111" Direction="r"/>                        <RouteTC TC = "112" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>111</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
+            <ControlledSignal.Routes>
+                <Route Exit = "114">
+                    <!-- M2 to M2 -->
+                    <Route.Points>
+                        <RoutePointPosition Points = "31" Reversed="False"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC = "111" Direction="r"/>
+                        <RouteTC TC = "113" Direction="r"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>111</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+                <Route Exit = "113">
+                    <!-- M2 to siding -->
+                    <Route.Points>
+                        <RoutePointPosition Points = "31" Reversed="True"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC = "111" Direction="r"/>
+                        <RouteTC TC = "112" Direction="r"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>111</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--109: Floral M1 SB-->
@@ -1256,37 +1283,305 @@
         
         <!--111: EE Bowles Siding SB-->
         <ControlledSignal>
-            <ControlledSignal.Routes>                <Route Exit = "109">                    <!-- siding to M2 -->                    <Route.Points>                        <RoutePointPosition Points = "31" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "111" Direction="r"/>                        <RouteTC TC = "109" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>111</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
+            <ControlledSignal.Routes>
+                <Route Exit = "109">
+                    <!-- siding to M2 -->
+                    <Route.Points>
+                        <RoutePointPosition Points = "31" Reversed="True"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC = "111" Direction="r"/>
+                        <RouteTC TC = "109" Direction="r"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>111</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--112: EE Bowles M2 SB-->
         <ControlledSignal>
-            <ControlledSignal.Routes>                <Route Exit = "109">                    <!-- M2 to M2 -->                    <Route.Points>                        <RoutePointPosition Points = "31" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "111" Direction="r"/>                        <RouteTC TC = "109" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>111</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
+            <ControlledSignal.Routes>
+                <Route Exit = "109">
+                    <!-- M2 to M2 -->
+                    <Route.Points>
+                        <RoutePointPosition Points = "31" Reversed="False"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC = "111" Direction="r"/>
+                        <RouteTC TC = "109" Direction="r"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>111</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--113 WE Bowles Siding NB-->
         <ControlledSignal>
-            <ControlledSignal.Routes>                <Route Exit = "96">                    <!-- siding to M1 -->                    <Route.Points>                        <RoutePointPosition Points = "32" Reversed="True"/>                        <RoutePointPosition Points = "59" Reversed="True"/>                        <RoutePointPosition Points = "34" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "114" Direction="l"/>                        <RouteTC TC = "139" Direction="l"/>                        <RouteTC TC = "116" Direction="l"/>                        <RouteTC TC = "161" Direction="l"/>                        <RouteTC TC = "118" Direction="l"/>                        <RouteTC TC = "120" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>114</s:UInt16>                        <s:UInt16>139</s:UInt16>                        <s:UInt16>116</s:UInt16>                        <s:UInt16>161</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "95">                    <!-- siding to M2 -->                    <Route.Points>                        <RoutePointPosition Points = "32" Reversed="True"/>                        <RoutePointPosition Points = "59" Reversed="False"/>                        <RoutePointPosition Points = "34" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "114" Direction="l"/>                        <RouteTC TC = "139" Direction="l"/>                        <RouteTC TC = "162" Direction="l"/>                        <RouteTC TC = "117" Direction="l"/>                        <RouteTC TC = "119" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>114</s:UInt16>                        <s:UInt16>139</s:UInt16>                        <s:UInt16>162</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
+            <ControlledSignal.Routes>
+                <Route Exit = "96">
+                    <!-- siding to M1 -->
+                    <Route.Points>
+                        <RoutePointPosition Points = "32" Reversed="True"/>
+                        <RoutePointPosition Points = "59" Reversed="True"/>
+                        <RoutePointPosition Points = "34" Reversed="False"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC = "114" Direction="l"/>
+                        <RouteTC TC = "139" Direction="l"/>
+                        <RouteTC TC = "116" Direction="l"/>
+                        <RouteTC TC = "161" Direction="l"/>
+                        <RouteTC TC = "118" Direction="l"/>
+                        <RouteTC TC = "120" Direction="l"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>114</s:UInt16>
+                        <s:UInt16>139</s:UInt16>
+                        <s:UInt16>116</s:UInt16>
+                        <s:UInt16>161</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+                <Route Exit = "95">
+                    <!-- siding to M2 -->
+                    <Route.Points>
+                        <RoutePointPosition Points = "32" Reversed="True"/>
+                        <RoutePointPosition Points = "59" Reversed="False"/>
+                        <RoutePointPosition Points = "34" Reversed="False"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC = "114" Direction="l"/>
+                        <RouteTC TC = "139" Direction="l"/>
+                        <RouteTC TC = "162" Direction="l"/>
+                        <RouteTC TC = "117" Direction="l"/>
+                        <RouteTC TC = "119" Direction="l"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>114</s:UInt16>
+                        <s:UInt16>139</s:UInt16>
+                        <s:UInt16>162</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--114 WE Bowles M2 NB-->
         <ControlledSignal>
-            <ControlledSignal.Routes>                <Route Exit = "96">                    <!-- M2 to M1 -->                    <Route.Points>                        <RoutePointPosition Points = "32" Reversed="False"/>                        <RoutePointPosition Points = "59" Reversed="True"/>                        <RoutePointPosition Points = "34" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "114" Direction="l"/>                        <RouteTC TC = "139" Direction="l"/>                        <RouteTC TC = "116" Direction="l"/>                        <RouteTC TC = "161" Direction="l"/>                        <RouteTC TC = "118" Direction="l"/>                        <RouteTC TC = "120" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>114</s:UInt16>                        <s:UInt16>139</s:UInt16>                        <s:UInt16>116</s:UInt16>                        <s:UInt16>161</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "95">                    <!-- M2 to M2 -->                    <Route.Points>                        <RoutePointPosition Points = "32" Reversed="False"/>                        <RoutePointPosition Points = "59" Reversed="False"/>                        <RoutePointPosition Points = "34" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "114" Direction="l"/>                        <RouteTC TC = "139" Direction="l"/>                        <RouteTC TC = "162" Direction="l"/>                        <RouteTC TC = "117" Direction="l"/>                        <RouteTC TC = "119" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>114</s:UInt16>                        <s:UInt16>139</s:UInt16>                        <s:UInt16>162</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
+            <ControlledSignal.Routes>
+                <Route Exit = "96">
+                    <!-- M2 to M1 -->
+                    <Route.Points>
+                        <RoutePointPosition Points = "32" Reversed="False"/>
+                        <RoutePointPosition Points = "59" Reversed="True"/>
+                        <RoutePointPosition Points = "34" Reversed="False"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC = "114" Direction="l"/>
+                        <RouteTC TC = "139" Direction="l"/>
+                        <RouteTC TC = "116" Direction="l"/>
+                        <RouteTC TC = "161" Direction="l"/>
+                        <RouteTC TC = "118" Direction="l"/>
+                        <RouteTC TC = "120" Direction="l"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>114</s:UInt16>
+                        <s:UInt16>139</s:UInt16>
+                        <s:UInt16>116</s:UInt16>
+                        <s:UInt16>161</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+                <Route Exit = "95">
+                    <!-- M2 to M2 -->
+                    <Route.Points>
+                        <RoutePointPosition Points = "32" Reversed="False"/>
+                        <RoutePointPosition Points = "59" Reversed="False"/>
+                        <RoutePointPosition Points = "34" Reversed="False"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC = "114" Direction="l"/>
+                        <RouteTC TC = "139" Direction="l"/>
+                        <RouteTC TC = "162" Direction="l"/>
+                        <RouteTC TC = "117" Direction="l"/>
+                        <RouteTC TC = "119" Direction="l"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>114</s:UInt16>
+                        <s:UInt16>139</s:UInt16>
+                        <s:UInt16>162</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--115 WE Bowles M1 NB-->
         <ControlledSignal>
-            <ControlledSignal.Routes>                <Route Exit = "96">                    <!-- M1 to M1 -->                    <Route.Points>                        <RoutePointPosition Points = "59" Reversed="False"/>                        <RoutePointPosition Points = "34" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "116" Direction="l"/>                        <RouteTC TC = "161" Direction="l"/>                        <RouteTC TC = "118" Direction="l"/>                        <RouteTC TC = "120" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>116</s:UInt16>                        <s:UInt16>161</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "95">                    <!-- M1 to M2 -->                    <Route.Points>                        <RoutePointPosition Points = "59" Reversed="False"/>                        <RoutePointPosition Points = "34" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "116" Direction="l"/>                        <RouteTC TC = "161" Direction="l"/>                        <RouteTC TC = "162" Direction="l"/>                        <RouteTC TC = "117" Direction="l"/>                        <RouteTC TC = "119" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>116</s:UInt16>                        <s:UInt16>161</s:UInt16>                        <s:UInt16>162</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
+            <ControlledSignal.Routes>
+                <Route Exit = "96">
+                    <!-- M1 to M1 -->
+                    <Route.Points>
+                        <RoutePointPosition Points = "59" Reversed="False"/>
+                        <RoutePointPosition Points = "34" Reversed="False"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC = "116" Direction="l"/>
+                        <RouteTC TC = "161" Direction="l"/>
+                        <RouteTC TC = "118" Direction="l"/>
+                        <RouteTC TC = "120" Direction="l"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>116</s:UInt16>
+                        <s:UInt16>161</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+                <Route Exit = "95">
+                    <!-- M1 to M2 -->
+                    <Route.Points>
+                        <RoutePointPosition Points = "59" Reversed="False"/>
+                        <RoutePointPosition Points = "34" Reversed="True"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC = "116" Direction="l"/>
+                        <RouteTC TC = "161" Direction="l"/>
+                        <RouteTC TC = "162" Direction="l"/>
+                        <RouteTC TC = "117" Direction="l"/>
+                        <RouteTC TC = "119" Direction="l"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>116</s:UInt16>
+                        <s:UInt16>161</s:UInt16>
+                        <s:UInt16>162</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--116 WE Bowles M2 SB-->
         <ControlledSignal>
-            <ControlledSignal.Routes>                <Route Exit = "110">                    <!-- M2 to M1 -->                    <Route.Points>                        <RoutePointPosition Points = "34" Reversed="True"/>                        <RoutePointPosition Points = "59" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "162" Direction="r"/>                        <RouteTC TC = "161" Direction="r"/>                        <RouteTC TC = "116" Direction="r"/>                        <RouteTC TC = "110" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>162</s:UInt16>                        <s:UInt16>161</s:UInt16>                        <s:UInt16>116</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "112">                    <!-- M2 to M2 -->                    <Route.Points>                        <RoutePointPosition Points = "34" Reversed="False"/>                        <RoutePointPosition Points = "59" Reversed="False"/>                        <RoutePointPosition Points = "32" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "162" Direction="r"/>                        <RouteTC TC = "139" Direction="r"/>                        <RouteTC TC = "114" Direction="r"/>                        <RouteTC TC = "113" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>162</s:UInt16>                        <s:UInt16>139</s:UInt16>                        <s:UInt16>114</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "111">                    <!-- M2 to siding -->                    <Route.Points>                        <RoutePointPosition Points = "34" Reversed="False"/>                        <RoutePointPosition Points = "59" Reversed="False"/>                        <RoutePointPosition Points = "32" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "162" Direction="r"/>                        <RouteTC TC = "139" Direction="r"/>                        <RouteTC TC = "114" Direction="r"/>                        <RouteTC TC = "112" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>162</s:UInt16>                        <s:UInt16>139</s:UInt16>                        <s:UInt16>114</s:UInt16>                        <s:UInt16>112</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
+            <ControlledSignal.Routes>
+                <Route Exit = "110">
+                    <!-- M2 to M1 -->
+                    <Route.Points>
+                        <RoutePointPosition Points = "34" Reversed="True"/>
+                        <RoutePointPosition Points = "59" Reversed="False"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC = "162" Direction="r"/>
+                        <RouteTC TC = "161" Direction="r"/>
+                        <RouteTC TC = "116" Direction="r"/>
+                        <RouteTC TC = "110" Direction="r"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>162</s:UInt16>
+                        <s:UInt16>161</s:UInt16>
+                        <s:UInt16>116</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+                <Route Exit = "112">
+                    <!-- M2 to M2 -->
+                    <Route.Points>
+                        <RoutePointPosition Points = "34" Reversed="False"/>
+                        <RoutePointPosition Points = "59" Reversed="False"/>
+                        <RoutePointPosition Points = "32" Reversed="False"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC = "162" Direction="r"/>
+                        <RouteTC TC = "139" Direction="r"/>
+                        <RouteTC TC = "114" Direction="r"/>
+                        <RouteTC TC = "113" Direction="r"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>162</s:UInt16>
+                        <s:UInt16>139</s:UInt16>
+                        <s:UInt16>114</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+                <Route Exit = "111">
+                    <!-- M2 to siding -->
+                    <Route.Points>
+                        <RoutePointPosition Points = "34" Reversed="False"/>
+                        <RoutePointPosition Points = "59" Reversed="False"/>
+                        <RoutePointPosition Points = "32" Reversed="True"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC = "162" Direction="r"/>
+                        <RouteTC TC = "139" Direction="r"/>
+                        <RouteTC TC = "114" Direction="r"/>
+                        <RouteTC TC = "112" Direction="r"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>162</s:UInt16>
+                        <s:UInt16>139</s:UInt16>
+                        <s:UInt16>114</s:UInt16>
+                        <s:UInt16>112</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--117: WE Bowles M1 SB-->
         <ControlledSignal>
-            <ControlledSignal.Routes>                <Route Exit = "110">                    <!-- M1 to M1 -->                    <Route.Points>                        <RoutePointPosition Points = "34" Reversed="False"/>                        <RoutePointPosition Points = "59" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "161" Direction="r"/>                        <RouteTC TC = "116" Direction="r"/>                        <RouteTC TC = "110" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>161</s:UInt16>                        <s:UInt16>116</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "112">                    <!-- M1 to M2 -->                    <Route.Points>                        <RoutePointPosition Points = "34" Reversed="False"/>                        <RoutePointPosition Points = "59" Reversed="True"/>                        <RoutePointPosition Points = "32" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "161" Direction="r"/>                        <RouteTC TC = "116" Direction="r"/>                        <RouteTC TC = "139" Direction="r"/>                        <RouteTC TC = "114" Direction="r"/>                        <RouteTC TC = "113" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>161</s:UInt16>                        <s:UInt16>116</s:UInt16>                        <s:UInt16>139</s:UInt16>                        <s:UInt16>114</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "111">                    <!-- M1 to siding -->                    <Route.Points>                        <RoutePointPosition Points = "34" Reversed="False"/>                        <RoutePointPosition Points = "59" Reversed="True"/>                        <RoutePointPosition Points = "32" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "161" Direction="r"/>                        <RouteTC TC = "116" Direction="r"/>                        <RouteTC TC = "139" Direction="r"/>                        <RouteTC TC = "114" Direction="r"/>                        <RouteTC TC = "112" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>161</s:UInt16>                        <s:UInt16>116</s:UInt16>                        <s:UInt16>139</s:UInt16>                        <s:UInt16>114</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
+            <ControlledSignal.Routes>
+                <Route Exit = "110">
+                    <!-- M1 to M1 -->
+                    <Route.Points>
+                        <RoutePointPosition Points = "34" Reversed="False"/>
+                        <RoutePointPosition Points = "59" Reversed="False"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC = "161" Direction="r"/>
+                        <RouteTC TC = "116" Direction="r"/>
+                        <RouteTC TC = "110" Direction="r"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>161</s:UInt16>
+                        <s:UInt16>116</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+                <Route Exit = "112">
+                    <!-- M1 to M2 -->
+                    <Route.Points>
+                        <RoutePointPosition Points = "34" Reversed="False"/>
+                        <RoutePointPosition Points = "59" Reversed="True"/>
+                        <RoutePointPosition Points = "32" Reversed="False"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC = "161" Direction="r"/>
+                        <RouteTC TC = "116" Direction="r"/>
+                        <RouteTC TC = "139" Direction="r"/>
+                        <RouteTC TC = "114" Direction="r"/>
+                        <RouteTC TC = "113" Direction="r"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>161</s:UInt16>
+                        <s:UInt16>116</s:UInt16>
+                        <s:UInt16>139</s:UInt16>
+                        <s:UInt16>114</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+                <Route Exit = "111">
+                    <!-- M1 to siding -->
+                    <Route.Points>
+                        <RoutePointPosition Points = "34" Reversed="False"/>
+                        <RoutePointPosition Points = "59" Reversed="True"/>
+                        <RoutePointPosition Points = "32" Reversed="True"/>
+                    </Route.Points>
+                    <Route.TCs>
+                        <RouteTC TC = "161" Direction="r"/>
+                        <RouteTC TC = "116" Direction="r"/>
+                        <RouteTC TC = "139" Direction="r"/>
+                        <RouteTC TC = "114" Direction="r"/>
+                        <RouteTC TC = "112" Direction="r"/>
+                    </Route.TCs>
+                    <Route.FreeTCs>
+                        <s:UInt16>161</s:UInt16>
+                        <s:UInt16>116</s:UInt16>
+                        <s:UInt16>139</s:UInt16>
+                        <s:UInt16>114</s:UInt16>
+                    </Route.FreeTCs>
+                </Route>
+            </ControlledSignal.Routes>
         </ControlledSignal>
         
         
@@ -1388,6 +1683,8 @@
 
     <SubArea.TrackCircuits>
         <TrackCircuit ID="0"        LocationName="Somewhere"/>
+        <TrackCircuit ID="107"        LocationName="Floral"/>
+        <TrackCircuit ID="108"        LocationName="Floral"/>
         <TrackCircuit ID="109"        LocationName="Bowles"/>
         <TrackCircuit ID="110"        LocationName="Bowles"/>
         <TrackCircuit ID="111"        LocationName="Bowles"/>
