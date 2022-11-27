@@ -122,26 +122,32 @@
         
         <!--28 E Sandrini SDG SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "27">                    <!-- E Sandrini SB Siding to MT -->                    <Route.Points>                        <RoutePointPosition Points = "9" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "31" Direction="r"/>                        <RouteTC TC = "30" Direction="r"/>                        <RouteTC TC = "29" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>31</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--29 E Sandrini MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "32">                    <!-- E Sandrini NB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "9" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "31" Direction="l"/>                        <RouteTC TC = "32" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>31</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "31">                    <!-- E Sandrini NB MT to Siding -->                    <Route.Points>                        <RoutePointPosition Points = "9" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "31" Direction="l"/>                        <RouteTC TC = "33" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>31</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--30 E Sandrini MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "27">                    <!-- E Sandrini SB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "9" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "31" Direction="r"/>                        <RouteTC TC = "30" Direction="r"/>                        <RouteTC TC = "29" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>31</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--31 W Sandrini SDG NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "34">                    <!-- W Sandrini NB Siding to MT -->                    <Route.Points>                        <RoutePointPosition Points = "10" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "34" Direction="l"/>                        <RouteTC TC = "35" Direction="l"/>                        <RouteTC TC = "36" Direction="l"/>                        <RouteTC TC = "37" Direction="l"/>                        <RouteTC TC = "38" Direction="l"/>                        <RouteTC TC = "39" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>34</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--32 W Sandrini MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "34">                    <!-- W Sandrini NB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "10" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "34" Direction="l"/>                        <RouteTC TC = "35" Direction="l"/>                        <RouteTC TC = "36" Direction="l"/>                        <RouteTC TC = "37" Direction="l"/>                        <RouteTC TC = "38" Direction="l"/>                        <RouteTC TC = "39" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>34</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--33 W Sandrini MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "30">                    <!-- W Sandrini SB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "10" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "34" Direction="r"/>                        <RouteTC TC = "32" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>34</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "28">                    <!-- W Sandrini SB MT to Siding -->                    <Route.Points>                        <RoutePointPosition Points = "10" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "34" Direction="r"/>                        <RouteTC TC = "33" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>34</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--34 E Allensworth MT NB-->
