@@ -170,22 +170,27 @@
         
         <!--40 E Angiola MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "44">                    <!-- E Angiola NB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "13" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "49" Direction="l"/>                        <RouteTC TC = "50" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>49</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "43">                    <!-- E Angiola NB MT to Siding -->                    <Route.Points>                        <RoutePointPosition Points = "13" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "49" Direction="l"/>                        <RouteTC TC = "51" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>49</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--41 E Angiola SDG SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "39">                    <!-- E Angiola SB Siding to MT -->                    <Route.Points>                        <RoutePointPosition Points = "13" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "49" Direction="r"/>                        <RouteTC TC = "48" Direction="r"/>                        <RouteTC TC = "47" Direction="r"/>                        <RouteTC TC = "46" Direction="r"/>                        <RouteTC TC = "45" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>49</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--42 E Angiola MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "39">                    <!-- E Angiola SB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "13" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "49" Direction="r"/>                        <RouteTC TC = "48" Direction="r"/>                        <RouteTC TC = "47" Direction="r"/>                        <RouteTC TC = "46" Direction="r"/>                        <RouteTC TC = "45" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>49</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--43 W Angiola Siding NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "46">                    <!-- W Angiola NB Siding to MT -->                    <Route.Points>                        <RoutePointPosition Points = "14" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "52" Direction="l"/>                        <RouteTC TC = "53" Direction="l"/>                        <RouteTC TC = "54" Direction="l"/>                        <RouteTC TC = "55" Direction="l"/>                        <RouteTC TC = "56" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>52</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--44 W Angiola MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "46">                    <!-- W Angiola NB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "14" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "52" Direction="l"/>                        <RouteTC TC = "53" Direction="l"/>                        <RouteTC TC = "54" Direction="l"/>                        <RouteTC TC = "55" Direction="l"/>                        <RouteTC TC = "56" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>52</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--45 E Corcoran SDG SB-->
@@ -240,6 +245,7 @@
         
         <!--55 W Angiola MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "42">                    <!-- W Angiola NB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "14" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "52" Direction="r"/>                        <RouteTC TC = "50" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>52</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "41">                    <!-- W Angiola NB MT to Siding -->                    <Route.Points>                        <RoutePointPosition Points = "14" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "52" Direction="r"/>                        <RouteTC TC = "51" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>52</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--56 Guernsey MT NB-->
