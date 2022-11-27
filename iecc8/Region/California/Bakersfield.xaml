@@ -234,14 +234,17 @@
         
         <!--56 Guernsey MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "59">                    <!-- Guernsey NB MT to M1 -->                    <Route.Points>                        <RoutePointPosition Points = "17" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "67" Direction="l"/>                        <RouteTC TC = "69" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>67</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "60">                    <!-- Guernsey NB MT to M2 -->                    <Route.Points>                        <RoutePointPosition Points = "17" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "67" Direction="l"/>                        <RouteTC TC = "68" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>67</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--57 Guernsey M1 SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "53">                    <!-- Guernsey SB M1 to W Corcoran -->                    <Route.Points>                        <RoutePointPosition Points = "17" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "67" Direction="r"/>                        <RouteTC TC = "66" Direction="r"/>                        <RouteTC TC = "65" Direction="r"/>                        <RouteTC TC = "64" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>67</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--58 Guernsey M2 SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "53">                    <!-- Guernsey SB M2 to W Corcoran -->                    <Route.Points>                        <RoutePointPosition Points = "17" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "67" Direction="r"/>                        <RouteTC TC = "66" Direction="r"/>                        <RouteTC TC = "65" Direction="r"/>                        <RouteTC TC = "64" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>67</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--59 Guernsey XOVER M1 NB-->
@@ -2430,6 +2433,9 @@
 
     <SubArea.TrackCircuits>
         <TrackCircuit ID="0"        LocationName="Somewhere"/>
+        <TrackCircuit ID="64"        LocationName="W Corcoran"/>
+        <TrackCircuit ID="65"        LocationName="Guernsey / Corcoran"/>
+        <TrackCircuit ID="66"        LocationName="Guernsey"/>
         <TrackCircuit ID="67"        LocationName="Guernsey"/>
         <TrackCircuit ID="68"        LocationName="Guernsey M2"/>
         <TrackCircuit ID="69"        LocationName="Guernsey M1"/>
