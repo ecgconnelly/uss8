@@ -98,26 +98,32 @@
         
         <!--22 E Elmo MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "26">                    <!-- E Elmo NB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "7" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "25" Direction="l"/>                        <RouteTC TC = "26" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>25</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "25">                    <!-- E Elmo NB MT to Siding -->                    <Route.Points>                        <RoutePointPosition Points = "7" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "25" Direction="l"/>                        <RouteTC TC = "27" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>25</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
-        <!--23 E Elmo SDG SB-->
+        <!--23 E Elmo MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "21">                    <!-- E Elmo SB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "7" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "25" Direction="r"/>                        <RouteTC TC = "24" Direction="r"/>                        <RouteTC TC = "23" Direction="r"/>                        <RouteTC TC = "22" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>25</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--24 E Elmo SDG SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "21">                    <!-- E Elmo SB Siding to MT -->                    <Route.Points>                        <RoutePointPosition Points = "7" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "25" Direction="r"/>                        <RouteTC TC = "24" Direction="r"/>                        <RouteTC TC = "23" Direction="r"/>                        <RouteTC TC = "22" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>25</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--25 W Elmo SDG NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "29">                    <!-- W Elmo NB Siding to MT -->                    <Route.Points>                        <RoutePointPosition Points = "8" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "28" Direction="l"/>                        <RouteTC TC = "29" Direction="l"/>                        <RouteTC TC = "30" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>28</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--26 W Elmo MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "29">                    <!-- W Elmo NB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "8" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "28" Direction="l"/>                        <RouteTC TC = "29" Direction="l"/>                        <RouteTC TC = "30" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>28</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--27 W Elmo MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "23">                    <!-- W Elmo SB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "8" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "28" Direction="r"/>                        <RouteTC TC = "26" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>28</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "24">                    <!-- W Elmo SB MT to Siding -->                    <Route.Points>                        <RoutePointPosition Points = "8" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "28" Direction="r"/>                        <RouteTC TC = "27" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>28</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--28 E Sandrini SDG SB-->
