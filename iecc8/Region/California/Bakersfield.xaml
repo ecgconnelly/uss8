@@ -34,42 +34,52 @@
         
         <!--6 E Shafter MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "9">                    <!-- E Shafter NB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "2" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "7" Direction="l"/>                        <RouteTC TC = "9" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>7</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "11">                    <!-- E Shafter NB MT to Siding -->                    <Route.Points>                        <RoutePointPosition Points = "2" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "7" Direction="l"/>                        <RouteTC TC = "8" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>7</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--7 E Shafter SDG SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "5">                    <!-- E Shafter SB Siding to MT -->                    <Route.Points>                        <RoutePointPosition Points = "2" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "7" Direction="r"/>                        <RouteTC TC = "6" Direction="r"/>                        <RouteTC TC = "5" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>7</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--8 E Shafter MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "5">                    <!-- E Shafter SB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "2" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "7" Direction="r"/>                        <RouteTC TC = "6" Direction="r"/>                        <RouteTC TC = "5" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>7</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--9 Shafter XOVER MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "13">                    <!-- Shafter XOVER NB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "3" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "11" Direction="l"/>                        <RouteTC TC = "12" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>11</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "14">                    <!-- Shafter XOVER NB MT to Siding -->                    <Route.Points>                        <RoutePointPosition Points = "3" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "11" Direction="l"/>                        <RouteTC TC = "13" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>10</s:UInt16>                        <s:UInt16>11</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--10 Shafter XOVER MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "8">                    <!-- Shafter XOVER SB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "3" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "11" Direction="r"/>                        <RouteTC TC = "9" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>11</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--11 Shafter XOVER SDG NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "14">                    <!-- Shafter XOVER NB Siding to Siding -->                    <Route.Points>                        <RoutePointPosition Points = "3" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "10" Direction="l"/>                        <RouteTC TC = "13" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>10</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--12 Shafter XOVER SDG SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "8">                    <!-- Shafter XOVER SB Siding to MT -->                    <Route.Points>                        <RoutePointPosition Points = "3" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "10" Direction="r"/>                        <RouteTC TC = "11" Direction="r"/>                        <RouteTC TC = "9" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>10</s:UInt16>                        <s:UInt16>11</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "7">                    <!-- Shafter XOVER SB Siding to Siding -->                    <Route.Points>                        <RoutePointPosition Points = "3" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "10" Direction="r"/>                        <RouteTC TC = "8" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>10</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--13 W Shafter MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "16">                    <!-- W Shafter NB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "4" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "14" Direction="l"/>                        <RouteTC TC = "15" Direction="l"/>                        <RouteTC TC = "16" Direction="l"/>                        <RouteTC TC = "17" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>14</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--14 W Shafter SDG NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "16">                    <!-- W Shafter NB Siding to MT -->                    <Route.Points>                        <RoutePointPosition Points = "4" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "14" Direction="l"/>                        <RouteTC TC = "15" Direction="l"/>                        <RouteTC TC = "16" Direction="l"/>                        <RouteTC TC = "17" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>14</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--15 W Shafter MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "10">                    <!-- W Shafter SB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "4" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "14" Direction="r"/>                        <RouteTC TC = "12" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>14</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "12">                    <!-- W Shafter SB MT to Siding -->                    <Route.Points>                        <RoutePointPosition Points = "4" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "14" Direction="r"/>                        <RouteTC TC = "13" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>14</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--16 E Wasco MT NB-->
