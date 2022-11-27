@@ -236,7 +236,7 @@ namespace Iecc8.World {
 			PingTimer = new Timer(PingTimerTick, null, 5000, 5000);
 			ClearExpiredTrainsTimer = new Timer(ClearExpiredTrainsTick, null, 0, 1000);
 			Trains = new ObservableCollection<Train>();
-			Regions regions = (Regions) Application.LoadComponent(new Uri("/iecc8;component/Region/Regions.xaml", UriKind.Relative));
+			Regions regions = (Regions) Application.LoadComponent(new Uri("/uss8;component/Region/Regions.xaml", UriKind.Relative));
 			Schema.Region region = null;
 			foreach (Schema.Region i in regions) {
 				foreach (RegionEntry j in i.SubAreas) {

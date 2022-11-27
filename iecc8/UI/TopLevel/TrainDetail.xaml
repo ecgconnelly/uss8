@@ -4,7 +4,7 @@
 		Background="{StaticResource {x:Static SystemColors.AppWorkspaceBrushKey}}"
 		Foreground="{StaticResource {x:Static SystemColors.ControlTextBrushKey}}">
 	<UserControl.Resources>
-		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Common/Resources.xaml"/>
+		<ResourceDictionary Source="pack://application:,,,/uss8;component/UI/Common/Resources.xaml"/>
 	</UserControl.Resources>
 	<Grid>
 		<Grid.Resources>

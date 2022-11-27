@@ -7,12 +7,19 @@
              mc:Ignorable="d" 
              d:DesignHeight="93" d:DesignWidth="60" Loaded="SignalModuleControl_Loaded">
     <Grid>
-        <Image Name="BackgroundPlate" HorizontalAlignment="Left" Height="93" Margin="0,0,0,0" VerticalAlignment="Top" Width="60" Source="/iecc8;component/Images/Plates/l-r-signal.gif" Stretch="None"/>
+        <Image Name="BackgroundPlate" HorizontalAlignment="Left" Height="93" Margin="0,0,0,0" VerticalAlignment="Top" Width="60" Source="/uss8;component/Images/Plates/l-r-signal.gif" Stretch="None"/>
         <Label x:Name="SignalNumberLabel" Content="##" HorizontalAlignment="Center" Height="12" Margin="-1,35,0,0" VerticalAlignment="Top" Width="20"  Foreground="#FFCACACA" FontFamily="Arial" FontSize="11" Padding="0,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Loaded="SignalNumberLabel_Loaded"/>
-        <Image x:Name="LeverImage" HorizontalAlignment="Center" Height="33" VerticalAlignment="Top" Width="50" Margin="0,56,0,0" Source="/iecc8;component/Images/Levers/lever-vertical-wide.gif" MouseUp="LeverImage_MouseUp" />
-        <Image x:Name="LeftLampImage" HorizontalAlignment="Left" Height="21" Margin="3,17,0,0" VerticalAlignment="Top" Width="21" Source="/iecc8;component/Images/Lamps/green-off.gif"/>
-        <Image x:Name="CenterLampImage" HorizontalAlignment="Center" Height="21" VerticalAlignment="Top" Width="20" Source="/iecc8;component/Images/Lamps/red-on.gif" Margin="0,3,0,0"/>
-        <Image x:Name="RightLampImage" HorizontalAlignment="Left" Height="21" Margin="34,17,0,0" VerticalAlignment="Top" Width="22" Source="/iecc8;component/Images/Lamps/green-off.gif"/>
+        <Image x:Name="LeverImage" HorizontalAlignment="Center" Height="33" VerticalAlignment="Top" Width="50" Margin="0,56,0,0" Source="/uss8;component/Images/Levers/lever-vertical-wide.gif" MouseUp="LeverImage_MouseUp" />
+        <Image x:Name="LeftLampImage" HorizontalAlignment="Left" Height="21" Margin="3,17,0,0" VerticalAlignment="Top" Width="21" Source="/uss8;component/Images/Lamps/green-off.gif"/>
+        <Image x:Name="CenterLampImage" HorizontalAlignment="Center" Height="21" VerticalAlignment="Top" Width="20" Source="/uss8;component/Images/Lamps/red-on.gif" Margin="0,3,0,0"/>
+        <Image x:Name="RightLampImage" HorizontalAlignment="Left" Height="21" Margin="34,17,0,0" VerticalAlignment="Top" Width="22" Source="/uss8;component/Images/Lamps/green-off.gif"/>
 
     </Grid>
+    <Control.Triggers>
+        <EventTrigger RoutedEvent="Control.MouseDown" SourceName="LeverImage">
+            <EventTrigger.Actions>
+                <SoundPlayerAction Source="/uss8;component/Sounds/Signal-lever.wav"/>
+            </EventTrigger.Actions>
+        </EventTrigger>
+    </Control.Triggers>
 </UserControl>

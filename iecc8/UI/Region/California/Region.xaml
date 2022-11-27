@@ -3,7 +3,7 @@
 		xmlns:cajon="clr-namespace:Iecc8.UI.Region.California.Cajon"
 		x:Class="Iecc8.UI.Region.California.Region">
 	<Grid.Resources>
-		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Common/Resources.xaml"/>
+		<ResourceDictionary Source="pack://application:,,,/uss8;component/UI/Common/Resources.xaml"/>
 	</Grid.Resources>
 	<Grid.Background>
 		<StaticResource ResourceKey="BG"/>

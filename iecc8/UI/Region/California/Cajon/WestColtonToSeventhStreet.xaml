@@ -4,7 +4,7 @@
 		x:Class="Iecc8.UI.Region.California.Cajon.WestColtonToSeventhStreet"
 		Grid.RowSpan="5" Grid.ColumnSpan="12">
 	<Grid.Resources>
-		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Common/Resources.xaml"/>
+		<ResourceDictionary Source="pack://application:,,,/uss8;component/UI/Common/Resources.xaml"/>
 	</Grid.Resources>
 	<Grid.ColumnDefinitions>
 		<ColumnDefinition Width="8"/>

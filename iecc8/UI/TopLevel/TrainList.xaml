@@ -4,7 +4,7 @@
 		ItemsSource="{Binding World.Trains, Mode=OneTime}"
 		MouseDoubleClick="OnDoubleClick">
 	<ListView.Resources>
-		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Common/Resources.xaml"/>
+		<ResourceDictionary Source="pack://application:,,,/uss8;component/UI/Common/Resources.xaml"/>
 	</ListView.Resources>
 	<ListView.View>
 		<GridView>

@@ -5,7 +5,7 @@
 		Height="16"
 		Grid.ColumnSpan="2">
 	<Grid.Resources>
-		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Common/Resources.xaml"/>
+		<ResourceDictionary Source="pack://application:,,,/uss8;component/UI/Common/Resources.xaml"/>
 	</Grid.Resources>
 	<Grid.ColumnDefinitions>
 		<ColumnDefinition Width="8"/>

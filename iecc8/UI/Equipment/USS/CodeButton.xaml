@@ -8,9 +8,18 @@
              mc:Ignorable="d" 
              d:DesignHeight="28 " d:DesignWidth="30" Loaded="UserControl_Loaded">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="28" Margin="0,0,0,0" VerticalAlignment="Top" Width="30" Source="/iecc8;component/Images/Levers/codeButton-Inactive.gif" Stretch="None" MouseDown="Image_MouseDown"/>
-
-       
-
+        <Image Name="codeButtonImage" HorizontalAlignment="Left" Height="28" Margin="0,0,0,0" VerticalAlignment="Top" Width="30" Source="/uss8;component/Images/Levers/codeButton-Inactive.gif" Stretch="None" MouseDown="Image_MouseDown"/>
     </Grid>
+    <Control.Triggers>
+        <EventTrigger RoutedEvent="Control.MouseDown" SourceName="codeButtonImage">
+            <EventTrigger.Actions>
+                <SoundPlayerAction Source="/uss8;component/Sounds/Button-press.wav"/>
+            </EventTrigger.Actions>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Control.MouseUp" SourceName="codeButtonImage">
+            <EventTrigger.Actions>
+                <SoundPlayerAction Source="/uss8;component/Sounds/Button-release.wav"/>
+            </EventTrigger.Actions>
+        </EventTrigger>
+        </Control.Triggers>
 </UserControl>

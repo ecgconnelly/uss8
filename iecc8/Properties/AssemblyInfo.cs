@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("iecc8")]
-[assembly: AssemblyDescription("External dispatcher for the Run8 train simulator with a user interface inspired by United Kingdom Integrated Electronic Control Centre systems.")]
+[assembly: AssemblyTitle("uss8")]
+[assembly: AssemblyDescription("External dispatcher for the Run8 train simulator; UI in the style of Union Switch and Signal CTC panels")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("iecc8")]
+[assembly: AssemblyProduct("uss8")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
@@ -29,3 +29,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("0.1.*")]
+[assembly: AssemblyCopyright("Copyright 2022 Emilia Connelly")]

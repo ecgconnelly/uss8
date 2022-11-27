@@ -5,7 +5,7 @@
 		FontSize="11"
 		Grid.ColumnSpan="3">
 	<TextBlock.Resources>
-		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Common/Resources.xaml"/>
+		<ResourceDictionary Source="pack://application:,,,/uss8;component/UI/Common/Resources.xaml"/>
 	</TextBlock.Resources>
 	<TextBlock.Background>
 		<StaticResource ResourceKey="BG"/>

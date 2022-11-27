@@ -5,7 +5,7 @@
 		x:Class="Iecc8.UI.Region.California.Cajon.SloverToSilverwood"
 		Grid.RowSpan="3" Grid.ColumnSpan="15">
 	<Grid.Resources>
-		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Common/Resources.xaml"/>
+		<ResourceDictionary Source="pack://application:,,,/uss8;component/UI/Common/Resources.xaml"/>
 	</Grid.Resources>
 	<Grid.ColumnDefinitions>
 		<ColumnDefinition Width="8"/>

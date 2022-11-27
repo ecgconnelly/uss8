@@ -5,7 +5,7 @@
 		Width="8"
 		Height="16">
 	<UserControl.Resources>
-		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Common/Resources.xaml"/>
+		<ResourceDictionary Source="pack://application:,,,/uss8;component/UI/Common/Resources.xaml"/>
 	</UserControl.Resources>
 	<UserControl.Background>
 		<StaticResource ResourceKey="BG"/>

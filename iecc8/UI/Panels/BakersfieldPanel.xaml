@@ -333,7 +333,7 @@
         <Label Content="25" HorizontalAlignment="Left" Height="24" Margin="792,170,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="27" HorizontalAlignment="Left" Height="24" Margin="838,170,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <USS:SignalModule x:Name="SignalModule28" HorizontalAlignment="Left" Height="93" Margin="869,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="28" LeftSignalStr="250/123" RightSignalStr="250/129,250/130"/>
-        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="488,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule16" SwitchModulesStr="SwitchModule17,SwitchModule19"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="488,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule16" SwitchModulesStr="SwitchModule15,SwitchModule17,SwitchModule19"/>
         <Image HorizontalAlignment="Left" Height="7" Margin="873,131,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>

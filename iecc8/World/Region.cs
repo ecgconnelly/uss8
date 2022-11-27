@@ -96,7 +96,7 @@ namespace Iecc8.World {
 		public Region(Schema.Region data, World world) {
 			SortedList<ushort, Schema.SubArea> subData = new SortedList<ushort, Schema.SubArea>();
 			foreach (RegionEntry i in data.SubAreas) {
-				subData[i.ID] = (Schema.SubArea) Application.LoadComponent(new Uri("/iecc8;component/Region/" + data.Name + "/" + i.Name + ".xaml", UriKind.Relative));
+				subData[i.ID] = (Schema.SubArea) Application.LoadComponent(new Uri("/uss8;component/Region/" + data.Name + "/" + i.Name + ".xaml", UriKind.Relative));
 			}
 			SortedList<ushort, SubArea> subs = new SortedList<ushort, SubArea>();
 			foreach (RegionEntry i in data.SubAreas) {

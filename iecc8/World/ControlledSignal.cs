@@ -349,7 +349,7 @@ namespace Iecc8.World {
 				UpdateAspects();
 			}
 		}
-
+		
 		/// <summary>
 		/// Invoked when a property changes on one of the track circuits this signal may be protecting.
 		/// </summary>

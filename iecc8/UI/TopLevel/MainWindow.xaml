@@ -5,7 +5,7 @@
 		xmlns:tl="clr-namespace:Iecc8.UI.TopLevel"
 		x:Class="Iecc8.UI.TopLevel.MainWindow">
 	<Window.Resources>
-		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Common/Resources.xaml"/>
+		<ResourceDictionary Source="pack://application:,,,/uss8;component/UI/Common/Resources.xaml"/>
 	</Window.Resources>
 	<Window.Background>
 		<StaticResource ResourceKey="BG"/>

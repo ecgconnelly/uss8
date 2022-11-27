@@ -1,26 +1,28 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 		xmlns:common="clr-namespace:Iecc8.UI.Common">
-    <BitmapImage x:Key="uss-lamp-amber-off" UriSource="/iecc8;component/Images/Lamps/amber-off.gif"/>
-    <BitmapImage x:Key="uss-lamp-amber-on" UriSource="/iecc8;component/Images/Lamps/amber-on.gif"/>
-    <BitmapImage x:Key="uss-lamp-blue-off" UriSource="/iecc8;component/Images/Lamps/blue-off.gif"/>
-    <BitmapImage x:Key="uss-lamp-blue-on" UriSource="/iecc8;component/Images/Lamps/blue-on.gif"/>
-    <BitmapImage x:Key="uss-lamp-green-off" UriSource="/iecc8;component/Images/Lamps/green-off.gif"/>
-    <BitmapImage x:Key="uss-lamp-green-on" UriSource="/iecc8;component/Images/Lamps/green-on.gif"/>
-    <BitmapImage x:Key="uss-lamp-purple-off" UriSource="/iecc8;component/Images/Lamps/purple-off.gif"/>
-    <BitmapImage x:Key="uss-lamp-purple-on" UriSource="/iecc8;component/Images/Lamps/purple-on.gif"/>
-    <BitmapImage x:Key="uss-lamp-red-off" UriSource="/iecc8;component/Images/Lamps/red-off.gif"/>
-    <BitmapImage x:Key="uss-lamp-red-on" UriSource="/iecc8;component/Images/Lamps/red-on.gif"/>
-    <BitmapImage x:Key="uss-lamp-white-off" UriSource="/iecc8;component/Images/Lamps/white-off.gif"/>
-    <BitmapImage x:Key="uss-lamp-white-on" UriSource="/iecc8;component/Images/Lamps/white-on.gif"/>
-    <BitmapImage x:Key="uss-lamp-dark" UriSource="/iecc8;component/Images/Lamps/dark.gif"/>
-    <BitmapImage x:Key="uss-lamp-s-inconsistent" UriSource="/iecc8;component/Images/Lamps/s-inconsistent.gif"/>
-    <BitmapImage x:Key="uss-lamp-s-unknown" UriSource="/iecc8;component/Images/Lamps/s-unknown.gif"/>
-    <BitmapImage x:Key="uss-lever-left" UriSource="/iecc8;component/Images/Levers/lever-left-wide.gif"/>
-    <BitmapImage x:Key="uss-lever-vertical" UriSource="/iecc8;component/Images/Levers/lever-vertical-wide.gif"/>
-    <BitmapImage x:Key="uss-lever-right" UriSource="/iecc8;component/Images/Levers/lever-right-wide.gif"/>
+    <BitmapImage x:Key="uss-lamp-amber-off" UriSource="/uss8;component/Images/Lamps/amber-off.gif"/>
+    <BitmapImage x:Key="uss-lamp-amber-on" UriSource="/uss8;component/Images/Lamps/amber-on.gif"/>
+    <BitmapImage x:Key="uss-lamp-blue-off" UriSource="/uss8;component/Images/Lamps/blue-off.gif"/>
+    <BitmapImage x:Key="uss-lamp-blue-on" UriSource="/uss8;component/Images/Lamps/blue-on.gif"/>
+    <BitmapImage x:Key="uss-lamp-green-off" UriSource="/uss8;component/Images/Lamps/green-off.gif"/>
+    <BitmapImage x:Key="uss-lamp-green-on" UriSource="/uss8;component/Images/Lamps/green-on.gif"/>
+    <BitmapImage x:Key="uss-lamp-purple-off" UriSource="/uss8;component/Images/Lamps/purple-off.gif"/>
+    <BitmapImage x:Key="uss-lamp-purple-on" UriSource="/uss8;component/Images/Lamps/purple-on.gif"/>
+    <BitmapImage x:Key="uss-lamp-red-off" UriSource="/uss8;component/Images/Lamps/red-off.gif"/>
+    <BitmapImage x:Key="uss-lamp-red-on" UriSource="/uss8;component/Images/Lamps/red-on.gif"/>
+    <BitmapImage x:Key="uss-lamp-white-off" UriSource="/uss8;component/Images/Lamps/white-off.gif"/>
+    <BitmapImage x:Key="uss-lamp-white-on" UriSource="/uss8;component/Images/Lamps/white-on.gif"/>
+    <BitmapImage x:Key="uss-lamp-dark" UriSource="/uss8;component/Images/Lamps/dark.gif"/>
+    <BitmapImage x:Key="uss-lamp-s-inconsistent" UriSource="/uss8;component/Images/Lamps/s-inconsistent.gif"/>
+    <BitmapImage x:Key="uss-lamp-s-unknown" UriSource="/uss8;component/Images/Lamps/s-unknown.gif"/>
+    <BitmapImage x:Key="uss-lever-left" UriSource="/uss8;component/Images/Levers/lever-left-wide.gif"/>
+    <BitmapImage x:Key="uss-lever-vertical" UriSource="/uss8;component/Images/Levers/lever-vertical-wide.gif"/>
+    <BitmapImage x:Key="uss-lever-right" UriSource="/uss8;component/Images/Levers/lever-right-wide.gif"/>
 
-    
+    <!--<SoundPlayerAction x:Key="code-button-press" Source="/uss8;component/Sounds/Button-press.wav"/>-->
+
+
     <SolidColorBrush x:Key="BG" Color="Black"/>
 	<SolidColorBrush x:Key="FG" Color="White"/>
 
