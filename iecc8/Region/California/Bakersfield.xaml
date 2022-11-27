@@ -2432,7 +2432,69 @@
     </SubArea.ControlledSignals>
 
     <SubArea.TrackCircuits>
-        <TrackCircuit ID="0"        LocationName="Somewhere"/>
+        <TrackCircuit ID="0"        LocationName="Una"/>
+        <TrackCircuit ID="1"        LocationName="Una"/>
+        <TrackCircuit ID="2"        LocationName="Una MT"/>
+        <TrackCircuit ID="3"        LocationName="Una Siding"/>
+        <TrackCircuit ID="4"        LocationName="Una"/>
+        <TrackCircuit ID="5"        LocationName="Una"/>
+        <TrackCircuit ID="6"        LocationName="E Shafter"/>
+        <TrackCircuit ID="7"        LocationName="E Shafter"/>
+        <TrackCircuit ID="8"        LocationName="E Shafter Siding"/>
+        <TrackCircuit ID="9"        LocationName="E Shafter MT"/>
+        <TrackCircuit ID="10"        LocationName="Shafter XO Siding"/>
+        <TrackCircuit ID="11"        LocationName="Shafter XO MT"/>
+        <TrackCircuit ID="12"        LocationName="W Shafter MT"/>
+        <TrackCircuit ID="13"        LocationName="W Shafter Siding"/>
+        <TrackCircuit ID="14"        LocationName="W Shafter"/>
+        <TrackCircuit ID="15"        LocationName="W Shafter"/>
+        <TrackCircuit ID="16"        LocationName="Wasco / Shafter"/>
+        <TrackCircuit ID="17"        LocationName="Wasco"/>
+        <TrackCircuit ID="18"        LocationName="Wasco"/>
+        <TrackCircuit ID="19"        LocationName="Wasco Siding"/>
+        <TrackCircuit ID="20"        LocationName="Wasco MT"/>
+        <TrackCircuit ID="21"        LocationName="Wasco"/>
+        <TrackCircuit ID="22"        LocationName="Wasco"/>
+        <TrackCircuit ID="23"        LocationName="Elmo/Wasco"/>
+        <TrackCircuit ID="24"        LocationName="Elmo"/>
+        <TrackCircuit ID="25"        LocationName="Elmo"/>
+        <TrackCircuit ID="26"        LocationName="Elmo MT"/>
+        <TrackCircuit ID="27"        LocationName="Elmo Siding"/>
+        <TrackCircuit ID="28"        LocationName="Elmo"/>
+        <TrackCircuit ID="29"        LocationName="Elmo"/>
+        <TrackCircuit ID="30"        LocationName="Sandrini"/>
+        <TrackCircuit ID="31"        LocationName="Sandrini"/>
+        <TrackCircuit ID="32"        LocationName="Sandrini MT"/>
+        <TrackCircuit ID="33"        LocationName="Sandrini Siding"/>
+        <TrackCircuit ID="34"        LocationName="Sandrini"/>
+        <TrackCircuit ID="35"        LocationName="Sandrini"/>
+        <TrackCircuit ID="36"        LocationName="Sandrini"/>
+        <TrackCircuit ID="37"        LocationName="Allensworth/Sandrini"/>
+        <TrackCircuit ID="38"        LocationName="Allensworth"/>
+        <TrackCircuit ID="39"        LocationName="Allensworth"/>
+        <TrackCircuit ID="40"        LocationName="Allensworth"/>
+        <TrackCircuit ID="41"        LocationName="W Corcoran MT"/>
+        <TrackCircuit ID="42"        LocationName="Allensworth MT"/>
+        <TrackCircuit ID="43"        LocationName="Allensworth Siding"/>
+        <TrackCircuit ID="44"        LocationName="Allensworth"/>
+        <TrackCircuit ID="45"        LocationName="Allensworth"/>
+        <TrackCircuit ID="46"        LocationName="Angiola/Allensworth"/>
+        <TrackCircuit ID="47"        LocationName="Angiola/Allensworth"/>
+        <TrackCircuit ID="48"        LocationName="Angiola"/>
+        <TrackCircuit ID="49"        LocationName="Angiola"/>
+        <TrackCircuit ID="50"        LocationName="Angiola MT"/>
+        <TrackCircuit ID="51"        LocationName="Angiola Siding"/>
+        <TrackCircuit ID="52"        LocationName="Angiola"/>
+        <TrackCircuit ID="53"        LocationName="Angiola"/>
+        <TrackCircuit ID="54"        LocationName="Corcoran/Angiola"/>
+        <TrackCircuit ID="55"        LocationName="Corcoran/Angiola"/>
+        <TrackCircuit ID="56"        LocationName="E Corcoran"/>
+        <TrackCircuit ID="57"        LocationName="E Corcoran"/>
+        <TrackCircuit ID="58"        LocationName="E Corcoran MT"/>
+        <TrackCircuit ID="59"        LocationName="E Corcoran Siding"/>
+        <TrackCircuit ID="60"        LocationName="Corcoran"/>
+        <TrackCircuit ID="62"        LocationName="W Corcoran Siding"/>
+        <TrackCircuit ID="63"        LocationName="W Corcoran"/>
         <TrackCircuit ID="64"        LocationName="W Corcoran"/>
         <TrackCircuit ID="65"        LocationName="Guernsey / Corcoran"/>
         <TrackCircuit ID="66"        LocationName="Guernsey"/>
@@ -2484,6 +2546,7 @@
         <TrackCircuit ID="112"        LocationName="Bowles Siding"/>
         <TrackCircuit ID="113"        LocationName="Bowles"/>
         <TrackCircuit ID="114"        LocationName="Bowles"/>
+        <TrackCircuit ID="115"        LocationName="Corcoran"/>
         <TrackCircuit ID="116"        LocationName="Bowles"/>
         <TrackCircuit ID="117"        LocationName="Bowles"/>
         <TrackCircuit ID="118"        LocationName="Bowles"/>
