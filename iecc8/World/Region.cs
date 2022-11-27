@@ -76,6 +76,12 @@ namespace Iecc8.World {
 				throw;
 			}
 
+			if (tc==null)
+			{
+                Debug.Print("Null track circuit {0}/{1}",
+                    subAreaID, id);
+            }
+
 			Debug.Assert(tc != null);
 			return tc;
 		}

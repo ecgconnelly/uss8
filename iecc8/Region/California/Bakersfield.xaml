@@ -293,18 +293,22 @@
         
         <!--70 Wagner M2 SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "66">                    <!-- Wagner SB M2 to M1 -->                    <Route.Points>                        <RoutePointPosition Points = "21" Reversed="False"/>                        <RoutePointPosition Points = "20" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "174" Direction="r"/>                        <RouteTC TC = "80" Direction="r"/>                        <RouteTC TC = "81" Direction="r"/>                        <RouteTC TC = "79" Direction="r"/>                        <RouteTC TC = "77" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>174</s:UInt16>                        <s:UInt16>80</s:UInt16>                        <s:UInt16>81</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "65">                    <!-- Wagner SB M2 to M2 -->                    <Route.Points>                        <RoutePointPosition Points = "21" Reversed="False"/>                        <RoutePointPosition Points = "20" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "174" Direction="r"/>                        <RouteTC TC = "80" Direction="r"/>                        <RouteTC TC = "78" Direction="r"/>                        <RouteTC TC = "76" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>174</s:UInt16>                        <s:UInt16>80</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--71 Wagner M1 SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "66">                    <!-- Wagner SB M1 to M1 -->                    <Route.Points>                        <RoutePointPosition Points = "21" Reversed="False"/>                        <RoutePointPosition Points = "20" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "173" Direction="r"/>                        <RouteTC TC = "81" Direction="r"/>                        <RouteTC TC = "79" Direction="r"/>                        <RouteTC TC = "77" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>173</s:UInt16>                        <s:UInt16>81</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "65">                    <!-- Wagner SB M1 to M2 -->                    <Route.Points>                        <RoutePointPosition Points = "21" Reversed="True"/>                        <RoutePointPosition Points = "20" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "173" Direction="r"/>                        <RouteTC TC = "174" Direction="r"/>                        <RouteTC TC = "80" Direction="r"/>                        <RouteTC TC = "78" Direction="r"/>                        <RouteTC TC = "76" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>173</s:UInt16>                        <s:UInt16>174</s:UInt16>                        <s:UInt16>80</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--72 Wagner M1 NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "68">                    <!-- Wagner NB M1 to M1 -->                    <Route.Points>                        <RoutePointPosition Points = "21" Reversed="False"/>                        <RoutePointPosition Points = "20" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "81" Direction="l"/>                        <RouteTC TC = "173" Direction="l"/>                        <RouteTC TC = "82" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>81</s:UInt16>                        <s:UInt16>173</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "69">                    <!-- Wagner NB M1 to M2 -->                    <Route.Points>                        <RoutePointPosition Points = "21" Reversed="False"/>                        <RoutePointPosition Points = "20" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "81" Direction="l"/>                        <RouteTC TC = "80" Direction="l"/>                        <RouteTC TC = "174" Direction="l"/>                        <RouteTC TC = "83" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>81</s:UInt16>                        <s:UInt16>80</s:UInt16>                        <s:UInt16>174</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--73 Wagner M2 NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "68">                    <!-- Wagner NB M2 to M1 -->                    <Route.Points>                        <RoutePointPosition Points = "21" Reversed="True"/>                        <RoutePointPosition Points = "20" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "80" Direction="l"/>                        <RouteTC TC = "174" Direction="l"/>                        <RouteTC TC = "173" Direction="l"/>                        <RouteTC TC = "82" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>80</s:UInt16>                        <s:UInt16>174</s:UInt16>                        <s:UInt16>173</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "69">                    <!-- Wagner NB M2 to M2 -->                    <Route.Points>                        <RoutePointPosition Points = "21" Reversed="False"/>                        <RoutePointPosition Points = "20" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "80" Direction="l"/>                        <RouteTC TC = "174" Direction="l"/>                        <RouteTC TC = "83" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>80</s:UInt16>                        <s:UInt16>174</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
 
         <!--74 Hanford SJVR-->
@@ -1729,6 +1733,12 @@
 
     <SubArea.TrackCircuits>
         <TrackCircuit ID="0"        LocationName="Somewhere"/>
+        <TrackCircuit ID="76"        LocationName="Calabrese M2"/>
+        <TrackCircuit ID="77"        LocationName="Calabrese M1"/>
+        <TrackCircuit ID="78"        LocationName="Wagner M2"/>
+        <TrackCircuit ID="79"        LocationName="Wagner M1"/>
+        <TrackCircuit ID="80"        LocationName="Wagner M2"/>
+        <TrackCircuit ID="81"        LocationName="Wagner M1"/>
         <TrackCircuit ID="82"        LocationName="Wagner M1"/>
         <TrackCircuit ID="83"        LocationName="Wagner M2"/>
         <TrackCircuit ID="84"        LocationName="Hanford M2"/>
@@ -1793,6 +1803,8 @@
         <TrackCircuit ID="170"      LocationName="Calwa"/>
         <TrackCircuit ID="171"      LocationName="Mingo"/>
         <TrackCircuit ID="172"      LocationName="Mingo"/>
+        <TrackCircuit ID="173"      LocationName="Wagner M1"/>
+        <TrackCircuit ID="174"      LocationName="Wagner M2"/>
         <TrackCircuit ID="175"      LocationName="Calwa XING"/>
         <TrackCircuit ID="176"      LocationName="Calwa XING"/>
         <TrackCircuit ID="177"      LocationName="Calwa XING"/>
