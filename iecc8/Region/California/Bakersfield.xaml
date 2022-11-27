@@ -9,27 +9,32 @@
     <SubArea.ControlledSignals>
         <!--0 E Una MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "4">                    <!-- E Una NB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "0" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "1" Direction="l"/>                        <RouteTC TC = "2" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>1</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "3">                    <!-- E Una NB MT to Siding -->                    <Route.Points>                        <RoutePointPosition Points = "0" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "1" Direction="l"/>                        <RouteTC TC = "3" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>1</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--1 E Una MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "-1">                    <!-- E Una SB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "0" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "1" Direction="r"/>                        <RouteTC TC = "0" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>1</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--2 E Una SDG SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "-1">                    <!-- E Una SB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "0" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "1" Direction="r"/>                        <RouteTC TC = "0" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>1</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
-        
         
         <!--3 W Una SDG NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "6">                    <!-- W Una NB Siding to MT -->                    <Route.Points>                        <RoutePointPosition Points = "1" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "4" Direction="l"/>                        <RouteTC TC = "5" Direction="l"/>                        <RouteTC TC = "6" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>4</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--4 W Una MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "6">                    <!-- W Una NB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "1" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "4" Direction="l"/>                        <RouteTC TC = "5" Direction="l"/>                        <RouteTC TC = "6" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>4</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--5 W Una MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "1">                    <!-- W Una SB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "1" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "4" Direction="r"/>                        <RouteTC TC = "2" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>4</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "2">                    <!-- W Una SB MT to Siding -->                    <Route.Points>                        <RoutePointPosition Points = "1" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "4" Direction="r"/>                        <RouteTC TC = "3" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>4</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--6 E Shafter MT NB-->
