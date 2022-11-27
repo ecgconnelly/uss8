@@ -146,26 +146,32 @@
         
         <!--34 E Allensworth MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "38">                    <!-- E Allensworth NB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "11" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "40" Direction="l"/>                        <RouteTC TC = "42" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>40</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "37">                    <!-- E Allensworth NB MT to Siding -->                    <Route.Points>                        <RoutePointPosition Points = "11" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "40" Direction="l"/>                        <RouteTC TC = "43" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>40</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--35 E Allensworth MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "33">                    <!-- E Allensworth SB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "11" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "40" Direction="r"/>                        <RouteTC TC = "39" Direction="r"/>                        <RouteTC TC = "38" Direction="r"/>                        <RouteTC TC = "37" Direction="r"/>                        <RouteTC TC = "36" Direction="r"/>                        <RouteTC TC = "35" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>40</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--36 E Allensworth SDG SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "33">                    <!-- E Allensworth SB Siding to MT -->                    <Route.Points>                        <RoutePointPosition Points = "11" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "40" Direction="r"/>                        <RouteTC TC = "39" Direction="r"/>                        <RouteTC TC = "38" Direction="r"/>                        <RouteTC TC = "37" Direction="r"/>                        <RouteTC TC = "36" Direction="r"/>                        <RouteTC TC = "35" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>40</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--37 W Allensworth SDG NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "40">                    <!-- W Allensworth NB Siding to MT -->                    <Route.Points>                        <RoutePointPosition Points = "12" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "44" Direction="l"/>                        <RouteTC TC = "45" Direction="l"/>                        <RouteTC TC = "46" Direction="l"/>                        <RouteTC TC = "47" Direction="l"/>                        <RouteTC TC = "48" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>44</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--38 W Allensworth MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "40">                    <!-- W Allensworth NB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "12" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "44" Direction="l"/>                        <RouteTC TC = "45" Direction="l"/>                        <RouteTC TC = "46" Direction="l"/>                        <RouteTC TC = "47" Direction="l"/>                        <RouteTC TC = "48" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>44</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--39 W Allensworth MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "35">                    <!-- W Allensworth SB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "12" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "44" Direction="r"/>                        <RouteTC TC = "42" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>44</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "36">                    <!-- W Allensworth SB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "12" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "44" Direction="r"/>                        <RouteTC TC = "43" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>44</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--40 E Angiola MT NB-->
