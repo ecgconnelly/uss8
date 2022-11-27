@@ -2183,6 +2183,35 @@
         <Label Content="111" HorizontalAlignment="Left" Height="24" Margin="3671,199,0,0" VerticalAlignment="Top" Width="20" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="113" HorizontalAlignment="Left" Height="24" Margin="3757,215,0,0" VerticalAlignment="Top" Width="20" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="115" HorizontalAlignment="Left" Height="24" Margin="3837,199,0,0" VerticalAlignment="Top" Width="20" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="2113,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule64"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="2178,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule66"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="2244,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule68"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="2310,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule70"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="2377,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule72"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="2443,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule74"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="2510,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule76"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="2574,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule78"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="2640,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule80"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="2705,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule82"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="2771,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule84"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="2838,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule86"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="2902,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule88"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="2968,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule90"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="3055,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule92"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="3121,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule94"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="3188,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule96"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="3252,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule98"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="3318,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule100"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="3385,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule102"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="3451,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule104"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="3518,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule106"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="3582,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule108"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="3648,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule110"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="3716,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule112"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="3782,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule114"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="3849,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule116"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="3913,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule118"/>
+        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="3979,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule120"/>
 
 
     </Grid>
