@@ -334,10 +334,12 @@
         
         <!--81 E Shirley M2 NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "121">                    <!-- E Shirley NB M2 to MT -->                    <Route.Points>                        <RoutePointPosition Points = "26" Reversed="True"/>                        <!--<RoutePointPosition Points = "27" Reversed="True"/>-->                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "96" Direction="l"/>                        <RouteTC TC = "98" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>96</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--82 E Shirley M1 NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "121">                    <!-- E Shirley NB M1 to MT -->                    <Route.Points>                        <RoutePointPosition Points = "26" Reversed="False"/>                        <!--<RoutePointPosition Points = "27" Reversed="False"/>-->                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "95" Direction="l"/>                        <RouteTC TC = "96" Direction="l"/>                        <RouteTC TC = "98" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>95</s:UInt16>                        <s:UInt16>96</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "122">                    <!-- E Shirley NB M1 to Siding -->                    <Route.Points>                        <RoutePointPosition Points = "26" Reversed="True"/>                        <!--<RoutePointPosition Points = "27" Reversed="True"/>-->                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "95" Direction="l"/>                        <RouteTC TC = "97" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>95</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--83: Calwa XING M1 SB-->
@@ -1602,46 +1604,65 @@
         
         <!--118 E Shirley MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "80">                    <!-- E Shirley SB MT to M1 -->                    <Route.Points>                        <RoutePointPosition Points = "26" Reversed="False"/>                        <!--<RoutePointPosition Points = "27" Reversed="False"/>-->                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "96" Direction="r"/>                        <RouteTC TC = "95" Direction="r"/>                        <RouteTC TC = "140" Direction="r"/>                        <RouteTC TC = "94" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>96</s:UInt16>                        <s:UInt16>95</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "79">                    <!-- E Shirley SB MT to M2 -->                    <Route.Points>                        <RoutePointPosition Points = "26" Reversed="True"/>                        <!--<RoutePointPosition Points = "27" Reversed="True"/>-->                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "96" Direction="r"/>                        <RouteTC TC = "126" Direction="r"/>                        <RouteTC TC = "93" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>96</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
+        
         <!--119 E Shirley SDG SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "80">                    <!-- E Shirley SB Siding to M1 -->                    <Route.Points>                        <RoutePointPosition Points = "26" Reversed="True"/>                        <!--<RoutePointPosition Points = "27" Reversed="True"/>-->                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "95" Direction="r"/>                        <RouteTC TC = "140" Direction="r"/>                        <RouteTC TC = "94" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>95</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
+        
         <!--120 W Shirley MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "118">                    <!-- W Shirley SB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "28" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "99" Direction="r"/>                        <RouteTC TC = "98" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>99</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "119">                    <!-- W Shirley SB MT to siding -->                    <Route.Points>                        <RoutePointPosition Points = "28" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "99" Direction="r"/>                        <RouteTC TC = "97" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>99</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
+        
         <!--121 W Shirley MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "101">                    <!-- W Shirley NB MT to Conejo -->                    <Route.Points>                        <RoutePointPosition Points = "28" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "99" Direction="l"/>                        <RouteTC TC = "100" Direction="l"/>                        <RouteTC TC = "101" Direction="l"/>                        <RouteTC TC = "102" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>99</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
+        
         <!--122 W Shirley Siding NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "101">                    <!-- W Shirley NB Siding to Conejo -->                    <Route.Points>                        <RoutePointPosition Points = "28" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "99" Direction="l"/>                        <RouteTC TC = "100" Direction="l"/>                        <RouteTC TC = "101" Direction="l"/>                        <RouteTC TC = "102" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>99</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
+        
         <!--123-->
         <ControlledSignal>
         </ControlledSignal>
+        
         <!--124-->
         <ControlledSignal>
         </ControlledSignal>
+        
         <!--125-->
         <ControlledSignal>
         </ControlledSignal>
+        
         <!--126-->
         <ControlledSignal>
         </ControlledSignal>
+        
         <!--127-->
         <ControlledSignal>
         </ControlledSignal>
+        
         <!--128-->
         <ControlledSignal>
         </ControlledSignal>
+        
         <!--129-->
         <ControlledSignal>
         </ControlledSignal>
+        
         <!--130-->
         <ControlledSignal>
         </ControlledSignal>
+        
         <!--131-->
         <ControlledSignal>
         </ControlledSignal>
+        
         <!--132-->
         <ControlledSignal>
         </ControlledSignal>
