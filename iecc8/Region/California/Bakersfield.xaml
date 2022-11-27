@@ -246,18 +246,22 @@
         
         <!--59 Guernsey XOVER M1 NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "63">                    <!-- Guernsey XO NB M1 to M1 -->                    <Route.Points>                        <RoutePointPosition Points = "18" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "71" Direction="l"/>                        <RouteTC TC = "72" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>71</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "64">                    <!-- Guernsey XO NB M1 to M2 -->                    <Route.Points>                        <RoutePointPosition Points = "18" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "71" Direction="l"/>                        <RouteTC TC = "70" Direction="l"/>                        <RouteTC TC = "73" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>71</s:UInt16>                        <s:UInt16>70</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--60 Guernsey XOVER M2 NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "64">                    <!-- Guernsey XO NB M2 to M2 -->                    <Route.Points>                        <RoutePointPosition Points = "18" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "70" Direction="l"/>                        <RouteTC TC = "73" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>70</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--61 Guernsey XOVER M1 SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "57">                    <!-- Guernsey XO SB M1 to M1 -->                    <Route.Points>                        <RoutePointPosition Points = "18" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "71" Direction="r"/>                        <RouteTC TC = "69" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>71</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--62 Guernsey XOVER M2 SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "57">                    <!-- Guernsey XO SB M2 to M1 -->                    <Route.Points>                        <RoutePointPosition Points = "18" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "70" Direction="r"/>                        <RouteTC TC = "71" Direction="r"/>                        <RouteTC TC = "69" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>71</s:UInt16>                        <s:UInt16>70</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "58">                    <!-- Guernsey XO SB M2 to M2 -->                    <Route.Points>                        <RoutePointPosition Points = "18" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "70" Direction="r"/>                        <RouteTC TC = "68" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>70</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--63 Calabrese M1 NB-->

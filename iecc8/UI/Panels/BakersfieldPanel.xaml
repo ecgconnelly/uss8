@@ -1694,7 +1694,7 @@
         <USS:SignalModule x:Name="SignalModule72" HorizontalAlignment="Left" Height="93" Margin="2362,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="72" RightSignalStr="250/66" LeftSignalStr="250/63"/>
         <USS:SignalModule x:Name="SignalModule74" HorizontalAlignment="Left" Height="93" Margin="2428,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="74" RightSignalStr="250/65" LeftSignalStr="250/64"/>
         <USS:SignalModule x:Name="SignalModule76" HorizontalAlignment="Left" Height="93" Margin="2494,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="76" RightSignalStr="250/61" LeftSignalStr="250/59"/>
-        <USS:SignalModule x:Name="SignalModule" HorizontalAlignment="Left" Height="93" Margin="2560,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="78" RightSignalStr="250/62" LeftSignalStr="250/60"/>
+        <USS:SignalModule x:Name="SignalModule78" HorizontalAlignment="Left" Height="93" Margin="2560,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="78" RightSignalStr="250/62" LeftSignalStr="250/60"/>
         <USS:SignalModule x:Name="SignalModule80" HorizontalAlignment="Left" Height="93" Margin="2626,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="80" RightSignalStr="250/57,250/58" LeftSignalStr="250/56"/>
         <USS:SignalModule x:Name="SignalModule82" HorizontalAlignment="Left" Height="93" Margin="2692,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="82" RightSignalStr="250/53" LeftSignalStr="250/51,250/52"/>
         <USS:SignalModule x:Name="SignalModule84" HorizontalAlignment="Left" Height="93" Margin="2757,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="84" RightSignalStr="250/49" LeftSignalStr="250/47"/>
