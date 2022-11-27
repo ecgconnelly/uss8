@@ -74,26 +74,32 @@
         
         <!--16 E Wasco MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "20">                    <!-- E Wasco MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "5" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "18" Direction="l"/>                        <RouteTC TC = "20" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>18</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "19">                    <!-- E Wasco MT to Siding -->                    <Route.Points>                        <RoutePointPosition Points = "5" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "18" Direction="l"/>                        <RouteTC TC = "19" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>18</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--17 E Wasco SDG SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "15">                    <!-- E Wasco SB Siding to MT -->                    <Route.Points>                        <RoutePointPosition Points = "5" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "18" Direction="r"/>                        <RouteTC TC = "17" Direction="r"/>                        <RouteTC TC = "16" Direction="r"/>                        <RouteTC TC = "15" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>18</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--18 E Wasco MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "15">                    <!-- E Wasco SB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "5" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "18" Direction="r"/>                        <RouteTC TC = "17" Direction="r"/>                        <RouteTC TC = "16" Direction="r"/>                        <RouteTC TC = "15" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>18</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--19 W Wasco MT NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "22">                    <!-- W Wasco NB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "6" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "21" Direction="l"/>                        <RouteTC TC = "22" Direction="l"/>                        <RouteTC TC = "23" Direction="l"/>                        <RouteTC TC = "24" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>21</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--20 W Wasco SDG NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "22">                    <!-- W Wasco NB SDG to MT -->                    <Route.Points>                        <RoutePointPosition Points = "6" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "21" Direction="l"/>                        <RouteTC TC = "22" Direction="l"/>                        <RouteTC TC = "23" Direction="l"/>                        <RouteTC TC = "24" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>21</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--21 W Wasco MT SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "18">                    <!-- W Wasco SB MT to MT -->                    <Route.Points>                        <RoutePointPosition Points = "6" Reversed="False"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "21" Direction="r"/>                        <RouteTC TC = "20" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>21</s:UInt16>                    </Route.FreeTCs>                </Route>                <Route Exit = "17">                    <!-- W Wasco SB MT to Siding -->                    <Route.Points>                        <RoutePointPosition Points = "6" Reversed="True"/>                    </Route.Points>                    <Route.TCs>                        <RouteTC TC = "21" Direction="r"/>                        <RouteTC TC = "19" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>21</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--22 E Elmo MT NB-->
