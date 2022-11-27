@@ -16,7 +16,6 @@
         <USS:SwitchModule x:Name="SwitchModule7" HorizontalAlignment="Left" Height="80" Margin="206,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="7" SwitchStr="250/41" />
         <USS:SwitchModule x:Name="SwitchModule3" HorizontalAlignment="Left" Height="79" Margin="74,336,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="3" SwitchStr="250/43"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="19,136,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="62,198,0,0" VerticalAlignment="Top" Width="100"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="40,136,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="40" Margin="85,135,0,0" VerticalAlignment="Top" Width="40" Source="/Images/TrackSegments/os-righthand-east-closed.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="65,139,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
@@ -982,8 +981,6 @@
         </Image>
         <Label Content="62L" HorizontalAlignment="Left" Height="24" Margin="2068,215,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="62R" HorizontalAlignment="Left" Height="24" Margin="2051,120,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2068,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="85" LampColor="red"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2068,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="84" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2102,182,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2102,159,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2131,182,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
@@ -993,11 +990,10 @@
         <Image HorizontalAlignment="Left" Height="15" Margin="2153,162,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="40" Margin="2170,158,0,0" VerticalAlignment="Top" Width="40" Source="/Images/TrackSegments/os-right-crossover-closed.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="40" Margin="2203,158,0,0" VerticalAlignment="Top" Width="40" Source="/Images/TrackSegments/os-left-crossover-closed.gif" Stretch="None"/>
-        <Image HorizontalAlignment="Left" Height="15" Margin="2186,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="2193,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2194,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2228,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2228,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2221,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="91" LampColor="red"/>
         <Label Content="65" HorizontalAlignment="Left" Height="24" Margin="2183,193,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="67" HorizontalAlignment="Left" Height="24" Margin="2214,193,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Image HorizontalAlignment="Left" Height="7" Margin="2152,200,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
@@ -1011,7 +1007,6 @@
             </Image.RenderTransform>
         </Image>
         <Image HorizontalAlignment="Left" Height="15" Margin="2153,185,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2172,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="171" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="7" Margin="2152,150,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -1047,9 +1042,6 @@
         <Label Content="68R" HorizontalAlignment="Left" Height="24" Margin="2146,130,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="68L" HorizontalAlignment="Left" Height="24" Margin="2231,130,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="WAGNER" HorizontalAlignment="Left" Height="24" Margin="2159,78,0,0" VerticalAlignment="Top" Width="97" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <Image HorizontalAlignment="Left" Height="15" Margin="2194,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2186,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="172" LampColor="red"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2210,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="92" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2248,159,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2248,182,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2265,185,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
@@ -1059,8 +1051,6 @@
         <Image HorizontalAlignment="Left" Height="15" Margin="2298,185,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2298,162,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="40" Margin="2314,158,0,0" VerticalAlignment="Top" Width="40" Source="/Images/TrackSegments/os-right-crossover-closed.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2316,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="171" LampColor="red"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2330,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="172" LampColor="red"/>
         <Label Content="CALABRESE" HorizontalAlignment="Left" Height="24" Margin="2285,78,0,0" VerticalAlignment="Top" Width="97" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2342,185,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2342,162,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
@@ -1070,9 +1060,7 @@
         <Image HorizontalAlignment="Left" Height="15" Margin="2372,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2406,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2406,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2399,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="91" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2372,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2388,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="92" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2422,159,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2422,182,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="40" Margin="2449,158,0,0" VerticalAlignment="Top" Width="40" Source="/Images/TrackSegments/os-righthand-east-closed.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
@@ -1085,7 +1073,6 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2450,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="103" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2431,185,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2431,162,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Label Content="" HorizontalAlignment="Left" Height="36" Margin="2353,92,0,0" VerticalAlignment="Top" Width="125" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
@@ -1152,8 +1139,6 @@
         <Image HorizontalAlignment="Left" Height="15" Margin="2827,182,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2796,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2821,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2787,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="93" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2813,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="93" LampColor="amber"/>
         <Image HorizontalAlignment="Left" Height="40" Margin="2856,158,0,0" VerticalAlignment="Top" Width="40" Source="/Images/TrackSegments/os-lefthand-east-closed.gif" Stretch="None"/>
         <Label Content="87" HorizontalAlignment="Left" Height="24" Margin="2861,157,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2885,185,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
@@ -1171,12 +1156,9 @@
             </Image.RenderTransform>
         </Image>
         <Label Content="89" HorizontalAlignment="Left" Height="24" Margin="2954,159,0,0" VerticalAlignment="Top" Width="27" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2941,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="103" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2924,185,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2924,162,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2910,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="104" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2910,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="105" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2873,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="106" LampColor="red"/>
+
         <Image HorizontalAlignment="Left" Height="7" Margin="2925,199,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -1239,12 +1221,8 @@
             </Image.RenderTransform>
         </Image>
         <Label Content="95" HorizontalAlignment="Left" Height="24" Margin="3168,157,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3151,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="103" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3132,185,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3132,162,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3120,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="104" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3120,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="105" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3089,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="106" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="7" Margin="3133,199,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -1307,12 +1285,12 @@
             </Image.RenderTransform>
         </Image>
         <Label Content="99" HorizontalAlignment="Left" Height="24" Margin="3330,157,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3313,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="103" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3313,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="31" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3294,185,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3294,162,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3282,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="104" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3282,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="105" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3251,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="106" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3282,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="32" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3282,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="33" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3251,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="34" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="7" Margin="3295,199,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -1375,12 +1353,12 @@
             </Image.RenderTransform>
         </Image>
         <Label Content="103" HorizontalAlignment="Left" Height="24" Margin="3474,157,0,0" VerticalAlignment="Top" Width="28" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3461,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="103" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3461,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="25" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3442,185,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3442,162,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3431,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="104" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3431,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="105" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3399,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="106" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3431,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="26" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3431,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="27" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3399,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="28" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="7" Margin="3446,199,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -1451,12 +1429,12 @@
             </Image.RenderTransform>
         </Image>
         <Image HorizontalAlignment="Left" Height="15" Margin="3574,205,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3609,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="103" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3609,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="18" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3590,185,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3590,208,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3578,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="104" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3578,205,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="105" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3547,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="106" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3578,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="20" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3578,205,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="19" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3547,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="21" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="7" Margin="3591,224,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -1516,12 +1494,12 @@
             </Image.RenderTransform>
         </Image>
         <Label Content="119" HorizontalAlignment="Left" Height="24" Margin="3975,157,0,0" VerticalAlignment="Top" Width="21" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3960,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="103" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3960,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="1" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3941,185,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3941,162,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3929,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="104" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3929,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="105" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3898,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="106" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3929,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="2" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3929,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="3" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3898,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="4" LampColor="red"/>
         <Label Content="UNA" HorizontalAlignment="Left" Height="24" Margin="3890,78,0,0" VerticalAlignment="Top" Width="97" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="SHAFTER" HorizontalAlignment="Left" Height="24" Margin="3709,78,0,0" VerticalAlignment="Top" Width="97" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3521,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
@@ -1549,9 +1527,9 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3721,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="104" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3721,205,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="105" LampColor="amber"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3689,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="106" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3722,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="12" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3722,205,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="13" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3689,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="14" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="7" Margin="3712,224,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -1578,18 +1556,17 @@
         <Image HorizontalAlignment="Left" Height="15" Margin="3172,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3063,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="40" Margin="3749,181,0,0" VerticalAlignment="Top" Width="40" Source="/Images/TrackSegments/os-left-crossover-closed.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3756,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="92" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3756,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="11" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3858,182,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3872,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3991,182,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3981,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3790,205,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3862,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="104" LampColor="amber"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3790,182,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3808,185,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3825,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="103" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3825,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="7" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3775,208,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3767,205,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="91" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3767,205,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="10" LampColor="red"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3775,185,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3808,208,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="3735,185,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
@@ -1779,7 +1756,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image HorizontalAlignment="Left" Height="7" Margin="2485,177,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+        <Image HorizontalAlignment="Left" Height="7" Margin="2481,200,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -1859,7 +1836,7 @@
         <Label Content="76L" HorizontalAlignment="Left" Height="24" Margin="2404,130,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="80R" HorizontalAlignment="Left" Height="24" Margin="2430,205,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="80R" HorizontalAlignment="Left" Height="24" Margin="2430,130,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <Label Content="80L" HorizontalAlignment="Left" Height="24" Margin="2479,158,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="80L" HorizontalAlignment="Left" Height="24" Margin="2473,206,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Image HorizontalAlignment="Left" Height="7" Margin="2599,222,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -1973,7 +1950,6 @@
         </Image>
         <Label Content="88L" HorizontalAlignment="Left" Height="24" Margin="2788,156,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="2848,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
-        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2837,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="93" LampColor="amber"/>
         <Image HorizontalAlignment="Left" Height="7" Margin="2854,201,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -2177,7 +2153,7 @@
         <Label Content="71" HorizontalAlignment="Left" Height="24" Margin="2393,193,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="73" HorizontalAlignment="Left" Height="24" Margin="2464,154,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="77" HorizontalAlignment="Left" Height="24" Margin="2567,200,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
-        <Label Content="79" HorizontalAlignment="Left" Height="24" Margin="2659,189,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="79" HorizontalAlignment="Left" Height="24" Margin="2653,187,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="81" HorizontalAlignment="Left" Height="24" Margin="2761,156,0,0" VerticalAlignment="Top" Width="16" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="107" HorizontalAlignment="Left" Height="24" Margin="3623,199,0,0" VerticalAlignment="Top" Width="20" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
         <Label Content="111" HorizontalAlignment="Left" Height="24" Margin="3671,199,0,0" VerticalAlignment="Top" Width="20" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
@@ -2212,6 +2188,55 @@
         <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="3849,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule116"/>
         <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="3913,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule118"/>
         <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="3979,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule120"/>
+        <USS:MultiBlockLamp HorizontalAlignment="Left" Height="16" Margin="2198,182,0,0" VerticalAlignment="Top" Width="16
+                            " LampColor="red" TrackCircuitStr="250/174,250/80"/>
+        <USS:MultiBlockLamp HorizontalAlignment="Left" Height="16" Margin="2068,182,0,0" VerticalAlignment="Top" Width="16                             " LampColor="white" TrackCircuitStr="250/84,250/86"/>
+        <USS:MultiBlockLamp HorizontalAlignment="Left" Height="16" Margin="2068,158,0,0" VerticalAlignment="Top" Width="16                             " LampColor="red" TrackCircuitStr="250/85,250/86"/>
+        <USS:MultiBlockLamp HorizontalAlignment="Left" Height="16" Margin="2198,159,0,0" VerticalAlignment="Top" Width="16                             " LampColor="red" TrackCircuitStr="250/173,250/81"/>
+        <USS:MultiBlockLamp HorizontalAlignment="Left" Height="16" Margin="2813,182,0,0" VerticalAlignment="Top" Width="16                             " TrackCircuitStr="250/55,250/54"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2251,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="79" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2286,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="77" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2251,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="78" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2287,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="76" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2316,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="74" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2333,160,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="75" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2389,160,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="71" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2399,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="70" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2362,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="73" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2362,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="72" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2423,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="69" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2423,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="68" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2450,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="67" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2491,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="66" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2519,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="65" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2545,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="64" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2581,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="63" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2614,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="41" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2614,205,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="62" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2667,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="115" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2669,204,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="60" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2715,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="58" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2715,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="59" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2747,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="57" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2787,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="56" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2839,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="53" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2875,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="52" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2910,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="50" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2910,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="51" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="2942,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="49" LampColor="red"/>
+        <USS:MultiBlockLamp HorizontalAlignment="Left" Height="16" Margin="2993,182,0,0" VerticalAlignment="Top" Width="16                             " TrackCircuitStr="250/48,250/47,250/46,250/45" LampColor="white"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3090,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="44" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3122,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="42" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3122,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="43" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3153,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="40" LampColor="red"/>
+        <USS:MultiBlockLamp HorizontalAlignment="Left" Height="16" Margin="3203,182,0,0" VerticalAlignment="Top" Width="16                             " TrackCircuitStr="250/39,250/38,250/37,250/36,250/35" LampColor="white"/>
+        <USS:MultiBlockLamp HorizontalAlignment="Left" Height="16" Margin="3357,182,0,0" VerticalAlignment="Top" Width="16                             " TrackCircuitStr="250/30,250/29" LampColor="white"/>
+        <USS:MultiBlockLamp HorizontalAlignment="Left" Height="16" Margin="3505,182,0,0" VerticalAlignment="Top" Width="16                             " TrackCircuitStr="250/24,250/23,250/22" LampColor="white"/>
+        <USS:MultiBlockLamp HorizontalAlignment="Left" Height="16" Margin="3650,182,0,0" VerticalAlignment="Top" Width="16                             " TrackCircuitStr="250/17,250/16,250/15" LampColor="white"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3796,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="9" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3796,205,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="8" LampColor="amber"/>
+        <USS:MultiBlockLamp HorizontalAlignment="Left" Height="16" Margin="3862,182,0,0" VerticalAlignment="Top" Width="16                             " TrackCircuitStr="250/6,250/5" LampColor="white"/>
+        <USS:MultiBlockLamp HorizontalAlignment="Left" Height="16" Margin="4002,182,0,0" VerticalAlignment="Top" Width="16                             " TrackCircuitStr="250/0,100/230" LampColor="white"/>
 
 
     </Grid>

@@ -63,9 +63,9 @@ namespace Iecc8.UI.Equipment.USS
         }
 
         /// <summary>
-        /// Whether there is a TCB at the right end of this section.
+        /// What color lamp to use.
         /// </summary>
-        [Category("Track"), Description("Gets or sets the lamp color for this occupancy light.")]
+        [Category("USS"), Description("Gets or sets the lamp color for this occupancy light.")]
         public string LampColor
         {
             get
@@ -79,10 +79,10 @@ namespace Iecc8.UI.Equipment.USS
         }
 
         /// <summary>
-        /// The TCB at right end property.
+        /// The lamp color property.
         /// </summary>
         public static readonly DependencyProperty LampColorProperty = 
-            DependencyProperty.Register(nameof(LampColor), typeof(string), typeof(BlockLamp), new PropertyMetadata("white"));
+            DependencyProperty.Register(nameof(LampColor), typeof(string), typeof(BlockLamp), new PropertyMetadata("amber"));
 
 
 

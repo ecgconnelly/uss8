@@ -184,6 +184,9 @@
     <Compile Include="UI\Assembly\USS\SwitchModule.xaml.cs">
       <DependentUpon>SwitchModule.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\Equipment\USS\MultiBlockLamp.xaml.cs">
+      <DependentUpon>MultiBlockLamp.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\Equipment\VSection.xaml.cs">
       <DependentUpon>VSection.xaml</DependentUpon>
     </Compile>
@@ -357,6 +360,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\Assembly\USS\SwitchModule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Equipment\USS\MultiBlockLamp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

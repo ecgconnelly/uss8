@@ -10,7 +10,7 @@
         <ResourceDictionary Source="pack://application:,,,/uss8;component/UI/Common/Resources.xaml"/>
     </UserControl.Resources>
     
-    <Image x:Name="LampImage" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="16" Source="/uss8;component/Images/Lamps/white-on.gif"/>
+    <Image x:Name="LampImage" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="16" Source="/uss8;component/Images/Lamps/amber-on.gif"/>
 
 
 </e:TrackSection>
