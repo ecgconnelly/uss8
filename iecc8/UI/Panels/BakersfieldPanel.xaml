@@ -1685,10 +1685,10 @@
         <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="1234,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule38" SwitchModulesStr="SwitchModule31,SwitchModule33,SwitchModule35,SwitchModule37,SwitchModule39"/>
         <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="1300,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule40" SwitchModulesStr="SwitchModule31,SwitchModule33,SwitchModule35,SwitchModule37,SwitchModule39"/>
         <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="1499,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule46" SwitchModulesStr="SwitchModule43,SwitchModule45"/>
-        <USS:SignalModule x:Name="SignalModule62" HorizontalAlignment="Left" Height="93" Margin="2031,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="62"/>
+        <USS:SignalModule x:Name="SignalModule62" HorizontalAlignment="Left" Height="93" Margin="2031,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="62" LeftSignalStr="250/67" RightSignalStr="250/74"/>
         <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="2045,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule62"/>
-        <USS:SignalModule x:Name="SignalModule64" HorizontalAlignment="Left" Height="93" Margin="2095,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="64"/>
-        <USS:SignalModule x:Name="SignalModule66" HorizontalAlignment="Left" Height="93" Margin="2164,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="66"/>
+        <USS:SignalModule x:Name="SignalModule64" HorizontalAlignment="Left" Height="93" Margin="2095,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="64" LeftSignalStr="250/68" RightSignalStr="250/76"/>
+        <USS:SignalModule x:Name="SignalModule66" HorizontalAlignment="Left" Height="93" Margin="2164,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="66" RightSignalStr="250/75" LeftSignalStr="250/69"/>
         <USS:SignalModule x:Name="SignalModule68" HorizontalAlignment="Left" Height="93" Margin="2230,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="68"/>
         <USS:SignalModule x:Name="SignalModule70" HorizontalAlignment="Left" Height="93" Margin="2296,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="70"/>
         <USS:SignalModule x:Name="SignalModule72" HorizontalAlignment="Left" Height="93" Margin="2362,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="72"/>

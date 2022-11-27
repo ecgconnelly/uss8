@@ -276,16 +276,19 @@
         <ControlledSignal>
         </ControlledSignal>
         
-        <!--67-->
+        <!--67 Hanford SJVR-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "-1">                    <!-- Hanford SJVR -->                    <Route.TCs>                        <RouteTC TC = "86" Direction="l"/>                        <RouteTC TC = "87" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>84</s:UInt16>                        <s:UInt16>85</s:UInt16>                        <s:UInt16>86</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--68 Hanford M1 NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "77">                    <!-- Hanford M1 NB -->                    <Route.TCs>                        <RouteTC TC = "85" Direction="l"/>                        <RouteTC TC = "90" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>85</s:UInt16>                        <s:UInt16>86</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--69 Hanford M2 NB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "78">                    <!-- Hanford M2 NB -->                    <Route.TCs>                        <RouteTC TC = "84" Direction="l"/>                        <RouteTC TC = "89" Direction="l"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>84</s:UInt16>                        <s:UInt16>86</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--70 Wagner M2 SB-->
@@ -303,17 +306,20 @@
         <!--73 Wagner M2 NB-->
         <ControlledSignal>
         </ControlledSignal>
-        
-        <!--74-->
+
+        <!--74 Hanford SJVR-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "-1">                    <!-- Hanford SJVR -->                    <Route.TCs>                        <RouteTC TC = "86" Direction="r"/>                        <RouteTC TC = "88" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>84</s:UInt16>                        <s:UInt16>85</s:UInt16>                        <s:UInt16>86</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--75 Hanford M2 SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "70">                    <!-- Hanford M2 SB -->                    <Route.TCs>                        <RouteTC TC = "84" Direction="r"/>                        <RouteTC TC = "83" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>84</s:UInt16>                        <s:UInt16>86</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--76 Hanford M1 SB-->
         <ControlledSignal>
+            <ControlledSignal.Routes>                <Route Exit = "71">                    <!-- Hanford M1 SB -->                    <Route.TCs>                        <RouteTC TC = "85" Direction="r"/>                        <RouteTC TC = "82" Direction="r"/>                    </Route.TCs>                    <Route.FreeTCs>                        <s:UInt16>85</s:UInt16>                        <s:UInt16>86</s:UInt16>                    </Route.FreeTCs>                </Route>            </ControlledSignal.Routes>
         </ControlledSignal>
         
         <!--77 Mingo M1 NB-->
