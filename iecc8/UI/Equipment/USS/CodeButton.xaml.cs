@@ -165,6 +165,24 @@ namespace Iecc8.UI.Equipment.USS
 
         }
 
+        private List<SwitchModule> FindSwitchModulesInPanel()
+        {
+            List<SwitchModule> mods = new List<SwitchModule>();
+
+            var siblings = LogicalTreeHelper.
+                    GetChildren(Parent);
+            
+            foreach (var child in siblings)
+            {
+                if (child.GetType() == typeof(SwitchModule) && child != null)
+                {
+                    mods.Add((SwitchModule)child);
+                }
+            }
+
+            return mods;
+        }
+
         private void Image_MouseDown(object sender, MouseButtonEventArgs e)
         {
             Press(); //this can be expanded later
@@ -191,18 +209,8 @@ namespace Iecc8.UI.Equipment.USS
                 }
             }
 
-            foreach (string modname in SwitchModulesStr.Split(','))
-            {
-                if (modname.Length == 0) { continue; }
+            switchModules = FindSwitchModulesInPanel();
 
-                SwitchModule mod = (SwitchModule)LogicalTreeHelper.
-                    FindLogicalNode(Parent, modname);
-
-                if (mod != null)
-                {
-                    switchModules.Add(mod);
-                }
-            }
         }
     }
 }
