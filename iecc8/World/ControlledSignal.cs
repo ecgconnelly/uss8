@@ -46,6 +46,9 @@ namespace Iecc8.World {
 			}
 		}
 
+		public bool FleetRequested
+		{ get; private set; }
+
 		/// <summary>
 		/// Whether it is possible to enable automatic working.
 		/// </summary>
@@ -265,7 +268,7 @@ namespace Iecc8.World {
 				if (!anyWrong) {
 					SwingingPoints = false;
 					ReplaceDelayTimer = ReplaceDelayPeriod;
-					await World.ChangeSignalAsync(SubArea, ID, AutoWorking ? ESignalIndication.Fleet : ESignalIndication.Proceed);
+					await World.ChangeSignalAsync(SubArea, ID, FleetRequested ? ESignalIndication.Fleet : ESignalIndication.Proceed);
 				}
 			}
 		}
@@ -276,8 +279,9 @@ namespace Iecc8.World {
 		/// Sets the current route from this signal.
 		/// </summary>
 		/// <param name="route">The route.</param>
-		public void SetCurrentRoute(Route route) {
+		public void SetCurrentRoute(Route route, bool fleet = false) {
 			Debug.Assert(route != null);
+			FleetRequested = fleet;
 			CurrentRoute = route;
 			SwingingPoints = true;
 			ReplaceDelayTimer = ReplaceDelayPeriod;

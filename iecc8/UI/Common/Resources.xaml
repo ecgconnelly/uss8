@@ -19,6 +19,8 @@
     <BitmapImage x:Key="uss-lever-left" UriSource="/uss8;component/Images/Levers/lever-left-wide.gif"/>
     <BitmapImage x:Key="uss-lever-vertical" UriSource="/uss8;component/Images/Levers/lever-vertical-wide.gif"/>
     <BitmapImage x:Key="uss-lever-right" UriSource="/uss8;component/Images/Levers/lever-right-wide.gif"/>
+    <BitmapImage x:Key="uss-toggle-on" UriSource="/uss8;component/Images/Levers/switch-on.gif"/>
+    <BitmapImage x:Key="uss-toggle-off" UriSource="/uss8;component/Images/Levers/switch-off.gif"/>
 
     <!--<SoundPlayerAction x:Key="code-button-press" Source="/uss8;component/Sounds/Button-press.wav"/>-->
 

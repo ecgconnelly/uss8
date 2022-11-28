@@ -74,7 +74,7 @@ namespace Iecc8.UI.Equipment.USS
                 bool leverPresent = false;
                 bool requestedReverse = false;
 
-                foreach(SwitchModule swm in switchModules)
+                foreach(SwitchModule swm in SwitchModules)
                 {
                     if (swm.PointsObject == rpp.Points)
                     {
@@ -90,7 +90,7 @@ namespace Iecc8.UI.Equipment.USS
             return true;
         }
 
-        public World.Route pickRequestedRoute(SignalModule sigmod)
+        public World.Route PickRequestedRoute(SignalModule sigmod)
         {
             bool left = sigmod.LeverState == 0;
             bool right = sigmod.LeverState == 2;
@@ -123,7 +123,7 @@ namespace Iecc8.UI.Equipment.USS
         {
             List<World.ControlledSignal> signalsToDrop= new List<World.ControlledSignal>();
 
-            foreach (SignalModule sigmod in signalModules)
+            foreach (SignalModule sigmod in SignalModules)
             {
                 if (sigmod.LeverState == 1) //centered
                 {
@@ -136,7 +136,7 @@ namespace Iecc8.UI.Equipment.USS
                     continue; //next signal module
                 }
                 
-                World.Route requestedRoute = pickRequestedRoute(sigmod);
+                World.Route requestedRoute = PickRequestedRoute(sigmod);
                 if (requestedRoute == null) continue;
                 Debug.Print("Code requested: {0} --> {1}", 
                     requestedRoute.Entrance.ID,
@@ -150,7 +150,7 @@ namespace Iecc8.UI.Equipment.USS
                     {
                         await rpp.Points.SwingAsync(rpp.Reverse);
                     }
-                    requestedRoute.Entrance.SetCurrentRoute(requestedRoute);
+                    requestedRoute.Entrance.SetCurrentRoute(requestedRoute, sigmod.FleetSwitchOn);
                 }
                 else
                 {
@@ -188,16 +188,16 @@ namespace Iecc8.UI.Equipment.USS
             Press(); //this can be expanded later
         }
 
-        public List<SignalModule> signalModules { get; set; }
-        public List<SwitchModule> switchModules { get; set; }
+        public List<SignalModule> SignalModules { get; set; }
+        public List<SwitchModule> SwitchModules { get; set; }
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
             if (DesignerProperties.GetIsInDesignMode(this)) { return; }
 
             //populate lists of signal and switch modules we code for
-            signalModules = new List<SignalModule>();
-            switchModules = new List<SwitchModule>();
+            SignalModules = new List<SignalModule>();
+            SwitchModules = new List<SwitchModule>();
             foreach(string modname in SignalModulesStr.Split(','))
             {
                 SignalModule mod = (SignalModule)LogicalTreeHelper.
@@ -205,11 +205,11 @@ namespace Iecc8.UI.Equipment.USS
 
                 if(mod != null)
                 {
-                    signalModules.Add(mod);
+                    SignalModules.Add(mod);
                 }
             }
 
-            switchModules = FindSwitchModulesInPanel();
+            SwitchModules = FindSwitchModulesInPanel();
 
         }
     }

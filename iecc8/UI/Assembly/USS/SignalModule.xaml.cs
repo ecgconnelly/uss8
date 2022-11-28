@@ -190,6 +190,10 @@ namespace Iecc8.UI.Equipment.USS
         public List<World.ControlledSignal> RightSignals
             = new List<World.ControlledSignal>();
 
+        public bool FleetSwitchOn
+        { get; private set; }
+
+
         private void PopulateSignalArrays()
         {
             MainViewModel vm = DataContext as MainViewModel;
@@ -314,6 +318,15 @@ namespace Iecc8.UI.Equipment.USS
             RightLampImage.Source = (ImageSource)FindResource(resourceKey: rkey);
         }
 
+        private void DrawFleetSwitch()
+        {
+            string key = "uss-toggle-";
+
+            key += (FleetSwitchOn ? "on" : "off");
+
+            FleetSwitchImage.Source = (ImageSource)(FindResource(resourceKey: key));
+        }
+
 
         private void LeverImage_MouseUp(object sender, MouseButtonEventArgs e)
         {
@@ -356,9 +369,17 @@ namespace Iecc8.UI.Equipment.USS
                 sig.PropertyChanged += OnSignalPropChanged;
             }
 
+            FleetSwitchOn = false;
+
             UpdateLampStates();
             DrawLamps();
+            DrawFleetSwitch();
         }
 
+        private void FleetSwitchImage_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            FleetSwitchOn ^= true; // toggle
+            DrawFleetSwitch();
+        }
     }
 }

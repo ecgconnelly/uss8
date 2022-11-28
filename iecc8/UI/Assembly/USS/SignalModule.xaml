@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Iecc8.UI.Equipment.USS"
              mc:Ignorable="d" 
-             d:DesignHeight="93" d:DesignWidth="60" Loaded="SignalModuleControl_Loaded">
+             d:DesignHeight="178" d:DesignWidth="60" Loaded="SignalModuleControl_Loaded">
     <Grid>
         <Image Name="BackgroundPlate" HorizontalAlignment="Left" Height="93" Margin="0,0,0,0" VerticalAlignment="Top" Width="60" Source="/uss8;component/Images/Plates/l-r-signal.gif" Stretch="None"/>
         <Label x:Name="SignalNumberLabel" Content="##" HorizontalAlignment="Center" Height="12" Margin="-1,35,0,0" VerticalAlignment="Top" Width="20"  Foreground="#FFCACACA" FontFamily="Arial" FontSize="11" Padding="0,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Loaded="SignalNumberLabel_Loaded"/>
@@ -13,12 +13,18 @@
         <Image x:Name="LeftLampImage" HorizontalAlignment="Left" Height="21" Margin="3,17,0,0" VerticalAlignment="Top" Width="21" Source="/uss8;component/Images/Lamps/green-off.gif"/>
         <Image x:Name="CenterLampImage" HorizontalAlignment="Center" Height="21" VerticalAlignment="Top" Width="20" Source="/uss8;component/Images/Lamps/red-on.gif" Margin="0,3,0,0"/>
         <Image x:Name="RightLampImage" HorizontalAlignment="Left" Height="21" Margin="34,17,0,0" VerticalAlignment="Top" Width="22" Source="/uss8;component/Images/Lamps/green-off.gif"/>
+        <Image x:Name="FleetSwitchImage" Height="39" Margin="4,141,3,0" VerticalAlignment="Bottom" Width="53" Source="/uss8;component/Images/Levers/switch-off.gif" Stretch="None" MouseDown="FleetSwitchImage_MouseDown" />
 
     </Grid>
     <Control.Triggers>
         <EventTrigger RoutedEvent="Control.MouseDown" SourceName="LeverImage">
             <EventTrigger.Actions>
                 <SoundPlayerAction Source="/uss8;component/Sounds/Signal-lever.wav"/>
+            </EventTrigger.Actions>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Control.MouseDown" SourceName="FleetSwitchImage">
+            <EventTrigger.Actions>
+                <SoundPlayerAction Source="/uss8;component/Sounds/toggle-on.wav"/>
             </EventTrigger.Actions>
         </EventTrigger>
     </Control.Triggers>
