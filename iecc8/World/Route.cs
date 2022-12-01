@@ -60,8 +60,8 @@ namespace Iecc8.World {
 		public bool Available {
 			get {
 				Debug.Print("Available??");
-				// If the entrance signal already has a route and isn't approach locked, you can't set another one. If it is approach locked, you can overset exactly the same route, and this will be enforced by later code checking track circuit directions and point positions.
-				if ((Entrance.CurrentRoute != null) && !Entrance.ApproachLocked) {
+				// If the entrance signal already has a different route, you can't set another one.
+				if ((Entrance.CurrentRoute != null) && Entrance.CurrentRoute != this) {
 					Debug.Print("This signal already has route: {0} --> {1}",
 						Entrance.ID,
 						Entrance.CurrentRoute.Exit.ID);
