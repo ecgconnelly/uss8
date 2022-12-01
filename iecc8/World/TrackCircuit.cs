@@ -57,6 +57,7 @@ namespace Iecc8.World {
 						next.RouteLockCascaded = false;
 					}
 				}
+
 				if (RouteLocked != oldLocked) {
 					EmitPropertyChanged(nameof(RouteLocked));
 				}

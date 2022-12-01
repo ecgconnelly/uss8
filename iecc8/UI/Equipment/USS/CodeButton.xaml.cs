@@ -126,6 +126,7 @@ namespace Iecc8.UI.Equipment.USS
                 Debug.Print("No signal modules to code for");
                 return;
             }
+
             List<World.ControlledSignal> signalsToDrop= new List<World.ControlledSignal>();
 
             foreach (SignalModule sigmod in SignalModules)
@@ -150,12 +151,16 @@ namespace Iecc8.UI.Equipment.USS
 
                 if (requestedRoute.Available)
                 {
-                    Debug.Print("Setting route");
+                    Debug.Print("Route is available, setting route");
+                    /*
                     foreach (World.RoutePointPosition rpp in requestedRoute.PointPositions)
                     {
                         await rpp.Points.SwingAsync(rpp.Reverse);
                     }
                     requestedRoute.Entrance.SetCurrentRoute(requestedRoute, sigmod.FleetSwitchOn);
+                    */
+
+                    await requestedRoute.CallAsync(sigmod.FleetSwitchOn);
                 }
                 else
                 {

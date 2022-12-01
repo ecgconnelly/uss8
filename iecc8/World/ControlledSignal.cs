@@ -121,6 +121,7 @@ namespace Iecc8.World {
 				}
 				if (!exempt) {
 					ApproachLockExpires = DateTime.UtcNow.AddSeconds(ApproachLockingTime);
+					Debug.Print("setting approach lock true");
 					ApproachLocked = true;
 				}
 			}
@@ -234,13 +235,21 @@ namespace Iecc8.World {
 			AutoWorking = indication == ESignalIndication.Fleet;
 			FlagBy = indication == ESignalIndication.FlagBy;
 
+
+			/*
 			// Clear approach locking if the signal is set to proceed. Approach locking will be reapplied if the signal is cancelled a second time. The only cases where approach locking would not be reapplied would be (1) if a CAL exemption matches, in which case the old approach locking is clearly no longer needed, or (2) if the signal is on, which can only happen if a TC in advance of the signal is occupied, which means either the approaching train passed the signal (in which case approach locking should no longer apply and TORR should be allowed to happen) or some other train approaching the area SPADed (in which case all bets are off and it doesn't really matter what we do).
 			if ((indication != ESignalIndication.Stop) && (indication != ESignalIndication.FlagBy)) {
 				ApproachLockExpires = null;
 			}
+			*/
 
 			// Update approach locking status based on timer.
+			bool oal = ApproachLocked;
+			//Debug.Print(oal.ToString());
 			ApproachLocked = ApproachLockExpires.HasValue && (ApproachLockExpires.Value > DateTime.UtcNow);
+			if (oal && !ApproachLocked) { Debug.Print("Approach lock released for signal {0}", this.ID); }
+			else if (!oal && ApproachLocked) { Debug.Print("Approach lock applied for signal {0}", this.ID); }
+			else if (oal) { Debug.Print("Approach lock held for signal {0}", this.ID); }
 
 			// Check for train operated route release.
 			if (!SwingingPoints && (indication == ESignalIndication.Stop) && !ApproachLocked) {
@@ -300,12 +309,12 @@ namespace Iecc8.World {
 		/// <remarks>
 		/// A delay timer is needed because signal indication changes and track circuit occupancy are carried in different messages from Run8. It is therefore possible that, as a train passes a signal, the signal could be reported as being replaced before the first track circuit is reported as occupied. Should that happen, we would not want route locking to drop. Therefore, we wait until a few updates later, giving plenty of time for the track circuit to occupy first.
 		/// </remarks>
-		private const byte ReplaceDelayPeriod = 2;
+		private const byte ReplaceDelayPeriod = 5;
 
 		/// <summary>
 		/// How many seconds of approach locking apply.
 		/// </summary>
-		private const ushort ApproachLockingTime = 120;
+		private const ushort ApproachLockingTime = 8;
 
 		/// <summary>
 		/// How many updates are left on the replacement delay timer before the route can be dropped.

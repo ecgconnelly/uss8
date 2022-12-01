@@ -55,10 +55,6 @@ namespace Iecc8.UI.Panels
         public BakersfieldPanel()
         {
             InitializeComponent();
-
-            SignalModule sig4 = null;
-            sig4 = (SignalModule)LogicalTreeHelper.FindLogicalNode(this, "SignalModule4");
-            Debug.Print(sig4.CenterLampImage.Source.ToString());
         }
     }
 }

@@ -86,8 +86,14 @@ namespace Iecc8.World {
 
 				// All track circuits that are required to be free must be so.
 				foreach (TrackCircuit i in FreeTrackCircuits) {
-					if (i.RouteLocked || i.Occupied) {
-                        Debug.Print("FTC {0} is route locked or occupied",
+					if (i.Occupied)
+					{
+						Debug.Print("FTC {0} is occupied", i.ID);
+						return false;
+					}
+
+					if (i.RouteLocked && i.LockedRoute != this) {
+                        Debug.Print("FTC {0} is route locked by a different route",
                             i.ID);
                         return false;
 					}
@@ -114,7 +120,7 @@ namespace Iecc8.World {
 		/// <remarks>
 		/// The caller must verify that the route is available first.
 		/// </remarks>
-		public async Task CallAsync() {
+		public async Task CallAsync(bool fleet = false) {
 			Debug.Assert(Available);
 
 			// Lock the track circuits.
@@ -125,7 +131,7 @@ namespace Iecc8.World {
 			}
 
 			// Set the signal's route.
-			Entrance.SetCurrentRoute(this);
+			Entrance.SetCurrentRoute(this, fleet);
 
 			// Swing and lock the points.
 			Task[] tasks = new Task[PointPositions.Count];
