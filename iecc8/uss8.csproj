@@ -127,6 +127,9 @@
     <Compile Include="UI\Assembly\SingleTrackSiding.xaml.cs">
       <DependentUpon>SingleTrackSiding.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\Assembly\USS\CTCColumn.xaml.cs">
+      <DependentUpon>CTCColumn.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\Common\BlinkClockSource.cs" />
     <Compile Include="UI\Common\EngineerTypeToFontStyle.cs" />
     <Compile Include="UI\Common\EngineerTypeToIsAI.cs" />
@@ -300,6 +303,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\Assembly\SingleTrackSiding.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Assembly\USS\CTCColumn.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
