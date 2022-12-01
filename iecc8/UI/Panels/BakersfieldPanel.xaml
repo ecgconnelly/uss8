@@ -14,7 +14,6 @@
         <Image HorizontalAlignment="Left" Height="718" Margin="3030,0,0,0" VerticalAlignment="Top" Width="1000" Source="/Images/PanelSegments/uss-15.gif"/>
 
         <USS:SwitchModule x:Name="SwitchModule7" HorizontalAlignment="Left" Height="80" Margin="206,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="7" SwitchStr="250/41" />
-        <USS:SwitchModule x:Name="SwitchModule3" HorizontalAlignment="Left" Height="79" Margin="74,336,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="3" SwitchStr="250/43"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="19,136,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="40,136,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="40" Margin="85,135,0,0" VerticalAlignment="Top" Width="40" Source="/Images/TrackSegments/os-righthand-east-closed.gif" Stretch="None"/>
@@ -182,9 +181,7 @@
         <USS:SwitchModule x:Name="SwitchModule19" HorizontalAlignment="Left" Height="80" Margin="604,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="19" SwitchStr="250/39"/>
         <USS:SwitchModule x:Name="SwitchModule15" HorizontalAlignment="Left" Height="80" Margin="472,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="15" SwitchStr="250/25"/>
         <USS:SwitchModule x:Name="SwitchModule17" HorizontalAlignment="Left" Height="80" Margin="538,335,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" PlateNumber="17" SwitchStr="250/38"/>
-        <USS:SignalModule x:Name="SignalModule4" HorizontalAlignment="Left" Height="178" Margin="76,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="4" RightSignalStr="250/137" LeftSignalStr="250/87,250/86"/>
         <USS:SignalModule x:Name="SignalModule10" HorizontalAlignment="Left" Height="178" Margin="275,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="10" RightSignalStr="250/88" LeftSignalStr="250/90,250/94"/>
-        <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="91,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule4"/>
         <USS:CodeButton HorizontalAlignment="Left" Height="28" Margin="224,543,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="SignalModule8" SwitchModulesStr="SwitchModule7,SwitchModule9,SwitchModule11"/>
         <USS:SignalModule x:Name="SignalModule18" HorizontalAlignment="Left" Height="178" Margin="537,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="18" RightSignalStr="250/92,250/100" LeftSignalStr="250/97"/>
         <USS:SignalModule x:Name="SignalModule16" HorizontalAlignment="Left" Height="178" Margin="474,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="16" RightSignalStr="250/93" LeftSignalStr="250/99,250/98"/>
@@ -2238,7 +2235,7 @@
         <USS:SignalModule x:Name="SignalModule8" HorizontalAlignment="Left" Height="178" Margin="208,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="8" RightSignalStr="250/89" LeftSignalStr="250/91"/>
 
 
-        <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="8,337,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="4" SwitchPlateNumber="3" HasSwitchPlate="True" HasSignalPlate="True" LeftSignalStr="250/87,250/86" SwitchStr="250/43" RightSignalStr="250/137"/>
+        <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="74,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="4" SwitchPlateNumber="3" HasSwitchPlate="True" HasSignalPlate="True" LeftSignalStr="250/87,250/86" SwitchStr="250/43" RightSignalStr="250/137"/>
 
 
     </Grid>
