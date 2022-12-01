@@ -4,7 +4,7 @@
 		x:Name="window"
 		x:Class="Iecc8.UI.TopLevel.WelcomeWindow"
 		ResizeMode="CanMinimize"
-		Title="Welcome - IECC8"
+		Title="Welcome - USS8"
 		WindowStartupLocation="CenterScreen"
 		SizeToContent="WidthAndHeight">
 	<Window.DataContext>

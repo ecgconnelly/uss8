@@ -3,7 +3,7 @@
 		xmlns:california="clr-namespace:Iecc8.UI.Region.California"
         xmlns:panels="clr-namespace:Iecc8.UI.Panels"
 		xmlns:tl="clr-namespace:Iecc8.UI.TopLevel"
-		x:Class="Iecc8.UI.TopLevel.MainWindow">
+		x:Class="Iecc8.UI.TopLevel.MainWindow" WindowStartupLocation="CenterScreen" WindowState="Maximized" Icon="/Images/Lamps/green-on.gif" Title="USS8">
 	<Window.Resources>
 		<ResourceDictionary Source="pack://application:,,,/uss8;component/UI/Common/Resources.xaml"/>
 	</Window.Resources>
