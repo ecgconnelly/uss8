@@ -121,6 +121,11 @@ namespace Iecc8.UI.Equipment.USS
 
         private async void Press()        
         {
+            if (SignalModules == null)
+            {
+                Debug.Print("No signal modules to code for");
+                return;
+            }
             List<World.ControlledSignal> signalsToDrop= new List<World.ControlledSignal>();
 
             foreach (SignalModule sigmod in SignalModules)
@@ -194,6 +199,7 @@ namespace Iecc8.UI.Equipment.USS
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
             if (DesignerProperties.GetIsInDesignMode(this)) { return; }
+            if (SignalModulesStr == "") { return; }
 
             //populate lists of signal and switch modules we code for
             SignalModules = new List<SignalModule>();

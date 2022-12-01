@@ -1,31 +1,28 @@
-﻿<UserControl x:Class="Iecc8.UI.Equipment.USS.SignalModule"
+﻿<UserControl
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Iecc8.UI.Equipment.USS"
+             xmlns:USS="clr-namespace:Iecc8.UI.Assembly.USS" x:Class="Iecc8.UI.Equipment.USS.SignalModule"
              mc:Ignorable="d" 
              d:DesignHeight="178" d:DesignWidth="60" Loaded="SignalModuleControl_Loaded">
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="UIElement.MouseDown" SourceName="LeverImage">
+            <SoundPlayerAction Source="/uss8;component/Sounds/Signal-lever.wav"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseDown" SourceName="FleetSwitchImage">
+            <SoundPlayerAction Source="/uss8;component/Sounds/toggle-on.wav"/>
+        </EventTrigger>
+    </UserControl.Triggers>
     <Grid>
-        <Image Name="BackgroundPlate" HorizontalAlignment="Left" Height="93" Margin="0,0,0,0" VerticalAlignment="Top" Width="60" Source="/uss8;component/Images/Plates/l-r-signal.gif" Stretch="None"/>
-        <Label x:Name="SignalNumberLabel" Content="##" HorizontalAlignment="Center" Height="12" Margin="-1,35,0,0" VerticalAlignment="Top" Width="20"  Foreground="#FFCACACA" FontFamily="Arial" FontSize="11" Padding="0,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Loaded="SignalNumberLabel_Loaded"/>
+        <Image x:Name="BackgroundPlate" HorizontalAlignment="Left" Height="93" Margin="0,0,0,0" VerticalAlignment="Top" Width="60" Source="/uss8;component/Images/Plates/l-r-signal.gif" Stretch="None"/>
         <Image x:Name="LeverImage" HorizontalAlignment="Center" Height="33" VerticalAlignment="Top" Width="50" Margin="0,56,0,0" Source="/uss8;component/Images/Levers/lever-vertical-wide.gif" MouseUp="LeverImage_MouseUp" />
         <Image x:Name="LeftLampImage" HorizontalAlignment="Left" Height="21" Margin="3,17,0,0" VerticalAlignment="Top" Width="21" Source="/uss8;component/Images/Lamps/green-off.gif"/>
         <Image x:Name="CenterLampImage" HorizontalAlignment="Center" Height="21" VerticalAlignment="Top" Width="20" Source="/uss8;component/Images/Lamps/red-on.gif" Margin="0,3,0,0"/>
         <Image x:Name="RightLampImage" HorizontalAlignment="Left" Height="21" Margin="34,17,0,0" VerticalAlignment="Top" Width="22" Source="/uss8;component/Images/Lamps/green-off.gif"/>
         <Image x:Name="FleetSwitchImage" Height="39" Margin="4,141,3,0" VerticalAlignment="Bottom" Width="53" Source="/uss8;component/Images/Levers/switch-off.gif" Stretch="None" MouseDown="FleetSwitchImage_MouseDown" />
+        <Label x:Name="SignalNumberLabel" HorizontalAlignment="Center" Height="12" Margin="-1,35,0,0" VerticalAlignment="Top" Width="20"  Foreground="#FFCACACA" FontFamily="Arial" FontSize="8" Padding="0,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="{Binding SignalPlateNumber, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type USS:CTCColumn}}}"/>
 
     </Grid>
-    <Control.Triggers>
-        <EventTrigger RoutedEvent="Control.MouseDown" SourceName="LeverImage">
-            <EventTrigger.Actions>
-                <SoundPlayerAction Source="/uss8;component/Sounds/Signal-lever.wav"/>
-            </EventTrigger.Actions>
-        </EventTrigger>
-        <EventTrigger RoutedEvent="Control.MouseDown" SourceName="FleetSwitchImage">
-            <EventTrigger.Actions>
-                <SoundPlayerAction Source="/uss8;component/Sounds/toggle-on.wav"/>
-            </EventTrigger.Actions>
-        </EventTrigger>
-    </Control.Triggers>
 </UserControl>

@@ -2238,7 +2238,7 @@
         <USS:SignalModule x:Name="SignalModule8" HorizontalAlignment="Left" Height="178" Margin="208,437,0,0" VerticalAlignment="Top" Width="60" PlateNumber="8" RightSignalStr="250/89" LeftSignalStr="250/91"/>
 
 
-        <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="8,335,0,0" VerticalAlignment="Top" Width="64"/>
+        <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="8,337,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="4" SwitchPlateNumber="3" HasSwitchPlate="True" HasSignalPlate="True" LeftSignalStr="250/87,250/86" SwitchStr="250/43" RightSignalStr="250/137"/>
 
 
     </Grid>
