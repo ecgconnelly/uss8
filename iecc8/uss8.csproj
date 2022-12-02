@@ -666,6 +666,20 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Plates\bell-cutout.gif" />
+    <Resource Include="Images\Plates\call-on.gif" />
+    <Resource Include="Images\Plates\code.gif" />
+    <Resource Include="Images\Plates\control.gif" />
+    <Resource Include="Images\Plates\CTC-codeplate.gif" />
+    <Resource Include="Images\Plates\CTC-Lock-h.gif" />
+    <Resource Include="Images\Plates\CTC-Lock-v.gif" />
+    <Resource Include="Images\Plates\CTC-SWHeater-h.png" />
+    <Resource Include="Images\Plates\CTC-SWHeater-v.png" />
+    <Resource Include="Images\Plates\TrafficDirectionArrowLeft.png" />
+    <Resource Include="Images\Plates\TrafficDirectionArrowRight.png" />
+    <Resource Include="Images\Plates\TrafficDirectionArrows.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
