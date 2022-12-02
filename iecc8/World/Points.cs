@@ -36,6 +36,11 @@ namespace Iecc8.World {
 		public bool Movable {
 			get {
 				if (HandCrankable || Keyed || Occupied) {
+					string msg = "";
+					msg += HandCrankable ? "HandCrankable " : "";
+					msg += Keyed ? "Keyed " : "";
+					msg += Occupied ? "Occupied " : "";
+					Debug.Print("Switch {0} cannot be thrown because it is {1}", this.ID, msg);
 					return false;
 				}
 				foreach (TrackCircuit i in ProtectingTCs) {
