@@ -1,5 +1,6 @@
 ﻿using Iecc8.Messages;
 using Iecc8.Schema;
+using Iecc8.UI.Assembly.USS;
 using Iecc8.UI.Panels;
 using System;
 using System.Collections.Generic;
@@ -61,6 +62,7 @@ namespace Iecc8.UI.Equipment.USS
         public CodeButton()
         {
             InitializeComponent();
+            AwaitingIndicationCode = false;
            
         }
 
@@ -119,15 +121,41 @@ namespace Iecc8.UI.Equipment.USS
             return req;
         }
 
+        public SignalModule ColumnSignalModule;
+        public SwitchModule ColumnSwitchModule;
+        public CodeLine ColumnCodeLine;
+
+        public bool AwaitingIndicationCode
+        {
+            get; private set;
+        }
+
+
         private async void Press()        
         {
+            ColumnCodeLine.QueueControlTransmission(ColumnSignalModule, ColumnSwitchModule);
+            AwaitingIndicationCode = true;
+            return;
+            
+            /* 
+             * Changing logic to code for everything in the column and nothing else
+             * Route checking logic will be moved out of the code button
             if (SignalModules == null)
             {
                 Debug.Print("No signal modules to code for");
                 return;
             }
+            */
+
+            //either we have a signal in this column or not
+            // turn this on once we're converted to CTCColumn controls instead of the separate lever objects
+            //Debug.Assert(SignalModules.Count < 2);
+
+
 
             List<World.ControlledSignal> signalsToDrop= new List<World.ControlledSignal>();
+
+            
 
             foreach (SignalModule sigmod in SignalModules)
             {
