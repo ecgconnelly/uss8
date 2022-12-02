@@ -60,6 +60,22 @@ namespace Iecc8.UI.Assembly.USS
             DependencyProperty.Register(nameof(SwitchPlateNumber), typeof(int), typeof(CTCColumn));
 
 
+        public string CodeLineName
+        {
+            get
+            {
+                return (string)GetValue(CodeLineNameProperty);
+            }
+            set
+            {
+                SetValue(CodeLineNameProperty, value);
+            }
+        }
+        [Category("USS"), Description("Gets or sets the name of the codeline this CTCColumn is connected to")]
+        public static readonly DependencyProperty CodeLineNameProperty =
+            DependencyProperty.Register(nameof(CodeLineName), typeof(string), typeof(CTCColumn));
+
+
         public bool HasSwitchPlate
         {
             get
@@ -141,5 +157,42 @@ namespace Iecc8.UI.Assembly.USS
 
 
         #endregion
+
+
+        private CodeLine FindCodeLine()
+        {
+            if (this.CodeLineName == "") return null;
+
+            var siblings = LogicalTreeHelper.GetChildren(Parent);
+            foreach ( var child in siblings )
+            {
+                if (child.GetType() == typeof(CodeLine))
+                {
+                    CodeLine cl = (CodeLine)child;
+                    if ((cl.Name) == CodeLineName) return cl;
+
+                }
+            }
+
+            return null;
+
+        }
+
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            SignalModule sigmod = this.HasSignalPlate ? this.sig : null;
+            SwitchModule swmod = this.HasSwitchPlate ? this.sw : null;
+            CodeButton code = this.code;
+
+            CodeLine line = FindCodeLine();
+
+
+            code.ColumnSignalModule = sigmod;
+            code.ColumnSwitchModule = swmod;
+            code.ColumnCodeLine = line;
+
+
+        }
     }
 }

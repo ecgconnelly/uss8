@@ -21,6 +21,22 @@ namespace Iecc8.World {
 		}
 
 		/// <summary>
+		/// Returns the available route from this signal with all switches lined and proved
+		/// Returns null if no such route
+		/// </summary>
+		public Route ReadyRoute
+		{ 
+			get
+			{
+				foreach(var route in RoutesFrom)
+				{
+					if (route.Value.Available && route.Value.PointsProved) return route.Value;
+				}
+				return null;
+			}
+		}
+
+		/// <summary>
 		/// Which route is currently set from this signal, or <c>null</c> if no route is set.
 		/// </summary>
 		public Route CurrentRoute {
