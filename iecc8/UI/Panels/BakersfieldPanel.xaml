@@ -2091,7 +2091,7 @@
         <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3796,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="9" LampColor="amber"/>
         <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3796,205,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="8" LampColor="amber"/>
         <USS:MultiBlockLamp HorizontalAlignment="Left" Height="16" Margin="3862,182,0,0" VerticalAlignment="Top" Width="16                             " TrackCircuitStr="250/6,250/5" LampColor="white"/>
-        <USS:MultiBlockLamp HorizontalAlignment="Left" Height="16" Margin="4003,182,0,0" VerticalAlignment="Top" Width="16                             " TrackCircuitStr="250/6,250/5" LampColor="white"/>
+        <USS:MultiBlockLamp HorizontalAlignment="Left" Height="16" Margin="4003,182,0,0" VerticalAlignment="Top" Width="16                             " TrackCircuitStr="250/0,100/230" LampColor="white"/>
 
 
         <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="74,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="4" SwitchPlateNumber="3" HasSwitchPlate="True" HasSignalPlate="True" LeftSignalStr="250/87,250/86" SwitchStr="250/43" RightSignalStr="250/137" CodeLineName="CodeLine0"/>
