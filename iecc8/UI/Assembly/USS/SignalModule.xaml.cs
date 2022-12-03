@@ -267,9 +267,10 @@ namespace Iecc8.UI.Equipment.USS
             //Debug.Print("OnSignalPropChanged: " + e.PropertyName);
             if (e.PropertyName == nameof(ControlledSignal.Indication))
             {
+                Column.FieldController.SpontaneousIndicationCode();
                 //Debug.Print("Indication changed");
-                UpdateLampStates();
-                DrawLamps();
+                //UpdateLampStates();
+                //DrawLamps();
             }
         }
 

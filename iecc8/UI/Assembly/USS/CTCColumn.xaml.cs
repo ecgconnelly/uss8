@@ -44,6 +44,29 @@ namespace Iecc8.UI.Assembly.USS
                 get { return WaitingForSignal || WaitingForSwitch; }
             }
 
+            public async void SpontaneousIndicationCode()
+            {
+                if (Waiting) return; //we're going to send an indication when our request completes anyway
+
+
+                while (!Column.ColumnCodeLine.RequestLineAccessReceive(this))
+                {
+                    await Task.Delay(1000);
+                }
+                Debug.Print("Got the indication line");
+                Column.AwaitingIndicationCode = true;
+
+                Column.TransmitSound.Source = new Uri("Sounds/Code-receive.wav", UriKind.Relative);
+                Column.TransmitSound.Position = new System.TimeSpan(0);
+                Column.TransmitSound.Play();
+                await Task.Delay(4000);
+                Column.TransmitSound.Stop();
+                Debug.Assert(Column.ColumnCodeLine.ReleaseLineAccessReceive(this));
+                Debug.Print("Released the indication line");
+
+                Column.AwaitingIndicationCode = false;
+            }
+
             public async void SendControlCode(CodeLine.ControlTransmission trans)
             {
                 WaitingForSwitch = true;
@@ -76,6 +99,7 @@ namespace Iecc8.UI.Assembly.USS
 
 
                 World.Route route = null;
+                WaitingForSignal = true;
                 if (trans.requestedIndication == ESignalIndication.Stop)
                 {
                     foreach (World.ControlledSignal sig in trans.signals)
