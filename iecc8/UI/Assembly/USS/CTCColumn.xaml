@@ -6,15 +6,17 @@
              xmlns:local="clr-namespace:Iecc8.UI.Assembly.USS"
              xmlns:USS="clr-namespace:Iecc8.UI.Equipment.USS" x:Class="Iecc8.UI.Assembly.USS.CTCColumn"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="60">
+             d:DesignHeight="300" d:DesignWidth="60" Loaded="UserControl_Loaded">
     <UserControl.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
     </UserControl.Resources>
     <Grid>
 
-        <USS:SwitchModule HorizontalAlignment="Left" Height="92" Margin="0,0,0,0" VerticalAlignment="Top" Width="60" IsEnabled="{Binding HasSwitchPlate, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:CTCColumn}}}" Visibility="{Binding HasSwitchPlate, Converter={StaticResource BooleanToVisibilityConverter}, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:CTCColumn}}}" SwitchStr="{Binding SwitchStr, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:CTCColumn}}}"/>
+        <USS:SwitchModule x:Name="sw" HorizontalAlignment="Left" Height="92" Margin="0,0,0,0" VerticalAlignment="Top" Width="60" IsEnabled="{Binding HasSwitchPlate, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:CTCColumn}}}" Visibility="{Binding HasSwitchPlate, Converter={StaticResource BooleanToVisibilityConverter}, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:CTCColumn}}}" SwitchStr="{Binding SwitchStr, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:CTCColumn}}}"/>
         <USS:SignalModule x:Name="sig" HorizontalAlignment="Center" Height="178" Margin="0,98,0,0" VerticalAlignment="Top" Width="60" Visibility="{Binding HasSignalPlate, Converter={StaticResource BooleanToVisibilityConverter}, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:CTCColumn}}}" IsEnabled="{Binding HasSignalPlate, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:CTCColumn}}}" LeftSignalStr="{Binding LeftSignalStr, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:CTCColumn}}}" RightSignalStr="{Binding RightSignalStr, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:CTCColumn}}}"/>
-        <USS:CodeButton HorizontalAlignment="Center" Height="30" Margin="0,206,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="sig"/>
+        <USS:CodeButton x:Name="code" HorizontalAlignment="Center" Height="30" Margin="0,206,0,0" VerticalAlignment="Top" Width="30" SignalModulesStr="sig"/>
+        <MediaElement x:Name="TransmitSound" HorizontalAlignment="Left" Height="8" Margin="138,85,0,0" VerticalAlignment="Top" Width="11" LoadedBehavior="Manual"/>
 
     </Grid>
+    
 </UserControl>

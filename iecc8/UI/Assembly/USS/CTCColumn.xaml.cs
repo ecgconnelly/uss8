@@ -1,7 +1,10 @@
-﻿using Iecc8.UI.Equipment.USS;
+﻿using Iecc8.Messages;
+using Iecc8.UI.Equipment.USS;
+using Iecc8.World;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +28,162 @@ namespace Iecc8.UI.Assembly.USS
         public CTCColumn()
         {
             InitializeComponent();
+        }
+
+        public class CTCFieldController
+        {
+            public CTCColumn Column = null;
+            public bool WaitingForSwitch
+            { get; private set; }
+            
+            public bool WaitingForSignal
+            { get; private set; }
+
+            public bool Waiting
+            {
+                get { return WaitingForSignal || WaitingForSwitch; }
+            }
+
+            public async void SpontaneousIndicationCode()
+            {
+                if (Waiting) return; //we're going to send an indication when our request completes anyway
+
+
+                while (!Column.ColumnCodeLine.RequestLineAccessReceive(this))
+                {
+                    await Task.Delay(1000);
+                }
+                Debug.Print("Got the indication line");
+                Column.AwaitingIndicationCode = true;
+
+                Column.TransmitSound.Source = new Uri("Sounds/Code-receive.wav", UriKind.Relative);
+                Column.TransmitSound.Position = new System.TimeSpan(0);
+                Column.TransmitSound.Play();
+                await Task.Delay(4000);
+                Column.TransmitSound.Stop();
+                Debug.Assert(Column.ColumnCodeLine.ReleaseLineAccessReceive(this));
+                Debug.Print("Released the indication line");
+
+                Column.AwaitingIndicationCode = false;
+            }
+
+            public async void SendControlCode(CodeLine.ControlTransmission trans)
+            {
+                WaitingForSwitch = true;
+                foreach (World.Points sw in trans.switches)
+                {
+                    if (!sw.Movable)
+                    {
+                        Debug.Print("This switch cannot be moved right now");
+                        continue;
+                    }
+                    Debug.Print("Throwing switch");
+                    WaitingForSwitch = true;
+                    await sw.SwingAsync(trans.requestedReverse);
+
+                    Debug.Print("Waiting for switch to prove");
+                    for (int loopcount = 0; loopcount < 30; loopcount++)
+                    {
+                        if (sw.Reversed == trans.requestedReverse && sw.Proved)
+                        {
+                            break;
+                        }
+
+                        Debug.Print("{0}", loopcount);
+                        await Task.Delay(1000);
+                    }
+
+                    Debug.Print(sw.Reversed.ToString());
+                }
+                WaitingForSwitch = false;
+
+
+                World.Route route = null;
+                WaitingForSignal = true;
+                if (trans.requestedIndication == ESignalIndication.Stop)
+                {
+                    foreach (World.ControlledSignal sig in trans.signals)
+                    {
+                        await sig.CancelAsync();
+                    }
+                    foreach (World.ControlledSignal sig in trans.signals)
+                    {
+                        Debug.Print("Waiting for signal to drop");
+                        for (int loopcount = 0; loopcount < 30; loopcount++)
+                        {
+                            if (sig.Indication == ESignalIndication.Stop)
+                            {
+                                break;
+                            }
+
+                            Debug.Print("{0}", loopcount);
+                            await Task.Delay(1000);
+                        }
+                    }
+                    
+                }
+                if (trans.requestedIndication != ESignalIndication.Stop) // requested indication was not Stop
+                {
+                    foreach (World.ControlledSignal sig in trans.signals)
+                    {
+                        route = sig.ReadyRoute;
+                        if (route != null) break;
+                    }
+
+                    if (route != null)
+                    {
+                        await route.CallAsync(fleet: trans.requestedIndication == ESignalIndication.Fleet);
+
+                        bool anyDisplayed = false;
+                        
+                        Debug.Print("Waiting for signal to display");
+
+                        for (int loopcount = 0; loopcount < 30; loopcount++)
+                        {
+                            foreach (World.ControlledSignal sig in trans.signals)
+                            {
+                                if (sig.Indication == trans.requestedIndication)
+                                {
+                                    anyDisplayed = true;
+                                    break;
+                                }
+                            }
+                            if (anyDisplayed) break;
+                            Debug.Print("{0}", loopcount);
+                            await Task.Delay(1000);
+                         }
+                        
+                    }
+                    else if (trans.signals != null && trans.requestedIndication != ESignalIndication.Stop)
+                    {
+                        Debug.Print("Not displaying a signal because no routes were ready");
+                    }
+                }
+                WaitingForSignal = false;
+
+                while (!Column.ColumnCodeLine.RequestLineAccessReceive(this))
+                {
+                    await Task.Delay(1000);
+                }
+                Debug.Print("Got the indication line");
+
+                Column.TransmitSound.Source = new Uri("Sounds/Code-receive.wav", UriKind.Relative);
+                Column.TransmitSound.Position = new System.TimeSpan(0);
+                Column.TransmitSound.Play();
+                await Task.Delay(4000);
+                Column.TransmitSound.Stop();
+                Debug.Assert(Column.ColumnCodeLine.ReleaseLineAccessReceive(this));
+                Debug.Print("Released the indication line");
+
+                Column.AwaitingIndicationCode = false;
+                
+            }
+
+
+            public CTCFieldController(CTCColumn col)
+            {
+                this.Column = col;
+            }
         }
 
         #region DependencyProperties
@@ -58,6 +217,22 @@ namespace Iecc8.UI.Assembly.USS
         [Category("USS"), Description("Gets or sets the number on the lever plate")]
         public static readonly DependencyProperty SwitchPlateNumberProperty =
             DependencyProperty.Register(nameof(SwitchPlateNumber), typeof(int), typeof(CTCColumn));
+
+
+        public string CodeLineName
+        {
+            get
+            {
+                return (string)GetValue(CodeLineNameProperty);
+            }
+            set
+            {
+                SetValue(CodeLineNameProperty, value);
+            }
+        }
+        [Category("USS"), Description("Gets or sets the name of the codeline this CTCColumn is connected to")]
+        public static readonly DependencyProperty CodeLineNameProperty =
+            DependencyProperty.Register(nameof(CodeLineName), typeof(string), typeof(CTCColumn));
 
 
         public bool HasSwitchPlate
@@ -141,5 +316,58 @@ namespace Iecc8.UI.Assembly.USS
 
 
         #endregion
+
+        private bool AwaitingIndicationCodeImpl = false;
+        public bool AwaitingIndicationCode
+        {
+            get { return AwaitingIndicationCodeImpl; }
+            set
+            {
+                AwaitingIndicationCodeImpl = value;
+                sig.UpdateLampStates();
+                sw.UpdateLampStates();
+            }
+        }
+
+
+        private CodeLine FindCodeLine()
+        {
+            if (this.CodeLineName == "") return null;
+
+            var siblings = LogicalTreeHelper.GetChildren(Parent);
+            foreach ( var child in siblings )
+            {
+                if (child.GetType() == typeof(CodeLine))
+                {
+                    CodeLine cl = (CodeLine)child;
+                    if ((cl.Name) == CodeLineName) return cl;
+
+                }
+            }
+            return null;
+        }
+
+        public CTCFieldController FieldController = null;
+        CodeLine ColumnCodeLine = null;
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            SignalModule sigmod = this.HasSignalPlate ? this.sig : null;
+            SwitchModule swmod = this.HasSwitchPlate ? this.sw : null;
+            CodeButton code = this.code;
+            FieldController = new CTCFieldController(this);
+            ColumnCodeLine = FindCodeLine();
+            AwaitingIndicationCode = false;
+
+
+            code.Column = this;
+            code.ColumnSignalModule = sigmod;
+            code.ColumnSwitchModule = swmod;
+            code.ColumnCodeLine = ColumnCodeLine;
+
+            sw.Column = this;
+            sig.Column = this;
+
+        }
     }
 }

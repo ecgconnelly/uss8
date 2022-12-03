@@ -127,6 +127,9 @@
     <Compile Include="UI\Assembly\SingleTrackSiding.xaml.cs">
       <DependentUpon>SingleTrackSiding.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\Assembly\USS\CodeLine.xaml.cs">
+      <DependentUpon>CodeLine.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\Assembly\USS\CTCColumn.xaml.cs">
       <DependentUpon>CTCColumn.xaml</DependentUpon>
     </Compile>
@@ -303,6 +306,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\Assembly\SingleTrackSiding.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Assembly\USS\CodeLine.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -614,48 +621,48 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Sounds\Bell.wav">
+    <Content Include="Sounds\Bell.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Sounds\bell_stroke.wav">
+    </Content>
+    <Content Include="Sounds\bell_stroke.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
+    </Content>
     <Resource Include="Sounds\Button-press.wav">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Sounds\Button-release.wav">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Sounds\Button.wav">
+    <Content Include="Sounds\Button.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Sounds\Code-receive.wav">
+    </Content>
+    <Content Include="Sounds\Code-receive.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Sounds\Code-send.wav">
+    </Content>
+    <Content Include="Sounds\Code-send.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Sounds\Crossing.wav">
+    </Content>
+    <Content Include="Sounds\Crossing.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Sounds\pull-on.wav">
+    </Content>
+    <Content Include="Sounds\pull-on.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Sounds\push-off.wav">
+    </Content>
+    <Content Include="Sounds\push-off.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Sounds\Relay.wav">
+    </Content>
+    <Content Include="Sounds\Relay.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Sounds\RlyClick.wav">
+    </Content>
+    <Content Include="Sounds\RlyClick.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
+    </Content>
     <Resource Include="Sounds\Signal-lever.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Sounds\Signal-normal.wav">
+    <Content Include="Sounds\Signal-normal.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
+    </Content>
     <Resource Include="Sounds\Switch-lever.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -665,6 +672,20 @@
     <Resource Include="Sounds\toggle-on.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Plates\bell-cutout.gif" />
+    <Resource Include="Images\Plates\call-on.gif" />
+    <Resource Include="Images\Plates\code.gif" />
+    <Resource Include="Images\Plates\control.gif" />
+    <Resource Include="Images\Plates\CTC-codeplate.gif" />
+    <Resource Include="Images\Plates\CTC-Lock-h.gif" />
+    <Resource Include="Images\Plates\CTC-Lock-v.gif" />
+    <Resource Include="Images\Plates\CTC-SWHeater-h.png" />
+    <Resource Include="Images\Plates\CTC-SWHeater-v.png" />
+    <Resource Include="Images\Plates\TrafficDirectionArrowLeft.png" />
+    <Resource Include="Images\Plates\TrafficDirectionArrowRight.png" />
+    <Resource Include="Images\Plates\TrafficDirectionArrows.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
