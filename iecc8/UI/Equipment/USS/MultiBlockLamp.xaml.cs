@@ -95,14 +95,31 @@ namespace Iecc8.UI.Equipment.USS
             }
         }
 
+        private bool oldOccupied = true;
+
         private void Update()
         {
             if (DesignerProperties.GetIsInDesignMode(this)) return;
 
             string imgname = "uss-lamp-" + GetValue(LampColorProperty) as string;
 
-            if (AnyCircuitsOccupied || AnyCircuitsReversed) imgname += "-on";
+            if (AnyCircuitsOccupied || AnyCircuitsReversed)
+            {
+                imgname += "-on";
+                if (!oldOccupied && LampColor == "red")
+                {
+                    BellSound.Source = new Uri("Sounds/Bell.wav", UriKind.Relative);
+                    BellSound.Volume = 0.04;
+                    BellSound.Position = new System.TimeSpan(0);
+                    BellSound.Play();
+                }
+            }
+
             else imgname += "-off";
+
+            
+
+            oldOccupied = AnyCircuitsOccupied || AnyCircuitsReversed;
 
             LampImage.Source = (ImageSource)FindResource(resourceKey: imgname);
         }
