@@ -6,12 +6,13 @@
              xmlns:local="clr-namespace:Iecc8.UI.Panels"
              xmlns:USS="clr-namespace:Iecc8.UI.Equipment.USS" xmlns:USS1="clr-namespace:Iecc8.UI.Assembly.USS" x:Class="Iecc8.UI.Panels.BakersfieldPanel"
              mc:Ignorable="d" 
-             d:DesignHeight="718" d:DesignWidth="4040">
+             d:DesignHeight="718" d:DesignWidth="5050">
     <Grid Margin="4,0,-4,0">
         <Image HorizontalAlignment="Left" Height="718" VerticalAlignment="Center" Width="1000" Source="/Images/PanelSegments/uss-15.gif" RenderTransformOrigin="0.503,0.521"/>
         <Image HorizontalAlignment="Left" Height="718" Margin="1010,0,0,0" VerticalAlignment="Center" Width="1000" Source="/Images/PanelSegments/uss-15.gif"/>
         <Image HorizontalAlignment="Left" Height="718" Margin="2020,0,0,0" VerticalAlignment="Top" Width="1000" Source="/Images/PanelSegments/uss-15.gif"/>
         <Image HorizontalAlignment="Left" Height="718" Margin="3030,0,0,0" VerticalAlignment="Top" Width="1000" Source="/Images/PanelSegments/uss-15.gif"/>
+        <Image HorizontalAlignment="Left" Height="718" Margin="4040,0,0,0" VerticalAlignment="Top" Width="1000" Source="/Images/PanelSegments/uss-15.gif"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="19,136,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="15" Margin="40,136,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
         <Image HorizontalAlignment="Left" Height="40" Margin="85,135,0,0" VerticalAlignment="Top" Width="40" Source="/Images/TrackSegments/os-righthand-east-closed.gif" Stretch="None"/>
@@ -2105,6 +2106,7 @@
         <USS1:CodeLine x:Name="CodeLine1" HorizontalAlignment="Left" Height="110" Margin="1844,0,0,-8" VerticalAlignment="Bottom" Width="170"/>
         <USS1:CodeLine x:Name="CodeLine2" HorizontalAlignment="Left" Height="110" Margin="2854,0,0,-8" VerticalAlignment="Bottom" Width="170"/>
         <USS1:CodeLine x:Name="CodeLine3" HorizontalAlignment="Left" Height="110" Margin="3864,0,0,-8" VerticalAlignment="Bottom" Width="170"/>
+        <USS1:CodeLine x:Name="CodeLine4" HorizontalAlignment="Left" Height="110" Margin="4874,0,0,-8" VerticalAlignment="Bottom" Width="170"/>
         <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="800,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="26" SwitchPlateNumber="25" HasSwitchPlate="True" SwitchStr="250/36" CodeLineName="CodeLine0" HasSignalPlate="True" LeftSignalStr="250/95" RightSignalStr="250/84,250/85"/>
         <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="866,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="28" SwitchPlateNumber="27" HasSwitchPlate="True" SwitchStr="250/35" CodeLineName="CodeLine0" LeftSignalStr="250/123" RightSignalStr="250/129,250/130" HasSignalPlate="True"/>
         <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="1019,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="32" SwitchPlateNumber="31" HasSwitchPlate="True" CodeLineName="CodeLine1" HasSignalPlate="True" SwitchStr="250/34" LeftSignalStr="250/115" RightSignalStr="250/117"/>
