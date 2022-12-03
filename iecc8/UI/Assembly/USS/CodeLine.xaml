@@ -19,8 +19,7 @@
         </Image>
         <Image x:Name="TransmitLampImage" HorizontalAlignment="Left" Height="21" Margin="40,51,0,0" VerticalAlignment="Top" Width="21" Stretch="None" Source="/uss8;component/Images/Lamps/white-off.gif"/>
         <Image x:Name="ReceiveLampImage" HorizontalAlignment="Left" Height="21" Margin="106,51,0,0" VerticalAlignment="Top" Width="21" Stretch="None" Source="/uss8;component/Images/Lamps/white-off.gif"/>
-        <MediaElement x:Name="TransmitSound" HorizontalAlignment="Left" Height="8" Margin="138,85,0,0" VerticalAlignment="Top" Width="11" LoadedBehavior="Manual"/>
-
+       
     </Grid>
 
 </UserControl>

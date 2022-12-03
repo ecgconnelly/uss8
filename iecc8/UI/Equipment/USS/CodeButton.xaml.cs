@@ -20,6 +20,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static Iecc8.UI.Assembly.USS.CodeLine;
 
 namespace Iecc8.UI.Equipment.USS
 {
@@ -61,9 +62,7 @@ namespace Iecc8.UI.Equipment.USS
 
         public CodeButton()
         {
-            InitializeComponent();
-            AwaitingIndicationCode = false;
-           
+            InitializeComponent();           
         }
 
         private bool RouteMatchesLeverSettings(World.Route route)
@@ -124,82 +123,36 @@ namespace Iecc8.UI.Equipment.USS
         public SignalModule ColumnSignalModule;
         public SwitchModule ColumnSwitchModule;
         public CodeLine ColumnCodeLine;
+        public CTCColumn Column;
 
-        public bool AwaitingIndicationCode
+
+
+
+        private async void Press()
         {
-            get; private set;
-        }
+            Column.AwaitingIndicationCode = true;
+            while (ColumnCodeLine.RequestLineAccessTransmit(this) == false)
+            {
+                Debug.Print("Line is busy, waiting");
+                await Task.Delay(500);
+            }
+            Debug.Print("Got the code line");
+
+            ControlTransmission trans = new ControlTransmission(ColumnSignalModule, ColumnSwitchModule);
+
+            Column.TransmitSound.Source = new Uri("Sounds/Code-send.wav", UriKind.Relative);
+            Column.TransmitSound.Position = new System.TimeSpan(0);
+            Column.TransmitSound.Play();
+            await Task.Delay(4000);
+            Column.TransmitSound.Stop();
+            Column.FieldController.SendControlCode(trans);
+            Debug.Assert(ColumnCodeLine.ReleaseLineAccessTransmit(this));
+            Debug.Print("Released the code line");
+           
 
 
-        private async void Press()        
-        {
-            ColumnCodeLine.QueueControlTransmission(ColumnSignalModule, ColumnSwitchModule);
-            AwaitingIndicationCode = true;
-            return;
+            //ColumnCodeLine.QueueControlTransmission(ColumnSignalModule, ColumnSwitchModule);
             
-            /* 
-             * Changing logic to code for everything in the column and nothing else
-             * Route checking logic will be moved out of the code button
-            if (SignalModules == null)
-            {
-                Debug.Print("No signal modules to code for");
-                return;
-            }
-            */
-
-            //either we have a signal in this column or not
-            // turn this on once we're converted to CTCColumn controls instead of the separate lever objects
-            //Debug.Assert(SignalModules.Count < 2);
-
-
-
-            List<World.ControlledSignal> signalsToDrop= new List<World.ControlledSignal>();
-
-            
-
-            foreach (SignalModule sigmod in SignalModules)
-            {
-                if (sigmod.LeverState == 1) //centered
-                {
-                    foreach (World.ControlledSignal dropsig in 
-                        sigmod.LeftSignals.Concat(sigmod.RightSignals))
-                    {
-                        signalsToDrop.Add(dropsig);
-                        
-                    }
-                    continue; //next signal module
-                }
-                
-                World.Route requestedRoute = PickRequestedRoute(sigmod);
-                if (requestedRoute == null) continue;
-                Debug.Print("Code requested: {0} --> {1}", 
-                    requestedRoute.Entrance.ID,
-                    requestedRoute.Exit.ID);
-                
-
-                if (requestedRoute.Available)
-                {
-                    Debug.Print("Route is available, setting route");
-                    /*
-                    foreach (World.RoutePointPosition rpp in requestedRoute.PointPositions)
-                    {
-                        await rpp.Points.SwingAsync(rpp.Reverse);
-                    }
-                    requestedRoute.Entrance.SetCurrentRoute(requestedRoute, sigmod.FleetSwitchOn);
-                    */
-
-                    await requestedRoute.CallAsync(sigmod.FleetSwitchOn);
-                }
-                else
-                {
-                    Debug.Print("Requested route is not available");
-                }
-            }
-
-            foreach (World.ControlledSignal dropsig in signalsToDrop)
-            {
-                await dropsig.CancelAsync();
-            }
 
         }
 

@@ -1,4 +1,5 @@
-﻿using Iecc8.UI.Common;
+﻿using Iecc8.UI.Assembly.USS;
+using Iecc8.UI.Common;
 using Iecc8.World;
 using System;
 using System.Collections.Generic;
@@ -24,6 +25,8 @@ namespace Iecc8.UI.Equipment.USS
     /// </summary>
     public partial class SignalModule : UserControl
     {
+        public CTCColumn Column;
+
         public SignalModule()
         {
             InitializeComponent();
@@ -270,7 +273,7 @@ namespace Iecc8.UI.Equipment.USS
             }
         }
 
-        private void UpdateLampStates()
+        public void UpdateLampStates()
         {
             //Debug.Print("Updating lamp states for signal module {0}", PlateNumber);
 
@@ -288,9 +291,18 @@ namespace Iecc8.UI.Equipment.USS
 
             if (!left && !right) center = true;
 
+            if (Column != null && Column.AwaitingIndicationCode)
+            {
+                left = false;
+                right = false;
+                center = false;
+            }
+
             LeftLampState = left;
             CenterLampState = center;
             RightLampState = right;
+
+            DrawLamps();
             //Debug.Print("{0}, {1}, {2}",
             //    left, center, right);
         }

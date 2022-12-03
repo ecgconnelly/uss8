@@ -110,71 +110,7 @@ namespace Iecc8.UI.Assembly.USS
 
         
 
-        private async Task Transmit(ControlTransmission trans)
-        {
-            //play code transmission sound now
-            //TransmitSound.LoadedBehavior = MediaState.Manual;
-            TransmitSound.Source = new Uri("Sounds/Code-send.wav", UriKind.Relative);
-            TransmitSound.Position = new System.TimeSpan(0);
-            TransmitSound.Play();
-            SetTransmitLamp(true);
-            await Task.Delay(4000);
-            TransmitSound.Stop();
-            SetTransmitLamp(false);
-
-            foreach (World.Points sw in trans.switches)
-            {
-                if (!sw.Movable)
-                {
-                    Debug.Print("This switch cannot be moved right now");
-                    continue;
-                }
-                Debug.Print("Throwing switch");
-                await sw.SwingAsync(trans.requestedReverse);
-                Debug.Print("Waiting for switch to prove");
-                for(int loopcount = 0; loopcount < 30; loopcount++)
-                {
-                    if (sw.Reversed == trans.requestedReverse && sw.Proved)
-                    {
-                        break;
-                    }
-
-                    Debug.Print("{0}", loopcount);
-                    await Task.Delay(1000);
-                    
-                }
-
-                Debug.Print(sw.Reversed.ToString());
-            }
-
-            World.Route route = null;
-
-            if (trans.requestedIndication == ESignalIndication.Stop)
-            {
-                foreach (World.ControlledSignal sig in trans.signals)
-                {
-                    await sig.CancelAsync();
-                }
-                return;
-            }
-
-            foreach(World.ControlledSignal sig in trans.signals)
-            {                
-                // if we're here, the requested aspect was not Stop
-                // therefore we want to call a route
-                route = sig.ReadyRoute;
-                if (route != null) break;
-            }
-
-            if (route != null)
-            {
-                await route.CallAsync(fleet: trans.requestedIndication == ESignalIndication.Fleet);
-            }
-            else if (trans.signals != null && trans.requestedIndication != ESignalIndication.Stop)
-            {
-                Debug.Print("Not displaying a signal because no routes were ready");
-            }
-        }
+   
 
         private async Task Receive()
         {
@@ -194,20 +130,66 @@ namespace Iecc8.UI.Assembly.USS
                 if (trans == null) continue;
 
                 Debug.Print("calling Transmit for transmission {0}", count);
-                await Transmit(trans);
+                //await Transmit(trans);
                 Debug.Print("back from calling Transmit for transmission {0}", count);
                 await Task.Delay(1000);
             }
             CodeLineActive = false;
         }
 
-        
+        private object TransmitLineHeldBy = null;
+        private object ReceiveLineHeldBy = null;
 
+        public bool RequestLineAccessTransmit(object sender)
+        {
+            if (TransmitLineHeldBy != null) { return false; }
+            if (ReceiveLineHeldBy != null) { return false; }
+
+            SetTransmitLamp(true);
+            TransmitLineHeldBy = sender;
+            return true;
+        }
+
+        public bool RequestLineAccessReceive(object sender)
+        {
+            if (TransmitLineHeldBy != null) { return false; }
+            if (ReceiveLineHeldBy != null) { return false; }
+
+            SetReceiveLamp(true);
+            ReceiveLineHeldBy = sender;
+            return true;
+        }
+
+        public bool ReleaseLineAccessTransmit(object sender)
+        {
+            if (TransmitLineHeldBy == sender)
+            {
+                TransmitLineHeldBy = null;
+                SetTransmitLamp(false);
+                return true;
+            }
+            
+            return false; 
+        }
+
+        public bool ReleaseLineAccessReceive(object sender)
+        {
+            if (ReceiveLineHeldBy == sender)
+            {
+                ReceiveLineHeldBy = null;
+                SetReceiveLamp(false);
+                return true;
+            }
+
+            return false;
+        }
 
         public void QueueControlTransmission(
             SignalModule sigmod,
             SwitchModule swmod)
         {
+            // ControlTransmission: grab current lever settings
+            // so that lever changes after Code is pressed do not have effect in the field
             ControlTransmission trans = new ControlTransmission(sigmod, swmod);
             ControlQueue.Enqueue(trans);
 
