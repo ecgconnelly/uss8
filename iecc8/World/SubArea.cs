@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using System.Windows.Data;
 
 namespace Iecc8.World {
 	/// <summary>
@@ -143,9 +144,14 @@ namespace Iecc8.World {
 			IEnumerator<int> occupiedEnum = message.OccupiedBlocks.GetEnumerator(), reversedEnum = message.OpenManualSwitchBlocks.GetEnumerator();
 			occupiedEnum = occupiedEnum.MoveNext() ? occupiedEnum : null;
 			reversedEnum = reversedEnum.MoveNext() ? reversedEnum : null;
+			
 			for (int i = 0; i != tcs.Count; ++i) {
 				bool occupied = occupiedEnum != null && occupiedEnum.Current == i;
 				bool reversed = reversedEnum != null && reversedEnum.Current == i;
+				if (reversed)
+				{
+					Debug.Print("Reversed switch");
+				}
 				if (tcs[i] != null) {
 					tcs[i].UpdateFromRun8(occupied, reversed);
 					if (occupied) {

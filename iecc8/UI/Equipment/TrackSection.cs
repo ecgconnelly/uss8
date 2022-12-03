@@ -264,7 +264,10 @@ namespace Iecc8.UI.Equipment {
 		/// <param name="sender">The track circuit.</param>
 		/// <param name="e">Information about the change.</param>
 		private void OnTCPropChanged(object sender, PropertyChangedEventArgs e) {
-			if (e.PropertyName == nameof(TrackCircuit.Occupied) || e.PropertyName == nameof(TrackCircuit.RouteLocked)) {
+			if (e.PropertyName == nameof(TrackCircuit.Occupied) 
+				|| e.PropertyName == nameof(TrackCircuit.ReversedHandPoints) 
+				|| e.PropertyName == nameof(TrackCircuit.RouteLocked)) 
+			{
 				Update();
 			}
 		}

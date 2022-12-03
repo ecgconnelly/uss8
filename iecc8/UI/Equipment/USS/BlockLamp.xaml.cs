@@ -100,19 +100,36 @@ namespace Iecc8.UI.Equipment.USS
         private string PickLampImageName()
         {
             MainViewModel vm = DataContext as MainViewModel;
-            if (vm == null)           return "uss-lamp-s-inconsistent";
+            if (vm == null) return "uss-lamp-s-inconsistent";
             if (TrackCircuit == null) return "uss-lamp-s-unknown";
 
             string imgname = "uss-lamp-" + GetValue(LampColorProperty) as string;
-            if (TrackCircuit.Occupied) imgname += "-on";
-            else imgname += "-off";
+            if (TrackCircuit.Occupied || TrackCircuit.ReversedHandPoints)
+            {
+                if (!oldOccupied && LampColor == "red")
+                {
+                    BellSound.Source = new Uri("Sounds/Bell.wav", UriKind.Relative);
+                    BellSound.Volume = 0.04;
+                    BellSound.Position = new System.TimeSpan(0);
+                    BellSound.Play();
+                }
+                imgname += "-on";
+                oldOccupied = true;
+
+
+            }
+            else
+            {
+                imgname += "-off";
+                oldOccupied = false;
+            }
 
             return imgname;
 
          }
-            
-    
 
+
+        private bool oldOccupied = true;
 
 
         /// <summary>
