@@ -54,6 +54,19 @@ namespace Iecc8.World {
 		#endregion
 
 		#region Signaller API
+
+		public bool PointsProved
+		{
+			get
+			{
+				foreach (RoutePointPosition rpp in PointPositions)
+				{
+					if (!rpp.Points.Proved || (rpp.Points.Reversed != rpp.Reverse)) return false;
+				}
+				return true;
+			}
+		}
+
 		/// <summary>
 		/// Whether this route is able to be called right now.
 		/// </summary>

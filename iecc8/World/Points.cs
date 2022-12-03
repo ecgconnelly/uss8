@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Iecc8.World {
@@ -43,6 +44,24 @@ namespace Iecc8.World {
 					Debug.Print("Switch {0} cannot be thrown because it is {1}", this.ID, msg);
 					return false;
 				}
+
+
+				foreach(ControlledSignal sig in this.World.Region.SubAreas[this.SubArea].ControlledSignals)
+				{
+					if (sig.CurrentRoute != null)
+					{
+						foreach(RoutePointPosition rpp in sig.CurrentRoute.PointPositions)
+						{
+							if (rpp.Points == this)
+							{
+								Debug.Print("Switch {0} cannot be thrown because it is part of a locked route");
+								return false;
+                            }
+						}
+					}
+				}
+
+
 				foreach (TrackCircuit i in ProtectingTCs) {
 					if (i.RouteLocked) {
 						Debug.Print("Switch cannot be changed because TC {0} is route locked",

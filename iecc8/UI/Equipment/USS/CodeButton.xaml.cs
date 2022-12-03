@@ -1,5 +1,6 @@
 ﻿using Iecc8.Messages;
 using Iecc8.Schema;
+using Iecc8.UI.Assembly.USS;
 using Iecc8.UI.Panels;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static Iecc8.UI.Assembly.USS.CodeLine;
 
 namespace Iecc8.UI.Equipment.USS
 {
@@ -60,8 +62,7 @@ namespace Iecc8.UI.Equipment.USS
 
         public CodeButton()
         {
-            InitializeComponent();
-           
+            InitializeComponent();           
         }
 
         private bool RouteMatchesLeverSettings(World.Route route)
@@ -119,59 +120,39 @@ namespace Iecc8.UI.Equipment.USS
             return req;
         }
 
-        private async void Press()        
+        public SignalModule ColumnSignalModule;
+        public SwitchModule ColumnSwitchModule;
+        public CodeLine ColumnCodeLine;
+        public CTCColumn Column;
+
+
+
+
+        private async void Press()
         {
-            if (SignalModules == null)
+            Column.AwaitingIndicationCode = true;
+            while (ColumnCodeLine.RequestLineAccessTransmit(this) == false)
             {
-                Debug.Print("No signal modules to code for");
-                return;
+                Debug.Print("Line is busy, waiting");
+                await Task.Delay(500);
             }
+            Debug.Print("Got the code line");
 
-            List<World.ControlledSignal> signalsToDrop= new List<World.ControlledSignal>();
+            ControlTransmission trans = new ControlTransmission(ColumnSignalModule, ColumnSwitchModule);
 
-            foreach (SignalModule sigmod in SignalModules)
-            {
-                if (sigmod.LeverState == 1) //centered
-                {
-                    foreach (World.ControlledSignal dropsig in 
-                        sigmod.LeftSignals.Concat(sigmod.RightSignals))
-                    {
-                        signalsToDrop.Add(dropsig);
-                        
-                    }
-                    continue; //next signal module
-                }
-                
-                World.Route requestedRoute = PickRequestedRoute(sigmod);
-                if (requestedRoute == null) continue;
-                Debug.Print("Code requested: {0} --> {1}", 
-                    requestedRoute.Entrance.ID,
-                    requestedRoute.Exit.ID);
-                
+            Column.TransmitSound.Source = new Uri("Sounds/Code-send.wav", UriKind.Relative);
+            Column.TransmitSound.Position = new System.TimeSpan(0);
+            Column.TransmitSound.Play();
+            await Task.Delay(4000);
+            Column.TransmitSound.Stop();
+            Column.FieldController.SendControlCode(trans);
+            Debug.Assert(ColumnCodeLine.ReleaseLineAccessTransmit(this));
+            Debug.Print("Released the code line");
+           
 
-                if (requestedRoute.Available)
-                {
-                    Debug.Print("Route is available, setting route");
-                    /*
-                    foreach (World.RoutePointPosition rpp in requestedRoute.PointPositions)
-                    {
-                        await rpp.Points.SwingAsync(rpp.Reverse);
-                    }
-                    requestedRoute.Entrance.SetCurrentRoute(requestedRoute, sigmod.FleetSwitchOn);
-                    */
 
-                    await requestedRoute.CallAsync(sigmod.FleetSwitchOn);
-                }
-                else
-                {
-                    Debug.Print("Requested route is not available");
-                }
-            }
-
-            foreach (World.ControlledSignal dropsig in signalsToDrop)
-            {
-                await dropsig.CancelAsync();
-            }
+            //ColumnCodeLine.QueueControlTransmission(ColumnSignalModule, ColumnSwitchModule);
+            
 
         }
 

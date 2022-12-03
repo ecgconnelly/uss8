@@ -1,4 +1,5 @@
-﻿using Iecc8.UI.Common;
+﻿using Iecc8.UI.Assembly.USS;
+using Iecc8.UI.Common;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,6 +23,8 @@ namespace Iecc8.UI.Equipment.USS
     /// </summary>
     public partial class SwitchModule : UserControl
     {
+        public CTCColumn Column = null;
+
         public SwitchModule()
         {
             InitializeComponent();
@@ -176,13 +179,15 @@ namespace Iecc8.UI.Equipment.USS
 
         public World.Points PointsObject;
 
-        private void OnPointsPropChanged(object sender, PropertyChangedEventArgs e)
+
+        public void UpdateLampStates()
         {
+            if (PointsObject == null) return;
             //if (e.PropertyName == nameof(World.Points.Reversed) || e.PropertyName == nameof(World.Points.HandCrankable))
             {
                 if (PointsObject.Inconsistent || !PointsObject.Proved || PointsObject.HandCrankable)
                 {
-                    LeftLampState = false; 
+                    LeftLampState = false;
                     RightLampState = false;
                 }
                 else if (PointsObject.Reversed)
@@ -196,8 +201,18 @@ namespace Iecc8.UI.Equipment.USS
                     RightLampState = false;
                 }
 
+                if (Column != null && Column.AwaitingIndicationCode)
+                {
+                    LeftLampState = false;
+                    RightLampState = false;
+                }
+
                 DrawLamps();
             }
+        }
+        private void OnPointsPropChanged(object sender, PropertyChangedEventArgs e)
+        {
+            UpdateLampStates();
         }
 
 
