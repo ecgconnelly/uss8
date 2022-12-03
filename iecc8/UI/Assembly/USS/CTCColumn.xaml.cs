@@ -109,20 +109,26 @@ namespace Iecc8.UI.Assembly.USS
                     if (route != null)
                     {
                         await route.CallAsync(fleet: trans.requestedIndication == ESignalIndication.Fleet);
-                        foreach (World.ControlledSignal sig in trans.signals)
+
+                        bool anyDisplayed = false;
+                        
+                        Debug.Print("Waiting for signal to display");
+
+                        for (int loopcount = 0; loopcount < 30; loopcount++)
                         {
-                            Debug.Print("Waiting for signal {0}to display", sig.ID);
-                            for (int loopcount = 0; loopcount < 30; loopcount++)
+                            foreach (World.ControlledSignal sig in trans.signals)
                             {
-                                if (sig.Indication == ESignalIndication.Stop)
+                                if (sig.Indication == trans.requestedIndication)
                                 {
+                                    anyDisplayed = true;
                                     break;
                                 }
-
-                                Debug.Print("{0}", loopcount);
-                                await Task.Delay(1000);
                             }
-                        }
+                            if (anyDisplayed) break;
+                            Debug.Print("{0}", loopcount);
+                            await Task.Delay(1000);
+                         }
+                        
                     }
                     else if (trans.signals != null && trans.requestedIndication != ESignalIndication.Stop)
                     {
