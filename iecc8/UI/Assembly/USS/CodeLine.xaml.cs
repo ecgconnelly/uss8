@@ -44,7 +44,7 @@ namespace Iecc8.UI.Assembly.USS
             public ESignalIndication requestedIndication;
             public bool requestedReverse;
 
-            public ControlTransmission(SignalModule sigmod, SwitchModule swmod)
+            public ControlTransmission(SignalModule sigmod, SwitchModule swmod, bool callOn = false)
             {
                 signals = new List<World.ControlledSignal>();
                 switches = new List<World.Points>();
@@ -73,6 +73,11 @@ namespace Iecc8.UI.Assembly.USS
                     else
                     {
                         throw new Exception("Missing signal lever state for signal module " + sigmod.PlateNumber.ToString());
+                    }
+
+                    if (callOn && (left || right))
+                    {
+                        requestedIndication = ESignalIndication.FlagBy;
                     }
                 }
 

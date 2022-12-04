@@ -130,6 +130,8 @@ namespace Iecc8.UI.Equipment.USS
 
         private async void Press()
         {
+            bool callOn = Keyboard.Modifiers.HasFlag(ModifierKeys.Control);
+
             Column.AwaitingIndicationCode = true;
             while (ColumnCodeLine.RequestLineAccessTransmit(this) == false)
             {
@@ -137,8 +139,9 @@ namespace Iecc8.UI.Equipment.USS
                 await Task.Delay(500);
             }
             Debug.Print("Got the code line");
-
-            ControlTransmission trans = new ControlTransmission(ColumnSignalModule, ColumnSwitchModule);
+            
+            ControlTransmission trans = 
+                new ControlTransmission(ColumnSignalModule, ColumnSwitchModule, callOn);
 
             Column.TransmitSound.Source = new Uri("Sounds/Code-send.wav", UriKind.Relative);
             Column.TransmitSound.Position = new System.TimeSpan(0);
@@ -176,6 +179,19 @@ namespace Iecc8.UI.Equipment.USS
 
         private void Image_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            ButtonPressSound.Source = new Uri("Sounds/Button-press.wav", UriKind.Relative);
+            ButtonPressSound.Position = new System.TimeSpan(0);
+            ButtonPressSound.Play();
+
+            
+        }
+
+        private void Image_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            ButtonReleaseSound.Source = new Uri("Sounds/Button-release.wav", UriKind.Relative);
+            ButtonReleaseSound.Position = new System.TimeSpan(0);
+            ButtonReleaseSound.Play();
+
             Press(); //this can be expanded later
         }
 
