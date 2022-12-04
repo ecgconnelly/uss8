@@ -70,11 +70,14 @@ namespace Iecc8.UI.Assembly.USS
             public async void SendControlCode(CodeLine.ControlTransmission trans)
             {
                 WaitingForSwitch = true;
+                bool switchOK = true;
+
                 foreach (World.Points sw in trans.switches)
                 {
                     if (!sw.Movable)
                     {
                         Debug.Print("This switch cannot be moved right now");
+                        if (sw.Reversed != trans.requestedReverse) switchOK = false;
                         continue;
                     }
                     Debug.Print("Throwing switch");
@@ -92,6 +95,8 @@ namespace Iecc8.UI.Assembly.USS
                         Debug.Print("{0}", loopcount);
                         await Task.Delay(1000);
                     }
+
+                    if ((sw.Reversed != trans.requestedReverse) || !sw.Proved) switchOK = false;
 
                     Debug.Print(sw.Reversed.ToString());
                 }
@@ -122,7 +127,8 @@ namespace Iecc8.UI.Assembly.USS
                     }
                     
                 }
-                if (trans.requestedIndication != ESignalIndication.Stop) // requested indication was not Stop
+                if (trans.requestedIndication != ESignalIndication.Stop && // requested indication was not Stop
+                    switchOK == true) // don't try to clear signals if setting switches at this controller failed
                 {
                     foreach (World.ControlledSignal sig in trans.signals)
                     {
