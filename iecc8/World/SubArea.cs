@@ -166,7 +166,7 @@ namespace Iecc8.World {
 				}
 			}
 			if (occupiedEnum != null) {
-				// TODO: put this back!
+				// disabled because it's easier to use block transition prints
 				//Debug.Print("Run8 sent occupied track circuit number " + occupiedEnum.Current + " which sub-area " + ID + " doesn't know about.");
 			}
 			if (reversedEnum != null) {

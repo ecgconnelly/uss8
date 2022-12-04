@@ -19,5 +19,6 @@ namespace Iecc8.Schema {
 		public Points() {
 			ProtectingTCs = new List<ushort>();
 		}
+
 	}
 }

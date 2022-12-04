@@ -127,6 +127,7 @@ namespace Iecc8.World {
 		// All functions in this region are called on the thread pool by WCF, so any touching of the Route objects, emitting of events, etc. must be posted to SyncContext.
 
 		void IDispatcher.DTMF(DTMFMessage pMessage) {
+			Debug.Print(pMessage.ToString());
 			MessageReceived = true;
 		}
 
