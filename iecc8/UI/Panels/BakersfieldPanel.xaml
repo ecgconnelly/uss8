@@ -2091,7 +2091,6 @@
         <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3796,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="9" LampColor="amber"/>
         <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="3796,205,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" TrackCircuitID="8" LampColor="amber"/>
         <USS:MultiBlockLamp HorizontalAlignment="Left" Height="16" Margin="3862,182,0,0" VerticalAlignment="Top" Width="16                             " TrackCircuitStr="250/6,250/5" LampColor="white"/>
-        <USS:MultiBlockLamp HorizontalAlignment="Left" Height="16" Margin="4003,182,0,0" VerticalAlignment="Top" Width="16                             " TrackCircuitStr="250/0,100/230" LampColor="white"/>
 
 
         <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="74,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="4" SwitchPlateNumber="3" HasSwitchPlate="True" HasSignalPlate="True" LeftSignalStr="250/87,250/86" SwitchStr="250/43" RightSignalStr="250/137" CodeLineName="CodeLine0"/>
@@ -2151,6 +2150,407 @@
         <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="3830,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="116" SwitchPlateNumber="115" CodeLineName="CodeLine3" HasSignalPlate="True" HasSwitchPlate="True" SwitchStr="250/2" LeftSignalStr="250/6" RightSignalStr="250/7,250/8"/>
         <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="3896,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="118" SwitchPlateNumber="117" CodeLineName="CodeLine3" HasSignalPlate="True" HasSwitchPlate="True" SwitchStr="250/1" LeftSignalStr="250/3,250/4" RightSignalStr="250/5"/>
         <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="3962,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="120" SwitchPlateNumber="119" CodeLineName="CodeLine3" HasSignalPlate="True" HasSwitchPlate="True" SwitchStr="250/0" LeftSignalStr="250/0" RightSignalStr="250/1,250/2"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4970,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4986,182,0,0" VerticalAlignment="Top" Width="31" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4986,159,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4970,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4992,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="220" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4992,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" LampColor="amber"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4948,159,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4948,182,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="4905,135,0,0" VerticalAlignment="Top" Width="40" Source="/Images/TrackSegments/os-lefthand-east-thrown.gif" Stretch="None"/>
+        <Label Content="149" HorizontalAlignment="Left" Height="24" Margin="4913,125,0,0" VerticalAlignment="Top" Width="26" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4926,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="124" LampColor="red"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4936,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4957,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="122" LampColor="amber"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4890,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4920,182,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4890,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4909,182,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4934,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" LampColor="amber" TrackCircuitID="150"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4867,159,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4856,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4877,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="125" LampColor="amber"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4867,182,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4856,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4877,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="149" LampColor="amber"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="4825,158,0,0" VerticalAlignment="Top" Width="40" Source="/Images/TrackSegments/os-left-crossover-closed.gif" Stretch="None"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4832,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="152" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4843,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="151" LampColor="red"/>
+        <Label Content="145" HorizontalAlignment="Left" Height="24" Margin="4833,192,0,0" VerticalAlignment="Top" Width="20" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4811,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4789,182,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4770,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4795,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="127" LampColor="amber"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="4739,181,0,0" VerticalAlignment="Top" Width="40" Source="/Images/TrackSegments/os-righthand-east-closed.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4761,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="114" LampColor="red"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4720,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="4686,181,0,0" VerticalAlignment="Top" Width="40" Source="/Images/TrackSegments/os-righthand-east-closed.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4707,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="25" LampColor="red"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4674,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4641,182,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="4587,158,0,0" VerticalAlignment="Top" Width="40" Source="/Images/TrackSegments/os-right-crossover-closed.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4622,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4622,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4654,182,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4652,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="129" LampColor="amber"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4642,159,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4672,159,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4701,159,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4731,159,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4760,159,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4786,159,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4811,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4724,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="126" LampColor="amber"/>
+        <Label Content="137" HorizontalAlignment="Left" Height="24" Margin="4599,192,0,0" VerticalAlignment="Top" Width="20" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4609,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="200" LampColor="red"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4570,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="4537,135,0,0" VerticalAlignment="Top" Width="40" Source="/Images/TrackSegments/os-righthand-east-closed.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4521,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4540,158,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="117" LampColor="red" RenderTransformOrigin="0.5,0.5">
+            <USS:BlockLamp.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </USS:BlockLamp.RenderTransform>
+        </USS:BlockLamp>
+        <Label Content="GOMEZ" HorizontalAlignment="Left" Height="24" Margin="4535,78,0,0" VerticalAlignment="Top" Width="97" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="W BAKERSFIELD" HorizontalAlignment="Left" Height="24" Margin="4681,78,0,0" VerticalAlignment="Top" Width="97" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="W BAKERSFIELD" HorizontalAlignment="Left" Height="24" Margin="4883,78,0,0" VerticalAlignment="Top" Width="97" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4496,159,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4496,182,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4521,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4541,182,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4561,182,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4575,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="199" LampColor="red"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="4448,158,0,0" VerticalAlignment="Top" Width="40" Source="/Images/TrackSegments/os-left-crossover-closed.gif" Stretch="None"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4455,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="214" LampColor="red"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4466,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="215" LampColor="red"/>
+        <Label Content="133" HorizontalAlignment="Left" Height="24" Margin="4456,192,0,0" VerticalAlignment="Top" Width="20" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4481,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4481,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <Label Content="JASTRO" HorizontalAlignment="Left" Height="24" Margin="4422,78,0,0" VerticalAlignment="Top" Width="97" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4430,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4405,159,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4405,182,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4430,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4390,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="4355,158,0,0" VerticalAlignment="Top" Width="40" Source="/Images/TrackSegments/os-righthand-east-closed.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4376,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="231" LampColor="red"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4390,185,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4505,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="213" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4505,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="212" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4414,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="233" LampColor="amber"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4414,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="232" LampColor="amber"/>
+        <Label Content="LOPEZ" HorizontalAlignment="Left" Height="24" Margin="4331,78,0,0" VerticalAlignment="Top" Width="97" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4320,159,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/block.gif" Stretch="None"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4344,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4329,159,0,0" VerticalAlignment="Top" Width="16" SubAreaID="100" TrackCircuitID="230" LampColor="amber"/>
+        <Image HorizontalAlignment="Left" Height="15" Margin="4305,162,0,0" VerticalAlignment="Top" Width="30" Source="/Images/TrackSegments/blackgap.gif" Stretch="None"/>
+        <USS:BlockLamp HorizontalAlignment="Left" Height="16" Margin="4000,182,0,0" VerticalAlignment="Top" Width="16" SubAreaID="250" LampColor="amber"/>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4347,149,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4394,200,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4394,149,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4435,200,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4435,149,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4486,200,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4486,149,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4628,200,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4628,149,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4520,200,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4520,149,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4520,133,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4675,200,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4782,200,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4782,219,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4723,219,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4815,200,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4815,149,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4862,200,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4862,149,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4941,149,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4941,129,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="7" Margin="4892,149,0,0" VerticalAlignment="Top" Width="14" Source="/Images/DiagramItems/sig-h-1.gif" Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="4972,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="150" SwitchPlateNumber="149" CodeLineName="CodeLine4" HasSignalPlate="True" HasSwitchPlate="True" LeftSignalStr="100/194,100/195" RightSignalStr="100/196" SwitchStr="100/0"/>
+        <Label Content="150R" HorizontalAlignment="Left" Height="24" Margin="4883,129,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="150L" HorizontalAlignment="Left" Height="24" Margin="4933,108,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="146L" HorizontalAlignment="Left" Height="24" Margin="4851,129,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="146R" HorizontalAlignment="Left" Height="24" Margin="4807,129,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="148R" HorizontalAlignment="Left" Height="24" Margin="4807,205,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="148L" HorizontalAlignment="Left" Height="24" Margin="4853,205,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="4905,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="148" SwitchPlateNumber="147" CodeLineName="CodeLine4" HasSignalPlate="True" LeftSignalStr="100/2" RightSignalStr="100/0"/>
+        <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="4839,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="146" SwitchPlateNumber="145" CodeLineName="CodeLine4" HasSignalPlate="True" LeftSignalStr="100/3" RightSignalStr="100/1" HasSwitchPlate="True" SwitchStr="100/1"/>
+        <Label Content="143" HorizontalAlignment="Left" Height="24" Margin="4741,199,0,0" VerticalAlignment="Top" Width="20" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="141" HorizontalAlignment="Left" Height="24" Margin="4690,200,0,0" VerticalAlignment="Top" Width="20" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="146L" HorizontalAlignment="Left" Height="24" Margin="4773,223,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="144L" HorizontalAlignment="Left" Height="24" Margin="4713,223,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="144R" HorizontalAlignment="Left" Height="24" Margin="4658,205,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="4774,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="143" SwitchPlateNumber="143" CodeLineName="CodeLine4" HasSignalPlate="True" HasSwitchPlate="True" SwitchStr="100/48" LeftSignalStr="100/120,100/121"/>
+        <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="4708,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="142" SwitchPlateNumber="141" CodeLineName="CodeLine4" HasSignalPlate="True" HasSwitchPlate="True" SwitchStr="100/47" RightSignalStr="100/199" LeftSignalStr="100/122"/>
+        <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="4577,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="138" SwitchPlateNumber="137" CodeLineName="CodeLine4" HasSignalPlate="True" HasSwitchPlate="True" SwitchStr="100/46" LeftSignalStr="100/198" RightSignalStr="100/119"/>
+        <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="4511,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="136" SwitchPlateNumber="135" CodeLineName="CodeLine4" HasSignalPlate="True" HasSwitchPlate="True" SwitchStr="100/76" LeftSignalStr="100/117" RightSignalStr="100/118"/>
+        <Label Content="135" HorizontalAlignment="Left" Height="24" Margin="4557,135,0,0" VerticalAlignment="Top" Width="20" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="129" HorizontalAlignment="Left" Height="24" Margin="4355,177,0,0" VerticalAlignment="Top" Width="20" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="4444,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="134" SwitchPlateNumber="133" CodeLineName="CodeLine4" HasSignalPlate="True" HasSwitchPlate="True" LeftSignalStr="100/123" RightSignalStr="100/126" SwitchStr="100/49"/>
+        <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="4379,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="132" SwitchPlateNumber="131" CodeLineName="CodeLine4" HasSignalPlate="True" LeftSignalStr="100/124" RightSignalStr="100/125"/>
+        <USS1:CTCColumn HorizontalAlignment="Left" Height="301" Margin="4312,338,0,0" VerticalAlignment="Top" Width="64" SignalPlateNumber="130" SwitchPlateNumber="129" CodeLineName="CodeLine4" HasSignalPlate="True" HasSwitchPlate="True" LeftSignalStr="100/128,100/127" RightSignalStr="100/129" SwitchStr="100/50"/>
+        <Label Content="136L" HorizontalAlignment="Left" Height="24" Margin="4616,129,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="138L" HorizontalAlignment="Left" Height="24" Margin="4617,205,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="136R" HorizontalAlignment="Left" Height="24" Margin="4513,113,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="138R" HorizontalAlignment="Left" Height="24" Margin="4514,205,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="132L" HorizontalAlignment="Left" Height="24" Margin="4473,129,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="132R" HorizontalAlignment="Left" Height="24" Margin="4429,129,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="134R" HorizontalAlignment="Left" Height="24" Margin="4429,205,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="134L" HorizontalAlignment="Left" Height="24" Margin="4475,205,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="130L" HorizontalAlignment="Left" Height="24" Margin="4382,129,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="130R" HorizontalAlignment="Left" Height="24" Margin="4338,129,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
+        <Label Content="130L" HorizontalAlignment="Left" Height="24" Margin="4384,205,0,0" VerticalAlignment="Top" Width="32" Foreground="#FFDEDEDE" Padding="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial"/>
 
 
     </Grid>
