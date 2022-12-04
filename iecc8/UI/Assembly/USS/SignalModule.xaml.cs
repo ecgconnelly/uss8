@@ -227,8 +227,8 @@ namespace Iecc8.UI.Equipment.USS
                     continue;
                 }
                 LeftSignals.Add(sig);
-                Debug.Print("Signal module {0}L linked to {1}",
-                    this.PlateNumber.ToString(), sig.ID);
+                //Debug.Print("Signal module {0}L linked to {1}",
+                //    this.PlateNumber.ToString(), sig.ID);
             }
             foreach (string rstr in rstrs)
             {
@@ -252,8 +252,8 @@ namespace Iecc8.UI.Equipment.USS
                     continue;
                 }
                 RightSignals.Add(sig);             
-                Debug.Print("Signal module {0}R linked to {1}",
-                    this.PlateNumber.ToString(), sig.ID);
+                //Debug.Print("Signal module {0}R linked to {1}",
+                //    this.PlateNumber.ToString(), sig.ID);
             }
         }
 
@@ -369,8 +369,8 @@ namespace Iecc8.UI.Equipment.USS
             if (DesignerProperties.GetIsInDesignMode(this)) return;
 
             PopulateSignalArrays();
-            Debug.Print("{0} left signals, {1} right signals",
-                LeftSignals.Count(), RightSignals.Count());
+            //Debug.Print("{0} left signals, {1} right signals",
+            //    LeftSignals.Count(), RightSignals.Count());
             
             foreach (World.Signal sig in LeftSignals)
             {
