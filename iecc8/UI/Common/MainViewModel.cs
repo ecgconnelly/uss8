@@ -221,7 +221,9 @@ namespace Iecc8.UI.Common {
 		/// </summary>
 		/// <param name="train">The new train.</param>
 		private void OnTrainEntered(Train train) {
-			AddMessage(Message.EType.Miscellaneous, string.Format("{0}{1} entered at {2} : {3}", train.Company, train.LocoNumber, train.SubArea, train.Location), true);
+			AddMessage(Message.EType.Miscellaneous, string.Format("{0}{1} entered at {2} : {3}\n" +
+				"\t>> {4} FT / {5} T / {6} HPT", 
+				train.Company, train.LocoNumber, train.SubArea, train.Location, train.Length, train.Weight, train.HPt), true);
 		}
 
 		/// <summary>
