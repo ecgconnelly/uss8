@@ -216,15 +216,27 @@ namespace Iecc8.UI.Common {
 			}
 		}
 
+
+		public List<string> AnnouncedTrains = new List<string>();
+
 		/// <summary>
 		/// Handles a train entering the world.
 		/// </summary>
 		/// <param name="train">The new train.</param>
 		private void OnTrainEntered(Train train) {
-			AddMessage(Message.EType.Miscellaneous, string.Format("{0}{1} entered at {2} : {3}\n" +
-				"\t>> {4} FT / {5} T / {6} HPT", 
-				train.Company, train.LocoNumber, train.SubArea, train.Location, train.Length, train.Weight, train.HPt), true);
-		}
+            string id = train.Company + " " + train.LocoNumber;
+            
+			//don't announce the same train over and over if we forget it existed
+			if (!AnnouncedTrains.Contains(id)) 
+			{
+                AddMessage(Message.EType.Miscellaneous, string.Format("{0} {1} ({7}) entered at {2} : {3}\n" +
+                "  >> {4} FT / {5} T / {6} HPT",
+                train.Company, train.LocoNumber, train.SubArea, train.Location, train.Length, train.Weight, train.HPt, train.Tag), true);
+
+			    AnnouncedTrains.Add(id);
+            }
+
+        }
 
 		/// <summary>
 		/// Handles a radio message arriving.
