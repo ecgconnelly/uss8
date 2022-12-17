@@ -138,7 +138,7 @@ namespace Iecc8.UI.Assembly.USS
 
                     if (route != null)
                     {
-                        await route.CallAsync(fleet: trans.requestedIndication == ESignalIndication.Fleet);
+                        await route.CallAsync(trans.requestedIndication);
 
                         bool anyDisplayed = false;
                         

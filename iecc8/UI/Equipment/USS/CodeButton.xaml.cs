@@ -128,10 +128,9 @@ namespace Iecc8.UI.Equipment.USS
 
 
 
-        private async void Press()
+        private async void Press(bool callOn)
         {
-            bool callOn = Keyboard.Modifiers.HasFlag(ModifierKeys.Control);
-
+            
             Column.AwaitingIndicationCode = true;
             while (ColumnCodeLine.RequestLineAccessTransmit(this) == false)
             {
@@ -148,6 +147,7 @@ namespace Iecc8.UI.Equipment.USS
             Column.TransmitSound.Play();
             await Task.Delay(4000);
             Column.TransmitSound.Stop();
+
             Column.FieldController.SendControlCode(trans);
             Debug.Assert(ColumnCodeLine.ReleaseLineAccessTransmit(this));
             Debug.Print("Released the code line");
@@ -188,11 +188,13 @@ namespace Iecc8.UI.Equipment.USS
 
         private void Image_MouseUp(object sender, MouseButtonEventArgs e)
         {
+            bool callOn = Keyboard.Modifiers.HasFlag(ModifierKeys.Control);
+          
             ButtonReleaseSound.Source = new Uri("Sounds/Button-release.wav", UriKind.Relative);
             ButtonReleaseSound.Position = new System.TimeSpan(0);
             ButtonReleaseSound.Play();
 
-            Press(); //this can be expanded later
+            Press(callOn); //this can be expanded later
         }
 
         public List<SignalModule> SignalModules { get; set; }

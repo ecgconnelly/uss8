@@ -65,10 +65,13 @@ namespace Iecc8.World {
 		public bool FleetRequested
 		{ get; private set; }
 
-		/// <summary>
-		/// Whether it is possible to enable automatic working.
-		/// </summary>
-		public bool AutoWorkingAvailable {
+        public bool FlagByRequested
+        { get; private set; }
+
+        /// <summary>
+        /// Whether it is possible to enable automatic working.
+        /// </summary>
+        public bool AutoWorkingAvailable {
 			get {
 				// This is roughly equivalent to whether or not a route is set. However, to avoid a race condition where Run8 replaces the signal just as the signaller enables automatic working (thus resulting in a fleeted signal without a route), we stop making automatic working available as soon as the replace delay timer starts counting down, even if the route has not yet released.
 				return (CurrentRoute != null) && (ReplaceDelayTimer == ReplaceDelayPeriod) && !SwingingPoints;
@@ -293,7 +296,12 @@ namespace Iecc8.World {
 				if (!anyWrong) {
 					SwingingPoints = false;
 					ReplaceDelayTimer = ReplaceDelayPeriod;
-					await World.ChangeSignalAsync(SubArea, ID, FleetRequested ? ESignalIndication.Fleet : ESignalIndication.Proceed);
+
+					ESignalIndication rq = ESignalIndication.Proceed;
+					if (FleetRequested) rq = ESignalIndication.Fleet;
+					if (FlagByRequested) rq = ESignalIndication.FlagBy;
+
+					await World.ChangeSignalAsync(SubArea, ID, rq);
 				}
 			}
 		}
@@ -304,9 +312,10 @@ namespace Iecc8.World {
 		/// Sets the current route from this signal.
 		/// </summary>
 		/// <param name="route">The route.</param>
-		public void SetCurrentRoute(Route route, bool fleet = false) {
+		public void SetCurrentRoute(Route route, ESignalIndication requestedIndication) {
 			Debug.Assert(route != null);
-			FleetRequested = fleet;
+			FleetRequested = requestedIndication == ESignalIndication.Fleet;
+			FlagByRequested = requestedIndication == ESignalIndication.FlagBy;
 			CurrentRoute = route;
 			SwingingPoints = true;
 			ReplaceDelayTimer = ReplaceDelayPeriod;

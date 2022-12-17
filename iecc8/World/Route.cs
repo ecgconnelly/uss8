@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Iecc8.Messages;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.ServiceModel.Description;
 using System.Threading.Tasks;
 
 namespace Iecc8.World {
@@ -133,8 +135,10 @@ namespace Iecc8.World {
 		/// <remarks>
 		/// The caller must verify that the route is available first.
 		/// </remarks>
-		public async Task CallAsync(bool fleet = false) {
-			Debug.Assert(Available);
+		public async Task CallAsync(ESignalIndication requestedIndication = ESignalIndication.Proceed) {
+			bool fleet = requestedIndication == ESignalIndication.Fleet;
+
+            Debug.Assert(Available);
 
 			// Lock the track circuits.
 			for (int i = 0; i != Elements.Count; ++i) {
@@ -144,7 +148,7 @@ namespace Iecc8.World {
 			}
 
 			// Set the signal's route.
-			Entrance.SetCurrentRoute(this, fleet);
+			Entrance.SetCurrentRoute(this, requestedIndication);
 
 			// Swing and lock the points.
 			Task[] tasks = new Task[PointPositions.Count];
@@ -156,6 +160,7 @@ namespace Iecc8.World {
 			}
 		}
 		#endregion
+
 
 		#region Data Initialization API
 		/// <summary>
